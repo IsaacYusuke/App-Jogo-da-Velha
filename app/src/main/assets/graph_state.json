@@ -1,0 +1,1983 @@
+{
+  "version": 11,
+  "randomSeed": "299b5abe0a73e1040aacfe8fafd54478",
+  "graph": {
+    "viewport": {
+      "xmin": -9.421213214156223,
+      "ymin": -8.845190310681044,
+      "xmax": 16.745996816277618,
+      "ymax": 19.161901675017678
+    },
+    "showGrid": false,
+    "showXAxis": false,
+    "showYAxis": false,
+    "xAxisNumbers": false,
+    "yAxisNumbers": false,
+    "polarNumbers": false
+  },
+  "expressions": {
+    "list": [
+      {
+        "type": "text",
+        "id": "120108",
+        "text": "Graças a Deus funcionou!"
+      },
+      {
+        "type": "text",
+        "id": "130886",
+        "text": "0 = vazio\n1 = bolinha\n2 = X\n3 = velha (empate)"
+      },
+      {
+        "type": "text",
+        "id": "130901",
+        "text": "Otimiza as funções de listas - parece q melhorou um pouco!"
+      },
+      {
+        "type": "folder",
+        "id": "121625",
+        "title": "Estados da MEF",
+        "hidden": true,
+        "collapsed": true
+      },
+      {
+        "type": "expression",
+        "id": "121677",
+        "folderId": "121625",
+        "color": "#388c46",
+        "latex": "E_{stado}=0",
+        "slider": {
+          "hardMin": true,
+          "hardMax": true,
+          "min": "I_{nicial}",
+          "max": "4"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "121678",
+        "folderId": "121625",
+        "color": "#6042a6",
+        "latex": "i_{f}\\left(E_{0}\\right)=\\left\\{E_{stado}=E_{0}:1,0\\right\\}",
+        "hidden": true
+      },
+      {
+        "type": "expression",
+        "id": "121593",
+        "folderId": "121625",
+        "color": "#c74440",
+        "latex": "I_{nicial}=0+0"
+      },
+      {
+        "type": "expression",
+        "id": "130574",
+        "folderId": "121625",
+        "color": "#c74440",
+        "latex": "S_{imples}=1+0"
+      },
+      {
+        "type": "expression",
+        "id": "130575",
+        "folderId": "121625",
+        "color": "#2d70b3",
+        "latex": "A_{vancado}=2+0"
+      },
+      {
+        "type": "expression",
+        "id": "130576",
+        "folderId": "121625",
+        "color": "#388c46",
+        "latex": "X_{ganhou}=3+0"
+      },
+      {
+        "type": "expression",
+        "id": "130577",
+        "folderId": "121625",
+        "color": "#6042a6",
+        "latex": "O_{ganhou}=4+0"
+      },
+      {
+        "type": "expression",
+        "id": "130846",
+        "folderId": "121625",
+        "color": "#2d70b3",
+        "latex": "s_{tart1}=E_{stado}\\to1"
+      },
+      {
+        "type": "expression",
+        "id": "130847",
+        "folderId": "121625",
+        "color": "#388c46",
+        "latex": "s_{tart2}=E_{stado}\\to2"
+      },
+      {
+        "type": "expression",
+        "id": "130643",
+        "folderId": "121625",
+        "color": "#c74440",
+        "latex": "r_{eset}=E_{stado}\\to0,r_{esetCampos},v_{ez}\\to1,\\ r_{esetProx}"
+      },
+      {
+        "type": "folder",
+        "id": "121681",
+        "title": "Titulo e palavras",
+        "collapsed": true
+      },
+      {
+        "type": "expression",
+        "id": "121684",
+        "folderId": "121681",
+        "color": "#000000",
+        "latex": "b_{otao2}\\left(\\left[j,o,g,o,-1,d,a\\right],\\left[v,e_{0},l,h,a,-1,-1\\right],t\\right)+\\left(0,5\\right)+\\left(0,\\left\\{i_{f}\\left(I_{nicial}\\right)=1:0,1000\\right\\}\\right)",
+        "lineWidth": "i_{f}\\left(I_{nicial}\\right)2.5"
+      },
+      {
+        "type": "expression",
+        "id": "121683",
+        "folderId": "121681",
+        "color": "#000000",
+        "latex": "\\frac{b_{otao}\\left(\\left[s,i,m,p,l,e_{0},s\\right],t\\right)}{2}+\\left(1.75,1.5\\right)+\\left(0,\\left\\{i_{f}\\left(I_{nicial}\\right)=1:0,1000\\right\\}\\right)",
+        "fill": true,
+        "fillOpacity": "0",
+        "lineWidth": "i_{f}\\left(I_{nicial}\\right)2.5",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "s_{tart1}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "130573",
+        "folderId": "121681",
+        "color": "#000000",
+        "latex": "\\frac{b_{otao}\\left(\\left[a,v,a,n,c,a,d,o\\right],t\\right)}{2}+\\left(1.5,0\\right)+\\left(0,\\left\\{i_{f}\\left(I_{nicial}\\right)=1:0,1000\\right\\}\\right)",
+        "fill": true,
+        "fillOpacity": "0",
+        "lineWidth": "i_{f}\\left(I_{nicial}\\right)2.5",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "s_{tart2}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "130815",
+        "folderId": "121681",
+        "color": "#000000",
+        "latex": "\\frac{b_{otao}\\left(\\left[r,e_{0},s,e_{0},t_{0}\\right],t\\right)}{2}+\\left(2,-01\\right)+\\left(0,\\left\\{i_{f}\\left(I_{nicial}\\right)=1:1000,0\\right\\}\\right)",
+        "fill": true,
+        "fillOpacity": "0",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "r_{eset}"
+        }
+      },
+      {
+        "type": "folder",
+        "id": "121505",
+        "title": "Matriz do Campo",
+        "hidden": true,
+        "collapsed": true
+      },
+      {
+        "type": "expression",
+        "id": "130600",
+        "folderId": "121505",
+        "color": "#388c46",
+        "latex": "r_{esetCampos}=C_{ampo1}\\to C_{ampo0},C_{ampo2}\\to C_{ampo0},C_{ampo3}\\to C_{ampo0},C_{ampo4}\\to C_{ampo0},C_{ampo5}\\to C_{ampo0},C_{ampo6}\\to C_{ampo0},C_{ampo7}\\to C_{ampo0},C_{ampo8}\\to C_{ampo0},C_{ampo9}\\to C_{ampo0}"
+      },
+      {
+        "type": "expression",
+        "id": "130737",
+        "folderId": "121505",
+        "color": "#6042a6",
+        "latex": "p_{roximo}\\left(x\\right)=\\left\\{x=1:2,x=2:1\\right\\}",
+        "hidden": true
+      },
+      {
+        "type": "text",
+        "id": "130595",
+        "folderId": "121505",
+        "text": "função Vencedor que recebe uma lista campo e diz se o jogo terminou"
+      },
+      {
+        "type": "expression",
+        "id": "130607",
+        "folderId": "121505",
+        "color": "#6042a6",
+        "latex": "P_{rodutos}\\left(C_{ampoX}\\right)=\\left[p_{rodLista}\\left(l_{in}\\left(C_{ampoX},1\\right)\\right),p_{rodLista}\\left(l_{in}\\left(C_{ampoX},2\\right)\\right),p_{rodLista}\\left(l_{in}\\left(C_{ampoX},3\\right)\\right),p_{rodLista}\\left(c_{ol}\\left(C_{ampoX},1\\right)\\right),p_{rodLista}\\left(c_{ol}\\left(C_{ampoX},2\\right)\\right),p_{rodLista}\\left(c_{ol}\\left(C_{ampoX},3\\right)\\right),p_{rodLista}\\left(d_{iag1}\\left(C_{ampoX}\\right)\\right),p_{rodLista}\\left(d_{iag2}\\left(C_{ampoX}\\right)\\right)\\right]"
+      },
+      {
+        "type": "expression",
+        "id": "130596",
+        "folderId": "121505",
+        "color": "#6042a6",
+        "latex": "V_{encedor}\\left(C_{ampoX}\\right)=\\max\\left(\\left\\{P_{rodutos}\\left(C_{ampoX}\\right)=2^{3}:2,P_{rodutos}\\left(C_{ampoX}\\right)=1^{3}:1,0\\right\\}\\right)"
+      },
+      {
+        "type": "text",
+        "id": "130894",
+        "folderId": "121505",
+        "text": "Função Vencedor2 considera os casos com coringa no jogo maior"
+      },
+      {
+        "type": "expression",
+        "id": "130891",
+        "folderId": "121505",
+        "color": "#6042a6",
+        "latex": "V_{encedor2}\\left(C_{ampoX}\\right)=\\max\\left(\\left\\{P_{rodutos}\\left(C_{ampoX}\\right)=2^{3}:2,P_{rodutos}\\left(C_{ampoX}\\right)=1^{3}:1,P_{rodutos}\\left(C_{ampoX}\\right)=3^{3}:3,P_{rodutos}\\left(C_{ampoX}\\right)=3\\cdot1\\cdot1:1,P_{rodutos}\\left(C_{ampoX}\\right)=3\\cdot3\\cdot1:1,P_{rodutos}\\left(C_{ampoX}\\right)=3\\cdot2\\cdot2:2,P_{rodutos}\\left(C_{ampoX}\\right)=3\\cdot3\\cdot2:2,0\\right\\}\\right)"
+      },
+      {
+        "type": "text",
+        "id": "130725",
+        "folderId": "121505",
+        "text": "função DeuVelha que recebe uma lista campo e diz se o jogo deu velha"
+      },
+      {
+        "type": "expression",
+        "id": "130728",
+        "folderId": "121505",
+        "color": "#c74440",
+        "latex": "D_{euVelha}\\left(C_{ampoX}\\right)=\\min\\left(\\left[t_{em1e2}\\left(l_{in}\\left(C_{ampoX},1\\right)\\right),t_{em1e2}\\left(l_{in}\\left(C_{ampoX},2\\right)\\right),t_{em1e2}\\left(l_{in}\\left(C_{ampoX},3\\right)\\right),t_{em1e2}\\left(c_{ol}\\left(C_{ampoX},1\\right)\\right),t_{em1e2}\\left(c_{ol}\\left(C_{ampoX},2\\right)\\right),t_{em1e2}\\left(c_{ol}\\left(C_{ampoX},3\\right)\\right),t_{em1e2}\\left(d_{iag1}\\left(C_{ampoX}\\right)\\right),t_{em1e2}\\left(d_{iag2}\\left(C_{ampoX}\\right)\\right)\\right]\\right)"
+      },
+      {
+        "type": "text",
+        "id": "130733",
+        "folderId": "121505",
+        "text": "Função Resultado que retorna:\n0 se o jogo não acabou\n1 se a bolinha ganhou\n2 se o X ganhou\n3 se o jogo deu velha"
+      },
+      {
+        "type": "expression",
+        "id": "130731",
+        "folderId": "121505",
+        "color": "#6042a6",
+        "latex": "R_{esultado}\\left(C_{ampoX}\\right)=3D_{euVelha}\\left(C_{ampoX}\\right)+V_{encedor2}\\left(C_{ampoX}\\right)"
+      },
+      {
+        "type": "text",
+        "id": "130798",
+        "folderId": "121505",
+        "text": "função QualLinha que recebe uma lista campo e diz qual linha está completa - e se tirar o max ele considera casos com empate no jogo maior??"
+      },
+      {
+        "type": "expression",
+        "id": "130799",
+        "folderId": "121505",
+        "color": "#000000",
+        "latex": "Q_{ualLinha}\\left(C_{ampoX}\\right)=\\left\\{R_{esultado}\\left(C_{ampoX}\\right)=3:-1,\\left(\\left\\{P_{rodutos}\\left(C_{ampoX}\\right)=2^{3}:1,P_{rodutos}\\left(C_{ampoX}\\right)=1^{3}:1,P_{rodutos}\\left(C_{ampoX}\\right)=3^{3}:1,P_{rodutos}\\left(C_{ampoX}\\right)=3\\cdot1\\cdot1:1,P_{rodutos}\\left(C_{ampoX}\\right)=3\\cdot3\\cdot1:1,P_{rodutos}\\left(C_{ampoX}\\right)=3\\cdot2\\cdot2:1,P_{rodutos}\\left(C_{ampoX}\\right)=3\\cdot3\\cdot2:1,0\\right\\}\\cdot\\left[1...8\\right]\\right)\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "130897",
+        "folderId": "121505",
+        "color": "#000000",
+        "latex": "Q_{ualLinhaOLD}\\left(C_{ampoX}\\right)=\\left\\{R_{esultado}\\left(C_{ampoX}\\right)=3:-1,\\max\\left(\\left\\{P_{rodutos}\\left(C_{ampoX}\\right)=2^{3}:1,P_{rodutos}\\left(C_{ampoX}\\right)=1^{3}:1,P_{rodutos}\\left(C_{ampoX}\\right)=3^{3}:1,P_{rodutos}\\left(C_{ampoX}\\right)=3\\cdot1\\cdot1:1,P_{rodutos}\\left(C_{ampoX}\\right)=3\\cdot3\\cdot1:1,P_{rodutos}\\left(C_{ampoX}\\right)=3\\cdot2\\cdot2:1,P_{rodutos}\\left(C_{ampoX}\\right)=3\\cdot3\\cdot2:1,0\\right\\}\\cdot\\left[1...8\\right]\\right)\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "130617",
+        "folderId": "121505",
+        "color": "#388c46",
+        "latex": "R_{esultado}\\left(C_{ampo}\\left(C_{ampoi}\\right)\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "130618",
+        "folderId": "121505",
+        "color": "#6042a6",
+        "latex": "C_{ampoi}=1",
+        "slider": {
+          "hardMin": true,
+          "min": "0",
+          "step": "1"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "130611",
+        "folderId": "121505",
+        "color": "#388c46",
+        "latex": "C_{ampo}\\left(x\\right)=\\left\\{x=0:C_{ampo0},x=1:C_{ampo1},x=2:C_{ampo2},x=3:C_{ampo3},x=4:C_{ampo4},x=5:C_{ampo5},x=6:C_{ampo6},x=7:C_{ampo7},x=8:C_{ampo8},x=9:C_{ampo9},x=10:C_{ampo10}\\right\\}",
+        "hidden": true
+      },
+      {
+        "type": "expression",
+        "id": "130583",
+        "folderId": "121505",
+        "color": "#6042a6",
+        "latex": "C_{ampo0}=\\operatorname{join}\\left(3,z_{erosLista}\\left(9\\right)\\right)"
+      },
+      {
+        "type": "text",
+        "id": "130620",
+        "folderId": "121505",
+        "text": "Campo10 é o jogo global"
+      },
+      {
+        "type": "expression",
+        "id": "130630",
+        "folderId": "121505",
+        "color": "#6042a6",
+        "latex": "R_{esultado}\\left(C_{ampo10}\\right)"
+      },
+      {
+        "id": "130626",
+        "type": "table",
+        "folderId": "121505",
+        "columns": [
+          {
+            "hidden": true,
+            "id": "130624",
+            "color": "#6042a6"
+          },
+          {
+            "hidden": true,
+            "id": "130625",
+            "color": "#000000",
+            "latex": "c_{ol2}\\left(C_{ampo10},1\\right)"
+          },
+          {
+            "hidden": true,
+            "id": "130627",
+            "color": "#c74440",
+            "latex": "c_{ol2}\\left(C_{ampo10},2\\right)"
+          },
+          {
+            "hidden": true,
+            "id": "130628",
+            "color": "#2d70b3",
+            "latex": "c_{ol2}\\left(C_{ampo10},3\\right)"
+          }
+        ]
+      },
+      {
+        "type": "expression",
+        "id": "130580",
+        "folderId": "121505",
+        "color": "#c74440",
+        "latex": "C_{ampo1}=\\left[3,0,0,0,0,0,0,0,0,0\\right]"
+      },
+      {
+        "type": "expression",
+        "id": "130582",
+        "folderId": "121505",
+        "color": "#388c46",
+        "latex": "C_{ampo2}=\\left[3,0,0,0,0,0,0,0,0,0\\right]"
+      },
+      {
+        "type": "expression",
+        "id": "130590",
+        "folderId": "121505",
+        "color": "#388c46",
+        "latex": "C_{ampo3}=\\left[3,0,0,0,0,0,0,0,0,0\\right]"
+      },
+      {
+        "type": "expression",
+        "id": "130589",
+        "folderId": "121505",
+        "color": "#388c46",
+        "latex": "C_{ampo4}=\\left[3,0,0,0,0,0,0,0,0,0\\right]"
+      },
+      {
+        "type": "expression",
+        "id": "130588",
+        "folderId": "121505",
+        "color": "#388c46",
+        "latex": "C_{ampo5}=\\left[3,0,0,0,0,0,0,0,0,0\\right]"
+      },
+      {
+        "type": "expression",
+        "id": "130587",
+        "folderId": "121505",
+        "color": "#388c46",
+        "latex": "C_{ampo6}=\\left[3,0,0,0,0,0,0,0,0,0\\right]"
+      },
+      {
+        "type": "expression",
+        "id": "130586",
+        "folderId": "121505",
+        "color": "#388c46",
+        "latex": "C_{ampo7}=\\left[3,0,0,0,0,0,0,0,0,0\\right]"
+      },
+      {
+        "type": "expression",
+        "id": "130585",
+        "folderId": "121505",
+        "color": "#388c46",
+        "latex": "C_{ampo8}=\\left[3,0,0,0,0,0,0,0,0,0\\right]"
+      },
+      {
+        "type": "expression",
+        "id": "130584",
+        "folderId": "121505",
+        "color": "#388c46",
+        "latex": "C_{ampo9}=\\left[3,0,0,0,0,0,0,0,0,0\\right]"
+      },
+      {
+        "type": "expression",
+        "id": "130861",
+        "folderId": "121505",
+        "color": "#2d70b3",
+        "latex": "R_{esultados}=\\operatorname{join}\\left(R_{esultado}\\left(C_{ampo1}\\right),R_{esultado}\\left(C_{ampo2}\\right),R_{esultado}\\left(C_{ampo3}\\right),R_{esultado}\\left(C_{ampo4}\\right),R_{esultado}\\left(C_{ampo5}\\right),R_{esultado}\\left(C_{ampo6}\\right),R_{esultado}\\left(C_{ampo7}\\right),R_{esultado}\\left(C_{ampo8}\\right),R_{esultado}\\left(C_{ampo9}\\right)\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "130593",
+        "folderId": "121505",
+        "color": "#2d70b3",
+        "latex": "C_{ampo10}=\\operatorname{join}\\left(3,R_{esultados}\\right)"
+      },
+      {
+        "type": "folder",
+        "id": "130817",
+        "title": "Funções pra escrever as listas Campo",
+        "hidden": true,
+        "collapsed": true
+      },
+      {
+        "type": "expression",
+        "id": "130736",
+        "folderId": "130817",
+        "color": "#388c46",
+        "latex": "v_{ez}=1",
+        "slider": {
+          "hardMin": true,
+          "hardMax": true,
+          "min": "1",
+          "max": "2",
+          "step": "1"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "130738",
+        "folderId": "130817",
+        "color": "#000000",
+        "latex": "t_{roca}=v_{ez}\\to p_{roximo}\\left(v_{ez}\\right)"
+      },
+      {
+        "type": "text",
+        "id": "131019",
+        "folderId": "130817",
+        "text": "E se tirar os casos das bordas? - Não sei se melhorou muito\nTirei a verificação de indice <= 10 - parece que ficou mais rápido\nMuda a função escreveCampo? Troca por uma soma de listas? - parece +ou- igual??\ntroquei as funções"
+      },
+      {
+        "type": "expression",
+        "id": "131022",
+        "folderId": "130817",
+        "color": "#388c46",
+        "latex": "\\operatorname{length}\\left(C_{ampo1}\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "131023",
+        "folderId": "130817",
+        "color": "#6042a6",
+        "latex": "c_{riaLista}\\left(i_{ndice},x\\right)=\\left\\{\\left[1...10\\right]=i_{ndice}:x,0\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131025",
+        "folderId": "130817",
+        "color": "#388c46",
+        "latex": "e_{screveCampo1}\\left(i_{ndice},x\\right)=C_{ampo1}\\to C_{ampo1}+c_{riaLista}\\left(i_{ndice},x\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "130735",
+        "folderId": "130817",
+        "color": "#2d70b3",
+        "latex": "c_{lica1}\\left(i_{ndice}\\right)=\\left\\{R_{esultado}\\left(C_{ampo1}\\right)=0:\\left\\{C_{ampo1}\\left[i_{ndice}\\right]=0:\\left(e_{screveCampo1}\\left(i_{ndice},v_{ez}\\right),t_{roca}\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131030",
+        "folderId": "130817",
+        "color": "#388c46",
+        "latex": "e_{screveCampo2}\\left(i_{ndice},x\\right)=C_{ampo2}\\to C_{ampo2}+c_{riaLista}\\left(i_{ndice},x\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "130833",
+        "folderId": "130817",
+        "color": "#2d70b3",
+        "latex": "c_{lica2}\\left(i_{ndice}\\right)=\\left\\{R_{esultado}\\left(C_{ampo2}\\right)=0:\\left\\{C_{ampo2}\\left[i_{ndice}\\right]=0:\\left(e_{screveCampo2}\\left(i_{ndice},v_{ez}\\right),t_{roca}\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131031",
+        "folderId": "130817",
+        "color": "#388c46",
+        "latex": "e_{screveCampo3}\\left(i_{ndice},x\\right)=C_{ampo3}\\to C_{ampo3}+c_{riaLista}\\left(i_{ndice},x\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "130832",
+        "folderId": "130817",
+        "color": "#2d70b3",
+        "latex": "c_{lica3}\\left(i_{ndice}\\right)=\\left\\{R_{esultado}\\left(C_{ampo3}\\right)=0:\\left\\{C_{ampo3}\\left[i_{ndice}\\right]=0:\\left(e_{screveCampo3}\\left(i_{ndice},v_{ez}\\right),t_{roca}\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131032",
+        "folderId": "130817",
+        "color": "#388c46",
+        "latex": "e_{screveCampo4}\\left(i_{ndice},x\\right)=C_{ampo4}\\to C_{ampo4}+c_{riaLista}\\left(i_{ndice},x\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "130831",
+        "folderId": "130817",
+        "color": "#2d70b3",
+        "latex": "c_{lica4}\\left(i_{ndice}\\right)=\\left\\{R_{esultado}\\left(C_{ampo4}\\right)=0:\\left\\{C_{ampo4}\\left[i_{ndice}\\right]=0:\\left(e_{screveCampo4}\\left(i_{ndice},v_{ez}\\right),t_{roca}\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131033",
+        "folderId": "130817",
+        "color": "#388c46",
+        "latex": "e_{screveCampo5}\\left(i_{ndice},x\\right)=C_{ampo5}\\to C_{ampo5}+c_{riaLista}\\left(i_{ndice},x\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "130830",
+        "folderId": "130817",
+        "color": "#2d70b3",
+        "latex": "c_{lica5}\\left(i_{ndice}\\right)=\\left\\{R_{esultado}\\left(C_{ampo5}\\right)=0:\\left\\{C_{ampo5}\\left[i_{ndice}\\right]=0:\\left(e_{screveCampo5}\\left(i_{ndice},v_{ez}\\right),t_{roca}\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131034",
+        "folderId": "130817",
+        "color": "#388c46",
+        "latex": "e_{screveCampo6}\\left(i_{ndice},x\\right)=C_{ampo6}\\to C_{ampo6}+c_{riaLista}\\left(i_{ndice},x\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "130829",
+        "folderId": "130817",
+        "color": "#2d70b3",
+        "latex": "c_{lica6}\\left(i_{ndice}\\right)=\\left\\{R_{esultado}\\left(C_{ampo6}\\right)=0:\\left\\{C_{ampo6}\\left[i_{ndice}\\right]=0:\\left(e_{screveCampo6}\\left(i_{ndice},v_{ez}\\right),t_{roca}\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131035",
+        "folderId": "130817",
+        "color": "#388c46",
+        "latex": "e_{screveCampo7}\\left(i_{ndice},x\\right)=C_{ampo7}\\to C_{ampo7}+c_{riaLista}\\left(i_{ndice},x\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "130828",
+        "folderId": "130817",
+        "color": "#2d70b3",
+        "latex": "c_{lica7}\\left(i_{ndice}\\right)=\\left\\{R_{esultado}\\left(C_{ampo7}\\right)=0:\\left\\{C_{ampo7}\\left[i_{ndice}\\right]=0:\\left(e_{screveCampo7}\\left(i_{ndice},v_{ez}\\right),t_{roca}\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131036",
+        "folderId": "130817",
+        "color": "#388c46",
+        "latex": "e_{screveCampo8}\\left(i_{ndice},x\\right)=C_{ampo8}\\to C_{ampo8}+c_{riaLista}\\left(i_{ndice},x\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "130827",
+        "folderId": "130817",
+        "color": "#2d70b3",
+        "latex": "c_{lica8}\\left(i_{ndice}\\right)=\\left\\{R_{esultado}\\left(C_{ampo8}\\right)=0:\\left\\{C_{ampo8}\\left[i_{ndice}\\right]=0:\\left(e_{screveCampo8}\\left(i_{ndice},v_{ez}\\right),t_{roca}\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131037",
+        "folderId": "130817",
+        "color": "#388c46",
+        "latex": "e_{screveCampo9}\\left(i_{ndice},x\\right)=C_{ampo9}\\to C_{ampo9}+c_{riaLista}\\left(i_{ndice},x\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "130826",
+        "folderId": "130817",
+        "color": "#2d70b3",
+        "latex": "c_{lica9}\\left(i_{ndice}\\right)=\\left\\{R_{esultado}\\left(C_{ampo9}\\right)=0:\\left\\{C_{ampo9}\\left[i_{ndice}\\right]=0:\\left(e_{screveCampo9}\\left(i_{ndice},v_{ez}\\right),t_{roca}\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "130857",
+        "folderId": "130817",
+        "color": "#388c46",
+        "latex": "c_{lica}\\left(j_{ogo},i_{ndice}\\right)=\\left\\{j_{ogo}=1:c_{lica1}\\left(i_{ndice}\\right),j_{ogo}=2:c_{lica2}\\left(i_{ndice}\\right),j_{ogo}=3:c_{lica3}\\left(i_{ndice}\\right),j_{ogo}=4:c_{lica4}\\left(i_{ndice}\\right),j_{ogo}=5:c_{lica5}\\left(i_{ndice}\\right),j_{ogo}=6:c_{lica6}\\left(i_{ndice}\\right),j_{ogo}=7:c_{lica7}\\left(i_{ndice}\\right),j_{ogo}=8:c_{lica8}\\left(i_{ndice}\\right),j_{ogo}=9:c_{lica9}\\left(i_{ndice}\\right)\\right\\}"
+      },
+      {
+        "type": "folder",
+        "id": "130639",
+        "title": "Jogo simples",
+        "collapsed": true
+      },
+      {
+        "type": "text",
+        "id": "130645",
+        "folderId": "130639",
+        "text": "Usa só o Campo1"
+      },
+      {
+        "type": "expression",
+        "id": "130734",
+        "folderId": "130639",
+        "color": "#c74440",
+        "latex": "r_{eset}"
+      },
+      {
+        "type": "expression",
+        "id": "130621",
+        "folderId": "130639",
+        "color": "#c74440",
+        "latex": "s_{tart1}"
+      },
+      {
+        "type": "expression",
+        "id": "130742",
+        "folderId": "130639",
+        "color": "#6042a6",
+        "latex": "R_{esultado}\\left(C_{ampo1}\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "130903",
+        "folderId": "130639",
+        "color": "#c74440",
+        "latex": "\\frac{b_{otao}\\left(\\left[r,e_{0},s,e_{0},t_{0}\\right],t\\right)}{2}+\\left(2,-01\\right)+\\left(0,\\left\\{i_{f}\\left(S_{imples}\\right)=1:0,1000\\right\\}\\right)\\left\\{R_{esultado}\\left(C_{ampo1}\\right)=3\\right\\}",
+        "fill": true,
+        "fillOpacity": "0",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "r_{eset}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "130640",
+        "folderId": "130639",
+        "color": "#000000",
+        "latex": "\\left(d_{esenhaCampo}\\left(C_{ampo1},t\\right)+\\left(2,1\\right)+\\left(0,\\left\\{i_{f}\\left(S_{imples}\\right)=1:0,1000\\right\\}\\right)\\right)",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{lica1}\\left(\\operatorname{index}\\right)"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "130902",
+        "folderId": "130639",
+        "color": "#000000",
+        "latex": "2d_{esenhaSimbolo}\\left(v_{ez},t\\right)+\\left(5,-02\\right)+\\left(0,\\left\\{i_{f}\\left(S_{imples}\\right)=1:0,1000\\right\\}\\right)"
+      },
+      {
+        "type": "folder",
+        "id": "130839",
+        "title": "Jogo Avançado",
+        "collapsed": true
+      },
+      {
+        "type": "text",
+        "id": "130840",
+        "folderId": "130839",
+        "text": "Usa todos os campos"
+      },
+      {
+        "type": "expression",
+        "id": "130841",
+        "folderId": "130839",
+        "color": "#c74440",
+        "latex": "r_{eset}"
+      },
+      {
+        "type": "expression",
+        "id": "130842",
+        "folderId": "130839",
+        "color": "#c74440",
+        "latex": "s_{tart2}"
+      },
+      {
+        "type": "expression",
+        "id": "130844",
+        "folderId": "130839",
+        "color": "#6042a6",
+        "latex": "R_{esultado}\\left(C_{ampo10}\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "130884",
+        "folderId": "130839",
+        "color": "#388c46",
+        "latex": "v_{ez}"
+      },
+      {
+        "type": "text",
+        "id": "130849",
+        "folderId": "130839",
+        "text": "Faz uma lista pra guardar qual o prox campo pra ser marcado e uma função pra definir o seguinte"
+      },
+      {
+        "type": "expression",
+        "id": "130852",
+        "folderId": "130839",
+        "color": "#388c46",
+        "latex": "p_{rox}=\\left[1,2,3,4,5,6,7,8,9\\right]"
+      },
+      {
+        "type": "expression",
+        "id": "130862",
+        "folderId": "130839",
+        "color": "#388c46",
+        "latex": "l_{ivres}=\\left\\{R_{esultados}=0:\\left[1...9\\right],-1\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "130863",
+        "folderId": "130839",
+        "color": "#6042a6",
+        "latex": "o_{posto}\\left(x\\right)=10-x",
+        "hidden": true
+      },
+      {
+        "type": "expression",
+        "id": "130854",
+        "folderId": "130839",
+        "color": "#000000",
+        "latex": "r_{esetProx}=p_{rox}\\to\\left[1...9\\right]"
+      },
+      {
+        "type": "text",
+        "id": "131041",
+        "folderId": "130839",
+        "text": "Bug quando o movimento finaliza o jogo e manda pro mesmo bloco - vale a pena arrumar?"
+      },
+      {
+        "type": "expression",
+        "id": "130864",
+        "folderId": "130839",
+        "color": "#000000",
+        "latex": "a_{tualizaProx}\\left(i_{ndice}\\right)=\\left\\{i_{n}\\left(i_{ndice},l_{ivres}\\right)=1:p_{rox}\\to\\left[i_{ndice}\\right],\\left\\{i_{n}\\left(o_{posto}\\left(i_{ndice}\\right),l_{ivres}\\right)=1:p_{rox}\\to\\left[o_{posto}\\left(i_{ndice}\\right)\\right],p_{rox}\\to l_{ivres}\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "130855",
+        "folderId": "130839",
+        "color": "#c74440",
+        "latex": "c_{licaAvancado}\\left(j_{ogo},i_{ndice}\\right)=\\left\\{R_{esultado}\\left(C_{ampo10}\\right)=0:\\left\\{i_{n}\\left(j_{ogo},p_{rox}\\right)=1:\\left(c_{lica}\\left(j_{ogo},i_{ndice}\\right),a_{tualizaProx}\\left(i_{ndice}-1\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "130845",
+        "folderId": "130839",
+        "color": "#000000",
+        "latex": "\\left(d_{esenhaCampo}\\left(C_{ampo1},t\\right)+\\left(-2,1\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)\\right)",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaAvancado}\\left(1,\\operatorname{index}\\right)"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "130873",
+        "folderId": "130839",
+        "color": "#000000",
+        "latex": "\\left(d_{esenhaCampo}\\left(C_{ampo2},t\\right)+\\left(2,1\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)\\right)",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaAvancado}\\left(2,\\operatorname{index}\\right)"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "130874",
+        "folderId": "130839",
+        "color": "#000000",
+        "latex": "\\left(d_{esenhaCampo}\\left(C_{ampo3},t\\right)+\\left(6,1\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)\\right)",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaAvancado}\\left(3,\\operatorname{index}\\right)"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "130872",
+        "folderId": "130839",
+        "color": "#000000",
+        "latex": "\\left(d_{esenhaCampo}\\left(C_{ampo4},t\\right)+\\left(-2,6\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)\\right)",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaAvancado}\\left(4,\\operatorname{index}\\right)"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "130871",
+        "folderId": "130839",
+        "color": "#000000",
+        "latex": "\\left(d_{esenhaCampo}\\left(C_{ampo5},t\\right)+\\left(2,6\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)\\right)",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaAvancado}\\left(5,\\operatorname{index}\\right)"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "130870",
+        "folderId": "130839",
+        "color": "#000000",
+        "latex": "\\left(d_{esenhaCampo}\\left(C_{ampo6},t\\right)+\\left(6,6\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)\\right)",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaAvancado}\\left(6,\\operatorname{index}\\right)"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "130869",
+        "folderId": "130839",
+        "color": "#000000",
+        "latex": "\\left(d_{esenhaCampo}\\left(C_{ampo7},t\\right)+\\left(-2,11\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)\\right)",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaAvancado}\\left(7,\\operatorname{index}\\right)"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "130868",
+        "folderId": "130839",
+        "color": "#000000",
+        "latex": "\\left(d_{esenhaCampo}\\left(C_{ampo8},t\\right)+\\left(2,11\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)\\right)",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaAvancado}\\left(8,\\operatorname{index}\\right)"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "130867",
+        "folderId": "130839",
+        "color": "#000000",
+        "latex": "\\left(d_{esenhaCampo}\\left(C_{ampo9},t\\right)+\\left(6,11\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)\\right)",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaAvancado}\\left(9,\\operatorname{index}\\right)"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "130866",
+        "folderId": "130839",
+        "color": "#2d70b3",
+        "latex": "\\left(4d_{esenhaCampo2}\\left(C_{ampo10},t\\right)+\\left(-2.5,0.5\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)\\right)",
+        "lineOpacity": "1",
+        "lineWidth": "5",
+        "clickableInfo": {
+          "enabled": true
+        }
+      },
+      {
+        "type": "expression",
+        "id": "130878",
+        "folderId": "130839",
+        "color": "#2d70b3",
+        "latex": "P_{prox}=\\left\\{\\operatorname{length}\\left(p_{rox}\\right)=1:\\left(-2,1\\right)+\\left(\\operatorname{mod}\\left(p_{rox}\\left[1\\right]-1,3\\right)4,\\operatorname{floor}\\left(\\frac{p_{rox}\\left[1\\right]-1}{3}\\right)5\\right)\\right\\}",
+        "hidden": true
+      },
+      {
+        "type": "expression",
+        "id": "130879",
+        "folderId": "130839",
+        "color": "#388c46",
+        "latex": "\\left(-2,1\\right)+\\left(\\operatorname{mod}\\left(p_{rox}\\left[1\\right]-1,3\\right)4,\\operatorname{floor}\\left(\\frac{p_{rox}\\left[1\\right]-1}{3}\\right)5\\right)",
+        "hidden": true
+      },
+      {
+        "type": "expression",
+        "id": "130877",
+        "folderId": "130839",
+        "color": "#c74440",
+        "latex": "P_{prox}+\\left(c_{ampo}\\left(t\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)\\right)\\left\\{R_{esultado}\\left(C_{ampo10}\\right)=0\\right\\}",
+        "clickableInfo": {
+          "enabled": true
+        }
+      },
+      {
+        "type": "expression",
+        "id": "130890",
+        "folderId": "130839",
+        "color": "#000000",
+        "latex": "2d_{esenhaSimbolo}\\left(v_{ez},t\\right)+\\left(5,-02\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "130904",
+        "folderId": "130839",
+        "color": "#c74440",
+        "latex": "\\frac{b_{otao}\\left(\\left[r,e_{0},s,e_{0},t_{0}\\right],t\\right)}{2}+\\left(2,-01\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)\\left\\{R_{esultado}\\left(C_{ampo10}\\right)>0\\right\\}",
+        "fill": true,
+        "fillOpacity": "0",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "r_{eset}"
+        }
+      },
+      {
+        "type": "folder",
+        "id": "120835",
+        "title": "Funções com Matrizes - Otimizadas",
+        "hidden": true,
+        "collapsed": true
+      },
+      {
+        "type": "text",
+        "id": "131045",
+        "folderId": "120835",
+        "text": "Todas as matrizes são 3x3"
+      },
+      {
+        "type": "expression",
+        "id": "120846",
+        "folderId": "120835",
+        "color": "#c74440",
+        "latex": "c_{ols}\\left(m_{x}\\right)=3"
+      },
+      {
+        "type": "expression",
+        "id": "120845",
+        "folderId": "120835",
+        "color": "#000000",
+        "latex": "l_{ins}\\left(m_{x}\\right)=3"
+      },
+      {
+        "type": "text",
+        "id": "130613",
+        "folderId": "120835",
+        "text": "Função pra calcular o indice de um elemento em uma matriz"
+      },
+      {
+        "type": "expression",
+        "id": "130614",
+        "folderId": "120835",
+        "color": "#000000",
+        "latex": "i_{ndex}\\left(m_{x},l_{x},c_{x}\\right)=\\left\\{c_{x}\\le c_{ols}\\left(m_{x}\\right):\\left\\{l_{x}\\le l_{ins}\\left(m_{x}\\right):1+\\left(l_{x}-1\\right)\\cdot c_{ols}\\left(m_{x}\\right)+c_{x}\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "130615",
+        "folderId": "120835",
+        "color": "#c74440",
+        "latex": "i_{ndex}\\left(\\operatorname{join}\\left(3,\\left[1...9\\right]\\right),3,1\\right)"
+      },
+      {
+        "type": "text",
+        "id": "120878",
+        "folderId": "120835",
+        "text": "Funções pra acessar linhas e colunas de uma matriz 3x3"
+      },
+      {
+        "type": "expression",
+        "id": "120864",
+        "folderId": "120835",
+        "color": "#c74440",
+        "latex": "l_{in}\\left(m_{x},l_{x}\\right)=\\left[m_{x}\\left[2+\\left(l_{x}-1\\right)3\\right],m_{x}\\left[3+\\left(l_{x}-1\\right)3\\right],m_{x}\\left[4+\\left(l_{x}-1\\right)3\\right]\\right]"
+      },
+      {
+        "type": "expression",
+        "id": "120863",
+        "folderId": "120835",
+        "color": "#000000",
+        "latex": "c_{ol}\\left(m_{x},c_{x}\\right)=\\left[m_{x}\\left[2+\\left(c_{x}-1\\right)\\right],m_{x}\\left[5+\\left(c_{x}-1\\right)\\right],m_{x}\\left[8+\\left(c_{x}-1\\right)\\right]\\right]"
+      },
+      {
+        "type": "expression",
+        "id": "121634",
+        "folderId": "120835",
+        "color": "#000000",
+        "latex": "c_{ol2}\\left(m_{x},c_{x}\\right)=c_{ol}\\left(m_{x},c_{x}\\right)\\left[3...1\\right]"
+      },
+      {
+        "type": "expression",
+        "id": "131046",
+        "folderId": "120835",
+        "color": "#c74440",
+        "latex": "l_{inOLD}\\left(m_{x},l_{x}\\right)=\\left\\{l_{x}\\le l_{ins}\\left(m_{x}\\right):m_{x}\\left[2+m_{x}\\left[1\\right]\\left(l_{x}-1\\right)...1+m_{x}\\left[1\\right]\\cdot l_{x}\\right]\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131047",
+        "folderId": "120835",
+        "color": "#000000",
+        "latex": "c_{olOLD}\\left(m_{x},c_{x}\\right)=\\left\\{c_{x}\\le c_{ols}\\left(m_{x}\\right):\\left\\{l_{ins}\\left(m_{x}\\right)=1:m_{x}\\left[1+c_{x}\\right],m_{x}\\left[1+c_{x},1+c_{x}+m_{x}\\left[1\\right]...1+c_{x}+m_{x}\\left[1\\right]\\left(l_{ins}\\left(m_{x}\\right)-1\\right)\\right]\\right\\}\\right\\}"
+      },
+      {
+        "type": "text",
+        "id": "130603",
+        "folderId": "120835",
+        "text": "Funções pras diagonais do jogo da velha"
+      },
+      {
+        "type": "expression",
+        "id": "130601",
+        "folderId": "120835",
+        "color": "#6042a6",
+        "latex": "d_{iag1}\\left(m_{x}\\right)=m_{x}\\left[2,6,10\\right]"
+      },
+      {
+        "type": "expression",
+        "id": "130604",
+        "folderId": "120835",
+        "color": "#c74440",
+        "latex": "d_{iag2}\\left(m_{x}\\right)=m_{x}\\left[4,6,8\\right]"
+      },
+      {
+        "type": "folder",
+        "id": "118810",
+        "title": "Letras 3.0 - Tirei as funções desnecessárias",
+        "hidden": true,
+        "collapsed": true
+      },
+      {
+        "type": "text",
+        "id": "130649",
+        "folderId": "118810",
+        "text": "Desenha com listas pra acessar o indice do elemento clicado"
+      },
+      {
+        "type": "text",
+        "id": "130810",
+        "folderId": "118810",
+        "text": "Função desenhaLinha pra desenhar a linha que foi completa"
+      },
+      {
+        "type": "text",
+        "id": "130813",
+        "folderId": "118810",
+        "text": "Linha linha linha col col col diag diag (linhas vão de baixo pra cima)"
+      },
+      {
+        "type": "expression",
+        "id": "130811",
+        "folderId": "118810",
+        "color": "#388c46",
+        "latex": "d_{esenhaLinha}\\left(x,t\\right)=\\left\\{Q_{ualLinha}\\left(x\\right)=1:\\left(3t,\\frac{2}{3}\\right),Q_{ualLinha}\\left(x\\right)=2:\\left(3t,\\frac{2}{3}+\\frac{5}{4}\\right),Q_{ualLinha}\\left(x\\right)=3:\\left(3t,\\frac{2}{3}+\\frac{10}{4}\\right),Q_{ualLinha}\\left(x\\right)=4:\\left(0.5,3.75t\\right),Q_{ualLinha}\\left(x\\right)=5:\\left(1.5,3.75t\\right),Q_{ualLinha}\\left(x\\right)=6:\\left(2.5,3.75t\\right),Q_{ualLinha}\\left(x\\right)=7:\\left(3,3.75\\right)t,Q_{ualLinha}\\left(x\\right)=8:\\left(3t,3.75\\left(1-t\\right)\\right)\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "130814",
+        "folderId": "118810",
+        "color": "#000000",
+        "latex": "Q_{ualLinha}\\left(C_{ampo1}\\right)"
+      },
+      {
+        "type": "text",
+        "id": "130804",
+        "folderId": "118810",
+        "text": "Funções pra desenhar o campo"
+      },
+      {
+        "type": "expression",
+        "id": "130646",
+        "folderId": "118810",
+        "color": "#388c46",
+        "latex": "d_{esenhaCampo}\\left(x,t\\right)=\\operatorname{join}\\left(d_{esenhaSimbolo}\\left(x,t\\right)+\\left[\\left(\\frac{1}{0},\\frac{1}{0}\\right),\\left(0,0\\right),\\left(1,0\\right),\\left(2,0\\right),\\left(0,1.25\\right),\\left(1,1.25\\right),\\left(2,1.25\\right),\\left(0,2.5\\right),\\left(1,2.5\\right),\\left(2,2.5\\right)\\right],c_{ampo}\\left(t\\right),d_{esenhaLinha}\\left(x,t\\right)\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "130875",
+        "folderId": "118810",
+        "color": "#388c46",
+        "latex": "d_{esenhaCampo2}\\left(x,t\\right)=\\operatorname{join}\\left(d_{esenhaSimbolo2}\\left(x,t\\right)+\\left[\\left(\\frac{1}{0},\\frac{1}{0}\\right),\\left(0,0\\right),\\left(1,0\\right),\\left(2,0\\right),\\left(0,1.25\\right),\\left(1,1.25\\right),\\left(2,1.25\\right),\\left(0,2.5\\right),\\left(1,2.5\\right),\\left(2,2.5\\right)\\right],c_{ampo}\\left(t\\right),d_{esenhaLinha}\\left(x,t\\right)\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "130636",
+        "folderId": "118810",
+        "color": "#000000",
+        "latex": "\\operatorname{length}\\left(d_{esenhaCampo}\\left(C_{ampo1},t\\right)\\right)",
+        "clickableInfo": {
+          "enabled": true
+        }
+      },
+      {
+        "type": "text",
+        "id": "130807",
+        "folderId": "118810",
+        "text": "Função pra desenhar Simbolo (X, O , * ou X e O)"
+      },
+      {
+        "type": "expression",
+        "id": "130634",
+        "folderId": "118810",
+        "color": "#388c46",
+        "latex": "d_{esenhaSimbolo}\\left(x,t\\right)=\\left\\{x=1:c_{irc}\\left(t\\right),x=2:X_{t}\\left(t\\right),x=0:c_{irc2}\\left(t\\right),\\left\\{t<\\frac{1}{2}:c_{irc}\\left(2t\\right),X_{t}\\left(\\operatorname{mod}\\left(2t,1\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "130876",
+        "folderId": "118810",
+        "color": "#388c46",
+        "latex": "d_{esenhaSimbolo2}\\left(x,t\\right)=\\left\\{x=1:c_{irc}\\left(t\\right),x=2:X_{t}\\left(t\\right),x=3:\\left\\{t<\\frac{1}{2}:c_{irc}\\left(2t\\right),X_{t}\\left(\\operatorname{mod}\\left(2t,1\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "130591",
+        "folderId": "118810",
+        "color": "#000000",
+        "latex": "c_{irc}\\left(t\\right)=\\frac{\\left(\\cos\\left(2\\pi t\\right),\\sin\\left(2\\pi t\\right)\\right)}{3}+\\left(\\frac{1}{2},\\frac{2}{3}\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "130647",
+        "folderId": "118810",
+        "color": "#6042a6",
+        "latex": "c_{irc2}\\left(t\\right)=\\frac{c_{irc}\\left(t\\right)}{5}+\\left(0.375,0.5\\right)"
+      },
+      {
+        "type": "text",
+        "id": "130809",
+        "folderId": "118810",
+        "text": "Função que desenha o #"
+      },
+      {
+        "type": "expression",
+        "id": "130631",
+        "folderId": "118810",
+        "color": "#000000",
+        "latex": "c_{ampo}\\left(t\\right)=\\left\\{t<\\frac{1}{4}:\\left(1,3.75\\operatorname{mod}\\left(4t,1\\right)\\right),t<\\frac{2}{4}:\\left(2,3.75\\operatorname{mod}\\left(4t,1\\right)\\right),t<\\frac{3}{4}:\\left(3\\operatorname{mod}\\left(4t,1\\right),1.25\\right),t<\\frac{4}{4}:\\left(3\\operatorname{mod}\\left(4t,1\\right),2.5\\right)\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "130633",
+        "folderId": "118810",
+        "color": "#2d70b3",
+        "latex": "c_{ampo}\\left(t\\right)",
+        "hidden": true
+      },
+      {
+        "type": "expression",
+        "id": "121646",
+        "folderId": "118810",
+        "color": "#000000",
+        "latex": "d_{esenhaCampo3}\\left(x,t\\right)=\\left\\{t<\\frac{1}{10}:c_{ampo}\\left(10t\\right),t<\\frac{2}{10}:d_{esenhaSimbolo}\\left(x\\left[2\\right],\\operatorname{mod}\\left(10t,1\\right)\\right),t<\\frac{3}{10}:d_{esenhaSimbolo}\\left(x\\left[3\\right],\\operatorname{mod}\\left(10t,1\\right)\\right)+\\left(1,0\\right),t<\\frac{4}{10}:d_{esenhaSimbolo}\\left(x\\left[4\\right],\\operatorname{mod}\\left(10t,1\\right)\\right)+\\left(2,0\\right),t<\\frac{5}{10}:d_{esenhaSimbolo}\\left(x\\left[5\\right],\\operatorname{mod}\\left(10t,1\\right)\\right)+\\left(0,1.25\\right),t<\\frac{6}{10}:d_{esenhaSimbolo}\\left(x\\left[6\\right],\\operatorname{mod}\\left(10t,1\\right)\\right)+\\left(1,1.25\\right),t<\\frac{7}{10}:d_{esenhaSimbolo}\\left(x\\left[7\\right],\\operatorname{mod}\\left(10t,1\\right)\\right)+\\left(2,1.25\\right),t<\\frac{8}{10}:d_{esenhaSimbolo}\\left(x\\left[8\\right],\\operatorname{mod}\\left(10t,1\\right)\\right)+\\left(0,2.5\\right),t<\\frac{9}{10}:d_{esenhaSimbolo}\\left(x\\left[9\\right],\\operatorname{mod}\\left(10t,1\\right)\\right)+\\left(1,2.5\\right),t<\\frac{10}{10}:d_{esenhaSimbolo}\\left(x\\left[10\\right],\\operatorname{mod}\\left(10t,1\\right)\\right)+\\left(2,2.5\\right)\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "120755",
+        "folderId": "118810",
+        "color": "#2d70b3",
+        "latex": "l_{etra3}\\left(l_{0},t\\right)=\\left\\{l_{0}=0:Z_{ero},l_{0}=1:U_{m},l_{0}=2:D_{ois},l_{0}=3:T_{res},l_{0}=4:Q_{uatro},l_{0}=5:C_{inco},l_{0}=6:S_{eis},l_{0}=7:S_{ete},l_{0}=8:O_{ito},l_{0}=9:N_{ove},l_{0}=10:A,l_{0}=10:A,l_{0}=10:A,l_{0}=10:A,l_{0}=10:A,l_{0}=10:A,l_{0}=10:A,l_{0}=10:A,l_{0}=10:A,l_{0}=10:A,l_{0}=10:A,l_{0}=10:A,l_{0}=10:A,l_{0}=10:A,l_{0}=10:A,l_{0}=10:A,l_{0}=10:A,l_{0}=10:A,l_{0}=10:A,l_{0}=10:A,l_{0}=10:A,l_{0}=10:A,l_{0}=10:A,l_{0}=10:A,l_{0}=10:A,l_{0}=10:A,\\left(0,0\\right)\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "120757",
+        "folderId": "118810",
+        "color": "#6042a6",
+        "latex": "l_{etra}\\left(l_{0},t\\right)=A_{lfabeto}\\left[l_{0}+1\\right]"
+      },
+      {
+        "type": "expression",
+        "id": "120936",
+        "folderId": "118810",
+        "color": "#388c46",
+        "latex": "l_{etra2}\\left(l_{0},t\\right)=\\left\\{l_{0}\\ge0:l_{etra3}\\left(l_{0},t\\right),\\left\\{t<\\frac{1}{2}:l_{etra3}\\left(\\left|l_{0}\\right|,2t\\right),\\left(-t,\\frac{1}{2}\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "text",
+        "id": "120811",
+        "folderId": "118810",
+        "text": "função num desenha só 1 número\nnum2 pra desenhar listas de números\nnum3 pra desenhar listas de números em posições diferentes\nnum4 pra escrever números decimais\nnum5 pra escrever números que podem ser decimais ou não"
+      },
+      {
+        "type": "expression",
+        "id": "121474",
+        "folderId": "118810",
+        "color": "#2d70b3",
+        "latex": "d_{igs2}\\left(x,d_{0}\\right)=\\left\\{x=0:1,\\operatorname{floor}\\left(\\log\\left(\\left|x\\right|\\right)+1\\right)\\right\\}+d_{0}"
+      },
+      {
+        "type": "expression",
+        "id": "121477",
+        "folderId": "118810",
+        "color": "#000000",
+        "latex": "d_{igZeros}\\left(n_{0}\\right)=\\left\\{\\operatorname{mod}\\left(n_{0},1\\right)=0:0,\\left(-\\operatorname{floor}\\left(\\log\\left(\\operatorname{mod}\\left(n_{0},1\\right)\\right)\\right)\\right)\\right\\}",
+        "hidden": true
+      },
+      {
+        "type": "expression",
+        "id": "121476",
+        "folderId": "118810",
+        "color": "#6042a6",
+        "latex": "z_{eros}\\left(n_{0},d_{0},t\\right)=n_{um3}\\left(0,d_{igZeros}\\left(\\frac{\\operatorname{round}\\left(10^{d_{0}}n_{0}\\right)}{10^{d_{0}}}\\right)\\operatorname{mod}\\left(t,1\\right)\\right)+\\left(\\operatorname{floor}\\left(d_{igZeros}\\left(\\frac{\\operatorname{round}\\left(10^{d_{0}}n_{0}\\right)}{10^{d_{0}}}\\right)t\\right),0\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "120768",
+        "folderId": "118810",
+        "color": "#c74440",
+        "latex": "n_{um}\\left(n_{0},t\\right)=\\left\\{n_{0}=0:l_{etra}\\left(0,t\\right),l_{etra}\\left(\\operatorname{mod}\\left(\\frac{n_{0}}{10^{\\operatorname{floor}\\left(d_{igs}\\left(n_{0}\\right)\\left(1-t\\right)\\right)}},10\\right),\\operatorname{mod}\\left(d_{igs}\\left(n_{0}\\right)t,1\\right)\\right)+\\left(\\operatorname{floor}\\left(d_{igs}\\left(n_{0}\\right)t\\right),0\\right)\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "120809",
+        "folderId": "118810",
+        "color": "#c74440",
+        "latex": "n_{um2}\\left(n_{0},t\\right)=l_{etra2}\\left(\\operatorname{floor}\\left(\\operatorname{mod}\\left(\\frac{n_{0}}{10^{\\operatorname{floor}\\left(d_{igs}\\left(n_{0}\\right)\\left(1-t\\right)\\right)}},10\\right)\\right),\\operatorname{mod}\\left(d_{igs}\\left(n_{0}\\right)t,1\\right)\\right)+\\left(\\left[0...\\operatorname{length}\\left(n_{0}\\right)\\right]+\\operatorname{join}\\left(0,\\sum_{n_{1}=1}^{\\left[1...\\operatorname{length}\\left(n_{0}\\right)\\right]}d_{igs}\\left(n_{0}\\right)\\left[n_{1}\\right]\\right),0\\right)+\\left(\\operatorname{floor}\\left(d_{igs}\\left(n_{0}\\right)t\\right),0\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "120939",
+        "folderId": "118810",
+        "color": "#c74440",
+        "latex": "n_{um3}\\left(n_{0},t\\right)=\\left\\{t<\\frac{1}{2}:\\left\\{n_{0}<0:\\left(t-1,\\frac{1}{2}\\right),\\left(0,0\\right)\\right\\},n_{um32}\\left(\\left|n_{0}\\right|,\\operatorname{mod}\\left(2t,1\\right)\\right)\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "121480",
+        "folderId": "118810",
+        "color": "#388c46",
+        "latex": "n_{um32}\\left(n_{0},t\\right)=l_{etra2}\\left(\\operatorname{floor}\\left(\\operatorname{mod}\\left(\\frac{n_{0}}{10^{\\operatorname{floor}\\left(d_{igs}\\left(n_{0}\\right)\\left(1-t\\right)\\right)}},10\\right)\\right),\\operatorname{mod}\\left(d_{igs}\\left(n_{0}\\right)t,1\\right)\\right)+\\left(\\operatorname{floor}\\left(d_{igs}\\left(n_{0}\\right)t\\right),0\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "121374",
+        "folderId": "118810",
+        "color": "#c74440",
+        "latex": "n_{um3mod}\\left(n_{0},t\\right)=l_{etra2}\\left(\\operatorname{floor}\\left(\\operatorname{mod}\\left(\\frac{n_{0}}{10^{\\operatorname{floor}\\left(d_{igs}\\left(n_{0}\\right)\\left(1-t\\right)\\right)}},10\\right)\\right),\\operatorname{mod}\\left(d_{igs}\\left(n_{0}\\right)t,1\\right)\\right)+\\left(\\operatorname{floor}\\left(d_{igs}\\left(n_{0}\\right)t\\right),0\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "121473",
+        "folderId": "118810",
+        "color": "#c74440",
+        "latex": "n_{umDec}\\left(n_{0},d_{0},t\\right)=\\left\\{t<\\frac{1}{2}:l_{etra2}\\left(\\operatorname{floor}\\left(\\operatorname{mod}\\left(\\frac{\\operatorname{round}\\left(10^{d_{0}}n_{0}\\right)}{10^{\\operatorname{floor}\\left(d_{igs2}\\left(n_{0},d_{0}\\right)\\left(1-2t\\right)\\right)}},10\\right)\\right),\\operatorname{mod}\\left(d_{igs2}\\left(n_{0},d_{0}\\right)2t,1\\right)\\right)+\\left(\\operatorname{floor}\\left(d_{igs2}\\left(n_{0},d_{0}\\right)2t\\right),0\\right),\\frac{\\left(\\cos\\left(2\\cdot2\\pi t\\right),\\sin\\left(2\\cdot2\\pi t\\right)\\right)}{10}+\\left(\\operatorname{floor}\\left(\\left\\{n_{0}=0:0,\\log\\left(n_{0}\\right)\\right\\}\\right)+0.75,0\\right)\\right\\}+\\left\\{n_{0}=0:\\left(0,0\\right),\\left\\{\\operatorname{floor}\\left(n_{0}\\right)=0:\\left(-\\operatorname{floor}\\left(\\log\\left(\\operatorname{mod}\\left(n_{0},1\\right)\\right)\\right),0\\right),\\left(0,0\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "121472",
+        "folderId": "118810",
+        "color": "#000000",
+        "latex": "n_{umAbs}\\left(n_{0},d_{0},t\\right)=\\left\\{t<\\frac{1}{2}:\\left\\{\\operatorname{floor}\\left(n_{0}\\right)=0:z_{eros}\\left(n_{0},d_{0},2t\\right),\\left(0,0\\right)\\right\\},n_{umDec}\\left(\\frac{\\operatorname{round}\\left(10^{d_{0}}n_{0}\\right)}{10^{d_{0}}},d_{0},2\\left(t-\\frac{1}{2}\\right)\\right)\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "121470",
+        "folderId": "118810",
+        "color": "#388c46",
+        "latex": "n_{um4}\\left(n_{0},d_{0},t\\right)=\\left\\{t<\\frac{1}{2}:\\left\\{n_{0}<0:\\left(t-1,\\frac{1}{2}\\right),\\left(0,0\\right)\\right\\},n_{umAbs}\\left(\\frac{\\operatorname{round}\\left(10^{d_{0}}\\left|n_{0}\\right|\\right)}{10^{d_{0}}},d_{0},2\\left(t-\\frac{1}{2}\\right)\\right)\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "121471",
+        "folderId": "118810",
+        "color": "#6042a6",
+        "latex": "n_{um5}\\left(n_{0},d_{0},t\\right)=\\left\\{\\operatorname{mod}\\left(n_{0},1\\right)=0:n_{um3}\\left(n_{0},t\\right),n_{um4}\\left(n_{0},d_{0},t\\right)\\right\\}"
+      },
+      {
+        "type": "text",
+        "id": "120804",
+        "folderId": "118810",
+        "text": "Pra matrizes, guarda na 1º posição o número de elementos de cada linha - não pode usar lista - faz a gambiarra da variável t"
+      },
+      {
+        "type": "text",
+        "id": "121330",
+        "folderId": "118810",
+        "text": "função matriz(m0,t) desenha matrizes de ATÉ 10 LINHAS FUNCIONOU GRAÇAS A DEUS"
+      },
+      {
+        "type": "expression",
+        "id": "121328",
+        "folderId": "118810",
+        "color": "#388c46",
+        "latex": "m_{atriz}\\left(m_{0},t\\right)=n_{um4}\\left(m_{0}\\left[2...\\right],n_{digsdec},t\\right)+a_{linhaMatriz}\\left(m_{0}\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "121338",
+        "folderId": "118810",
+        "color": "#2d70b3",
+        "latex": "a_{linhaMatriz}\\left(m_{0}\\right)=\\operatorname{join}\\left(a_{linhaMatrizX}\\left(m_{0},1\\right),a_{linhaMatrizX}\\left(m_{0},2\\right),a_{linhaMatrizX}\\left(m_{0},3\\right),a_{linhaMatrizX}\\left(m_{0},4\\right),a_{linhaMatrizX}\\left(m_{0},5\\right),a_{linhaMatrizX}\\left(m_{0},6\\right),a_{linhaMatrizX}\\left(m_{0},7\\right),a_{linhaMatrizX}\\left(m_{0},8\\right),a_{linhaMatrizX}\\left(m_{0},9\\right),a_{linhaMatrizX}\\left(m_{0},10\\right)\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "121334",
+        "folderId": "118810",
+        "color": "#6042a6",
+        "latex": "a_{linhaMatrizX}\\left(m_{0},l_{0}\\right)=a_{linhaMatriz1}\\left(\\operatorname{join}\\left(m_{0}\\left[1\\right],l_{in}\\left(m_{0},l_{0}\\right)\\right)\\right)+a_{linhaCol}\\left(m_{0}\\right)+\\left(l_{0}-1\\right)\\cdot\\left(0,-2\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "121495",
+        "folderId": "118810",
+        "color": "#c74440",
+        "latex": "d_{igsCol}\\left(m_{0},c_{0}\\right)=\\max\\left(d_{igs2}\\left(c_{ol}\\left(m_{0},c_{0}\\right),n_{digsdec}\\right)\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "121486",
+        "folderId": "118810",
+        "color": "#2d70b3",
+        "latex": "a_{linhaCol2}\\left(m_{0}\\right)=\\operatorname{join}\\left(0,d_{igsCol}\\left(m_{0},1\\right),d_{igsCol}\\left(m_{0},1\\right)+d_{igsCol}\\left(m_{0},2\\right),d_{igsCol}\\left(m_{0},1\\right)+d_{igsCol}\\left(m_{0},2\\right)+d_{igsCol}\\left(m_{0},3\\right),d_{igsCol}\\left(m_{0},1\\right)+d_{igsCol}\\left(m_{0},2\\right)+d_{igsCol}\\left(m_{0},3\\right)+d_{igsCol}\\left(m_{0},4\\right),d_{igsCol}\\left(m_{0},1\\right)+d_{igsCol}\\left(m_{0},2\\right)+d_{igsCol}\\left(m_{0},3\\right)+d_{igsCol}\\left(m_{0},4\\right)+d_{igsCol}\\left(m_{0},5\\right)\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "121502",
+        "folderId": "118810",
+        "color": "#c74440",
+        "latex": "a_{linhaCol}\\left(m_{0}\\right)=\\left(\\operatorname{join}\\left(a_{linhaCol2}\\left(m_{0}\\right),a_{linhaCol2}\\left(m_{0}\\right),a_{linhaCol2}\\left(m_{0}\\right),a_{linhaCol2}\\left(m_{0}\\right),a_{linhaCol2}\\left(m_{0}\\right)\\right),0\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "121496",
+        "folderId": "118810",
+        "color": "#6042a6",
+        "latex": "a_{linhaMatrizY}\\left(m_{0},l_{0}\\right)=a_{linhaMatriz2}\\left(\\operatorname{join}\\left(m_{0}\\left[1\\right],l_{in}\\left(m_{0},l_{0}\\right)\\right)\\right)+\\left(l_{0}-1\\right)\\cdot\\left(0,-2\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "121497",
+        "folderId": "118810",
+        "color": "#c74440",
+        "latex": "a_{linhaMatriz2}\\left(m_{0}\\right)=\\left(\\left[0...\\operatorname{length}\\left(m_{0}\\right)-2\\right]+\\operatorname{join}\\left(0,\\sum_{n_{1}=1}^{\\left[1...\\operatorname{length}\\left(m_{0}\\right)\\right]}d_{igs2}\\left(m_{0},n_{digsdec}\\right)\\left[n_{1}\\right]\\right),0\\right)+\\left(d_{igs2}\\left(m_{0},n_{digsdec}\\right)-1,0\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "120766",
+        "folderId": "118810",
+        "color": "#c74440",
+        "latex": "p_{alavra}\\left(p_{0},t\\right)=l_{etra}\\left(p_{0},t\\right)+\\left(\\left[0...\\operatorname{length}\\left(p_{0}\\right)\\right],0\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "120788",
+        "folderId": "118810",
+        "color": "#c74440",
+        "latex": "b_{otao}\\left(p_{0},t\\right)=\\left\\{t<\\frac{1}{5}:p_{alavra}\\left(p_{0},5t\\right)+\\left(0.25,0\\right),t<\\frac{2}{5}:\\left(0,10\\left(t-\\frac{1}{5}\\right)-\\frac{5}{10}\\right),t<\\frac{3}{5}:\\left(5\\operatorname{length}\\left(p_{0}\\right)\\left(t-\\frac{2}{5}\\right),1.5\\right),t<\\frac{4}{5}:\\left(\\operatorname{length}\\left(p_{0}\\right),1.5-10\\left(t-\\frac{3}{5}\\right)\\right),\\left(\\operatorname{length}\\left(p_{0}\\right)\\left(1-5\\left(t-\\frac{4}{5}\\right)\\right),-0.5\\right)\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "120794",
+        "folderId": "118810",
+        "color": "#c74440",
+        "latex": "b_{otao2}\\left(p_{0},p_{1},t\\right)=\\left\\{t<\\frac{1}{6}:p_{alavra}\\left(p_{0},6t\\right)+\\left(0.25,0\\right),t<\\frac{2}{6}:\\left(0,21\\left(t-\\frac{1}{6}\\right)-2\\right),t<\\frac{3}{6}:\\left(6\\operatorname{length}\\left(p_{0}\\right)\\left(t-\\frac{2}{6}\\right),1.5\\right),t<\\frac{4}{6}:\\left(\\operatorname{length}\\left(p_{0}\\right),1.5-21\\left(t-\\frac{3}{6}\\right)\\right),t<\\frac{5}{6}:\\left(\\operatorname{length}\\left(p_{0}\\right)\\left(1-6\\left(t-\\frac{4}{6}\\right)\\right),-2\\right),p_{alavra}\\left(p_{1},6\\left(t-\\frac{5}{6}\\right)\\right)+\\left(0.25,-1.5\\right)\\right\\}"
+      },
+      {
+        "type": "text",
+        "id": "120799",
+        "folderId": "118810",
+        "text": "Botao2 so funciona se as 2 palavras tem a mesma quantidade de caracteres (?) - e se usar caracteres invalidos?"
+      },
+      {
+        "type": "expression",
+        "id": "121233",
+        "folderId": "118810",
+        "color": "#6042a6",
+        "latex": "t_{amx}\\left(m_{0}\\right)=\\operatorname{total}\\left(d_{igs}\\left(m_{0}\\left[2...m_{0}\\left[1\\right]+1\\right]\\right)+m_{0}\\left[1\\right]-1\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "120785",
+        "folderId": "118810",
+        "color": "#388c46",
+        "latex": "h_{exa}\\left(n_{0},t\\right)=\\left\\{n_{0}=0:l_{etra}\\left(0,t\\right),l_{etra}\\left(\\operatorname{mod}\\left(\\frac{n_{0}}{16^{\\operatorname{floor}\\left(d_{igshexa}\\left(n_{0}\\right)\\left(1-t\\right)\\right)}},16\\right),\\left(d_{igshexa}\\left(n_{0}\\right)\\left(t-\\frac{\\operatorname{floor}\\left(d_{igshexa}\\left(n_{0}\\right)t\\right)}{d_{igshexa}\\left(n_{0}\\right)}\\right)\\right)\\right)+\\left(\\operatorname{floor}\\left(d_{igshexa}\\left(n_{0}\\right)t\\right),0\\right)\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "120786",
+        "folderId": "118810",
+        "color": "#6042a6",
+        "latex": "h_{exa}\\left(16^{4}-1,t\\right)",
+        "hidden": true
+      },
+      {
+        "type": "expression",
+        "id": "120756",
+        "folderId": "118810",
+        "color": "#388c46",
+        "latex": "A_{lfabeto}=\\left[Z_{ero},U_{m},D_{ois},T_{res},Q_{uatro},C_{inco},S_{eis},S_{ete},O_{ito},N_{ove},A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z\\right]",
+        "hidden": true
+      },
+      {
+        "type": "expression",
+        "id": "120713",
+        "folderId": "118810",
+        "color": "#000000",
+        "latex": "Z_{ero}=\\left(\\frac{\\cos2\\pi t}{4},\\frac{\\sin2\\pi t}{2}\\right)+\\left(0.25,0.5\\right)",
+        "hidden": true
+      },
+      {
+        "type": "expression",
+        "id": "120712",
+        "folderId": "118810",
+        "color": "#000000",
+        "latex": "U_{m}=\\left(0.25,t\\right)",
+        "hidden": true
+      },
+      {
+        "type": "expression",
+        "id": "120715",
+        "folderId": "118810",
+        "color": "#000000",
+        "latex": "D_{ois}=\\left(\\left\\{t<\\frac{1}{5}:\\frac{5}{2}t,t<\\frac{2}{5}:\\frac{1}{2},t<\\frac{3}{5}:\\frac{5}{2}\\left(t-\\frac{2}{5}\\right),t<\\frac{4}{5}:0,\\frac{5}{2}\\left(t-\\frac{4}{5}\\right)\\right\\},\\left\\{t<\\frac{1}{5}:1,t<\\frac{2}{5}:\\frac{5}{2}t,t<\\frac{3}{5}:\\frac{1}{2},t<\\frac{4}{5}:\\frac{5}{2}\\left(t-\\frac{3}{5}\\right),0\\right\\}\\right)",
+        "hidden": true
+      },
+      {
+        "type": "expression",
+        "id": "120718",
+        "folderId": "118810",
+        "color": "#000000",
+        "latex": "T_{res}=\\left(\\left\\{t<\\frac{1}{5}:\\frac{5}{2}t,t<\\frac{2}{5}:\\frac{1}{2},t<\\frac{3}{5}:\\frac{5}{2}\\left(t-\\frac{2}{5}\\right),t<\\frac{4}{5}:0.5,\\frac{5}{2}\\left(t-\\frac{4}{5}\\right)\\right\\},\\left\\{t<\\frac{1}{5}:1,t<\\frac{2}{5}:\\frac{5}{2}t,t<\\frac{3}{5}:\\frac{1}{2},t<\\frac{4}{5}:\\frac{5}{2}\\left(t-\\frac{3}{5}\\right),0\\right\\}\\right)",
+        "hidden": true
+      },
+      {
+        "type": "expression",
+        "id": "120719",
+        "folderId": "118810",
+        "color": "#000000",
+        "latex": "Q_{uatro}=\\left(\\left\\{t<\\frac{1}{5}:0,t<\\frac{2}{5}:\\frac{1}{2},t<\\frac{3}{5}:\\frac{5}{2}\\left(t-\\frac{2}{5}\\right),t<\\frac{4}{5}:0.5,0\\cdot\\frac{5}{2}\\left(t-\\frac{4}{5}\\right)\\right\\},\\left\\{t<\\frac{1}{5}:\\frac{1}{2}+\\frac{5}{2}t,t<\\frac{2}{5}:\\frac{5}{2}t,t<\\frac{3}{5}:\\frac{1}{2},t<\\frac{4}{5}:\\frac{5}{2}\\left(t-\\frac{3}{5}\\right),0\\right\\}\\right)",
+        "hidden": true
+      },
+      {
+        "type": "expression",
+        "id": "120720",
+        "folderId": "118810",
+        "color": "#000000",
+        "latex": "C_{inco}=\\left(\\left\\{t<\\frac{1}{5}:\\frac{5}{2}t,t<\\frac{2}{5}:0,t<\\frac{3}{5}:\\frac{5}{2}\\left(t-\\frac{2}{5}\\right),t<\\frac{4}{5}:\\frac{1}{2},\\frac{5}{2}\\left(t-\\frac{4}{5}\\right)\\right\\},\\left\\{t<\\frac{1}{5}:1,t<\\frac{2}{5}:\\frac{5}{2}t,t<\\frac{3}{5}:\\frac{1}{2},t<\\frac{4}{5}:\\frac{5}{2}\\left(t-\\frac{3}{5}\\right),0\\right\\}\\right)",
+        "hidden": true
+      },
+      {
+        "type": "expression",
+        "id": "120721",
+        "folderId": "118810",
+        "color": "#000000",
+        "latex": "S_{eis}=\\left(\\left\\{t<\\frac{1}{5}:\\frac{5}{2}t,t<\\frac{2}{5}:0,t<\\frac{3}{5}:\\frac{5}{2}\\left(t-\\frac{2}{5}\\right),t<\\frac{4}{5}:\\frac{1}{2},\\frac{5}{2}\\left(t-\\frac{4}{5}\\right)\\right\\},\\left\\{t<\\frac{1}{5}:1,t<\\frac{2}{5}:5\\left(t-\\frac{1}{5}\\right),t<\\frac{3}{5}:\\frac{1}{2},t<\\frac{4}{5}:\\frac{5}{2}\\left(t-\\frac{3}{5}\\right),0\\right\\}\\right)",
+        "hidden": true
+      },
+      {
+        "type": "expression",
+        "id": "120723",
+        "folderId": "118810",
+        "color": "#000000",
+        "latex": "S_{ete}=\\left(\\left\\{t<\\frac{1}{5}:\\frac{5}{2}t,t<\\frac{2}{5}:\\frac{1}{2},t<\\frac{3}{5}:0\\cdot\\frac{5}{2}\\left(t-\\frac{2}{5}\\right),t<\\frac{4}{5}:0.5,0\\cdot\\frac{5}{2}\\left(t-\\frac{4}{5}\\right)\\right\\},\\left\\{t<\\frac{1}{5}:1,t<\\frac{2}{5}:\\frac{5}{2}t,t<\\frac{3}{5}:\\frac{1}{2},t<\\frac{4}{5}:\\frac{5}{2}\\left(t-\\frac{3}{5}\\right),0\\right\\}\\right)",
+        "hidden": true
+      },
+      {
+        "type": "expression",
+        "id": "120724",
+        "folderId": "118810",
+        "color": "#000000",
+        "latex": "O_{ito}=\\left(\\left\\{t<\\frac{1}{5}:\\frac{5}{2}t,t<\\frac{2}{5}:0,t<\\frac{3}{5}:\\frac{5}{2}\\left(t-\\frac{2}{5}\\right),t<\\frac{4}{5}:\\frac{1}{2},\\frac{5}{2}\\left(t-\\frac{4}{5}\\right)\\right\\},\\left\\{t<\\frac{1}{5}:1,t<\\frac{2}{5}:5\\left(t-\\frac{1}{5}\\right),t<\\frac{3}{5}:\\frac{1}{2},t<\\frac{4}{5}:5\\left(t-\\frac{3}{5}\\right),0\\right\\}\\right)",
+        "hidden": true
+      },
+      {
+        "type": "expression",
+        "id": "120725",
+        "folderId": "118810",
+        "color": "#000000",
+        "latex": "N_{ove}=\\left(\\left\\{t<\\frac{1}{5}:\\frac{5}{2}t,t<\\frac{2}{5}:0,t<\\frac{3}{5}:\\frac{5}{2}\\left(t-\\frac{2}{5}\\right),t<\\frac{4}{5}:\\frac{1}{2},\\frac{0}{2}\\left(t-\\frac{4}{5}\\right)\\right\\},\\left\\{t<\\frac{1}{5}:1,t<\\frac{2}{5}:\\frac{5}{2}\\left(t-\\frac{0}{5}\\right),t<\\frac{3}{5}:\\frac{1}{2},t<\\frac{4}{5}:5\\left(t-\\frac{3}{5}\\right),0\\right\\}\\right)",
+        "hidden": true
+      },
+      {
+        "type": "expression",
+        "id": "120078",
+        "folderId": "118810",
+        "color": "#388c46",
+        "latex": "a=10+0"
+      },
+      {
+        "type": "expression",
+        "id": "120716",
+        "folderId": "118810",
+        "color": "#388c46",
+        "latex": "A=\\left(\\left\\{t<\\frac{1}{3}:\\frac{3t}{4},t<\\frac{2}{3}:\\frac{3t}{4},\\frac{3}{2}\\left(-\\frac{2}{3}+t\\right)\\right\\},\\left\\{t<\\frac{1}{3}:3t,t<\\frac{2}{3}:2-3t,\\frac{1}{2}\\right\\}\\right)",
+        "hidden": true
+      },
+      {
+        "type": "expression",
+        "id": "120079",
+        "folderId": "118810",
+        "color": "#6042a6",
+        "latex": "b=11+0"
+      },
+      {
+        "type": "expression",
+        "id": "120717",
+        "folderId": "118810",
+        "color": "#6042a6",
+        "latex": "B=\\left(\\left\\{t<\\frac{1}{3}:0,t<\\frac{3}{3}:\\frac{\\left|\\sin\\left(\\frac{2\\pi3}{2}\\left(t-\\frac{1}{3}\\right)\\right)\\right|}{2}\\right\\},\\left\\{t<\\frac{1}{3}:3t,t<\\frac{3}{3}:\\left(1-\\frac{3}{2}\\left(t-\\frac{1}{3}\\right)\\right)\\right\\}\\right)",
+        "hidden": true
+      },
+      {
+        "type": "expression",
+        "id": "120080",
+        "folderId": "118810",
+        "color": "#000000",
+        "latex": "c=12+0"
+      },
+      {
+        "type": "expression",
+        "id": "120727",
+        "folderId": "118810",
+        "color": "#c74440",
+        "latex": "C=\\left(\\left\\{t<\\frac{1}{3}:\\frac{3}{2}t,t<\\frac{2}{3}:\\frac{3}{2}\\left(t-\\frac{1}{3}\\right),t<\\frac{3}{3}:0\\right\\},\\left\\{t<\\frac{1}{3}:0,t<\\frac{2}{3}:1,t<\\frac{3}{3}:3\\left(t-\\frac{2}{3}\\right)\\right\\}\\right)",
+        "hidden": true
+      },
+      {
+        "type": "expression",
+        "id": "120081",
+        "folderId": "118810",
+        "color": "#c74440",
+        "latex": "d=13+0"
+      },
+      {
+        "type": "expression",
+        "id": "120728",
+        "folderId": "118810",
+        "color": "#6042a6",
+        "latex": "D=\\left(\\left\\{t<\\frac{1}{3}:0,t<\\frac{3}{3}:\\frac{\\left|\\sin\\left(\\frac{\\pi3}{2}\\left(t-\\frac{1}{3}\\right)\\right)\\right|}{2}\\right\\},\\left\\{t<\\frac{1}{3}:3t,t<\\frac{3}{3}:\\left(1-\\frac{3}{2}\\left(t-\\frac{1}{3}\\right)\\right)\\right\\}\\right)",
+        "hidden": true
+      },
+      {
+        "type": "expression",
+        "id": "120082",
+        "folderId": "118810",
+        "color": "#2d70b3",
+        "latex": "e_{0}=14+0"
+      },
+      {
+        "type": "expression",
+        "id": "120729",
+        "folderId": "118810",
+        "color": "#2d70b3",
+        "latex": "E=\\left(\\left\\{t<\\frac{1}{5}:\\frac{5}{2}t,t<\\frac{2}{5}:0,t<\\frac{3}{5}:\\frac{5}{2}\\left(t-\\frac{2}{5}\\right),t<\\frac{4}{5}:0,\\frac{5}{2}\\left(t-\\frac{4}{5}\\right)\\right\\},\\left\\{t<\\frac{1}{5}:1,t<\\frac{2}{5}:\\frac{5}{2}t,t<\\frac{3}{5}:\\frac{1}{2},t<\\frac{4}{5}:\\frac{5}{2}\\left(t-\\frac{3}{5}\\right),0\\right\\}\\right)",
+        "hidden": true
+      },
+      {
+        "type": "expression",
+        "id": "120083",
+        "folderId": "118810",
+        "color": "#388c46",
+        "latex": "f=15+0"
+      },
+      {
+        "type": "expression",
+        "id": "120730",
+        "folderId": "118810",
+        "color": "#2d70b3",
+        "latex": "F=\\left(\\left\\{t<\\frac{1}{5}:\\frac{5}{2}t,t<\\frac{2}{5}:0,t<\\frac{3}{5}:\\frac{5}{2}\\left(t-\\frac{2}{5}\\right),t<\\frac{4}{5}:0,0\\cdot\\frac{5}{2}\\left(t-\\frac{4}{5}\\right)\\right\\},\\left\\{t<\\frac{1}{5}:1,t<\\frac{2}{5}:\\frac{5}{2}t,t<\\frac{3}{5}:\\frac{1}{2},t<\\frac{4}{5}:\\frac{5}{2}\\left(t-\\frac{3}{5}\\right),0\\right\\}\\right)",
+        "hidden": true
+      },
+      {
+        "type": "expression",
+        "id": "120084",
+        "folderId": "118810",
+        "color": "#6042a6",
+        "latex": "g=16+0"
+      },
+      {
+        "type": "expression",
+        "id": "120731",
+        "folderId": "118810",
+        "color": "#388c46",
+        "latex": "G=\\left(\\left\\{t<\\frac{1}{5}:\\frac{5}{2}t,t<\\frac{2}{5}:0,t<\\frac{3}{5}:\\left(\\frac{5}{10}+\\frac{5}{4}\\left(t-\\frac{3}{5}\\right)\\right),t<\\frac{4}{5}:\\frac{1}{2},\\frac{5}{2}\\left(t-\\frac{4}{5}\\right)\\right\\},\\left\\{t<\\frac{1}{5}:1,t<\\frac{2}{5}:5\\left(t-\\frac{1}{5}\\right),t<\\frac{3}{5}:\\frac{1}{2},t<\\frac{4}{5}:\\frac{5}{2}\\left(t-\\frac{3}{5}\\right),0\\right\\}\\right)",
+        "hidden": true
+      },
+      {
+        "type": "expression",
+        "id": "120085",
+        "folderId": "118810",
+        "color": "#000000",
+        "latex": "h=17+0"
+      },
+      {
+        "type": "expression",
+        "id": "120732",
+        "folderId": "118810",
+        "color": "#6042a6",
+        "latex": "H=\\left(\\left\\{t<\\frac{1}{5}:0\\cdot\\frac{5}{2}t,t<\\frac{2}{5}:0,t<\\frac{3}{5}:\\frac{5}{2}\\left(t-\\frac{2}{5}\\right),t<\\frac{4}{5}:\\frac{1}{2},0\\cdot\\frac{5}{2}\\left(t-\\frac{4}{5}\\right)\\right\\},\\left\\{t<\\frac{1}{5}:1,t<\\frac{2}{5}:5\\left(t-\\frac{1}{5}\\right),t<\\frac{3}{5}:\\frac{1}{2},t<\\frac{4}{5}:5\\left(t-\\frac{3}{5}\\right),0\\right\\}\\right)",
+        "hidden": true
+      },
+      {
+        "type": "expression",
+        "id": "120086",
+        "folderId": "118810",
+        "color": "#c74440",
+        "latex": "i=18+0"
+      },
+      {
+        "type": "expression",
+        "id": "120734",
+        "folderId": "118810",
+        "color": "#c74440",
+        "latex": "I=U_{m}",
+        "hidden": true
+      },
+      {
+        "type": "expression",
+        "id": "120087",
+        "folderId": "118810",
+        "color": "#2d70b3",
+        "latex": "j=19+0"
+      },
+      {
+        "type": "expression",
+        "id": "120735",
+        "folderId": "118810",
+        "color": "#2d70b3",
+        "latex": "J=\\left(\\left\\{t<\\frac{1}{5}:0\\cdot\\frac{5}{2}t,t<\\frac{2}{5}:0,t<\\frac{3}{5}:\\frac{5}{2}\\left(t-\\frac{2}{5}\\right),t<\\frac{4}{5}:\\frac{1}{2},0\\cdot\\frac{5}{2}\\left(t-\\frac{4}{5}\\right)\\right\\},\\left\\{t<\\frac{1}{5}:1,t<\\frac{2}{5}:\\frac{5}{4}\\left(t-\\frac{1}{5}\\right),t<\\frac{3}{5}:\\frac{0}{2},t<\\frac{4}{5}:5\\left(t-\\frac{3}{5}\\right),0\\right\\}\\right)",
+        "hidden": true
+      },
+      {
+        "type": "expression",
+        "id": "120088",
+        "folderId": "118810",
+        "color": "#388c46",
+        "latex": "k=20+0"
+      },
+      {
+        "type": "expression",
+        "id": "120736",
+        "folderId": "118810",
+        "color": "#388c46",
+        "latex": "K=\\left(\\left\\{t<\\frac{1}{3}:0,t<\\frac{2}{3}:\\frac{3}{2}\\left(t-\\frac{1}{3}\\right),t<\\frac{3}{3}:\\frac{3}{2}\\left(t-\\frac{2}{3}\\right)\\right\\},\\left\\{t<\\frac{1}{3}:3t,t<\\frac{2}{3}:\\frac{1}{2}+\\frac{3}{2}\\left(t-\\frac{1}{3}\\right),t<\\frac{3}{3}:-\\frac{3}{2}\\left(t-\\frac{3}{3}\\right)\\right\\}\\right)",
+        "hidden": true
+      },
+      {
+        "type": "expression",
+        "id": "120089",
+        "folderId": "118810",
+        "color": "#6042a6",
+        "latex": "l=21+0"
+      },
+      {
+        "type": "expression",
+        "id": "120737",
+        "folderId": "118810",
+        "color": "#6042a6",
+        "latex": "L=\\left(\\left\\{t<\\frac{1}{5}:0\\cdot\\frac{5}{2}t,t<\\frac{2}{5}:0,t<\\frac{3}{5}:\\frac{5}{2}\\left(t-\\frac{2}{5}\\right),t<\\frac{4}{5}:0,0\\cdot\\frac{5}{2}\\left(t-\\frac{4}{5}\\right)\\right\\},\\left\\{t<\\frac{1}{5}:1,t<\\frac{2}{5}:\\frac{5}{4}\\left(t-\\frac{1}{5}\\right),t<\\frac{3}{5}:\\frac{0}{2},t<\\frac{4}{5}:5\\left(t-\\frac{3}{5}\\right),0\\right\\}\\right)",
+        "hidden": true
+      },
+      {
+        "type": "expression",
+        "id": "120090",
+        "folderId": "118810",
+        "color": "#000000",
+        "latex": "m=22+0"
+      },
+      {
+        "type": "expression",
+        "id": "120738",
+        "folderId": "118810",
+        "color": "#000000",
+        "latex": "M=\\left(\\left\\{t<\\frac{1}{4}:0,t<\\frac{2}{4}:t-\\frac{1}{4},t<\\frac{3}{4}:t-\\frac{1}{4},t<\\frac{4}{4}:\\frac{1}{2}\\right\\},\\left\\{t<\\frac{1}{4}:4t,t<\\frac{2}{4}:1-2\\left(t-\\frac{1}{4}\\right),t<\\frac{3}{4}:2\\left(t-\\frac{1}{4}\\right),t<\\frac{4}{4}:4\\left(t-\\frac{3}{4}\\right)\\right\\}\\right)",
+        "hidden": true
+      },
+      {
+        "type": "expression",
+        "id": "120091",
+        "folderId": "118810",
+        "color": "#c74440",
+        "latex": "n=23+0"
+      },
+      {
+        "type": "expression",
+        "id": "120739",
+        "folderId": "118810",
+        "color": "#c74440",
+        "latex": "N=\\left(\\left\\{t<\\frac{1}{4}:0,t<\\frac{2}{4}:2\\left(t-\\frac{1}{4}\\right),t<\\frac{3}{4}:0\\left(t-\\frac{1}{4}\\right),t<\\frac{4}{4}:\\frac{1}{2}\\right\\},\\left\\{t<\\frac{1}{4}:4t,t<\\frac{2}{4}:1-4\\left(t-\\frac{1}{4}\\right),t<\\frac{3}{4}:2\\left(t-\\frac{1}{4}\\right),t<\\frac{4}{4}:4\\left(t-\\frac{3}{4}\\right)\\right\\}\\right)",
+        "hidden": true
+      },
+      {
+        "type": "expression",
+        "id": "120092",
+        "folderId": "118810",
+        "color": "#2d70b3",
+        "latex": "o=24+0"
+      },
+      {
+        "type": "expression",
+        "id": "120740",
+        "folderId": "118810",
+        "color": "#2d70b3",
+        "latex": "O=Z_{ero}",
+        "hidden": true
+      },
+      {
+        "type": "expression",
+        "id": "120093",
+        "folderId": "118810",
+        "color": "#388c46",
+        "latex": "p=25+0"
+      },
+      {
+        "type": "expression",
+        "id": "120741",
+        "folderId": "118810",
+        "color": "#388c46",
+        "latex": "P=\\left(\\left\\{t<\\frac{1}{5}:\\frac{5}{2}t,t<\\frac{2}{5}:0,t<\\frac{3}{5}:\\frac{5}{2}\\left(t-\\frac{2}{5}\\right),t<\\frac{4}{5}:0,\\frac{1}{2}\\right\\},\\left\\{t<\\frac{1}{5}:1,t<\\frac{2}{5}:\\frac{5}{2}\\left(t-\\frac{0}{5}\\right),t<\\frac{3}{5}:\\frac{1}{2},t<\\frac{4}{5}:5\\left(t-\\frac{3}{5}\\right),\\frac{1}{2}+\\frac{5}{2}\\left(t-\\frac{4}{5}\\right)\\right\\}\\right)",
+        "hidden": true
+      },
+      {
+        "type": "expression",
+        "id": "120094",
+        "folderId": "118810",
+        "color": "#6042a6",
+        "latex": "q=26+0",
+        "labelSize": "1"
+      },
+      {
+        "type": "expression",
+        "id": "120742",
+        "folderId": "118810",
+        "color": "#6042a6",
+        "latex": "Q=\\left(\\left\\{t<\\frac{1}{2}:\\frac{\\cos4\\pi t}{4}+0.25,\\frac{1}{3}+\\frac{1}{3}\\left(t-\\frac{1}{2}\\right)\\right\\},\\left\\{t<\\frac{1}{2}:\\frac{\\sin4\\pi t}{2}+0.5,\\frac{1}{4}-\\frac{1}{2}\\left(t-\\frac{1}{2}\\right)\\right\\}\\right)",
+        "hidden": true
+      },
+      {
+        "type": "expression",
+        "id": "120095",
+        "folderId": "118810",
+        "color": "#000000",
+        "latex": "r=27+0",
+        "hidden": true
+      },
+      {
+        "type": "expression",
+        "id": "120743",
+        "folderId": "118810",
+        "color": "#000000",
+        "latex": "R=\\left(\\left\\{t<\\frac{1}{5}:\\frac{5}{2}t,t<\\frac{2}{5}:\\frac{5}{2}\\left(t-\\frac{1}{5}\\right),t<\\frac{3}{5}:\\frac{5}{2}\\left(t-\\frac{2}{5}\\right),t<\\frac{4}{5}:0,\\frac{1}{2}\\right\\},\\left\\{t<\\frac{1}{5}:1,t<\\frac{2}{5}:\\frac{5}{2}\\left(-t+\\frac{2}{5}\\right),t<\\frac{3}{5}:\\frac{1}{2},t<\\frac{4}{5}:5\\left(t-\\frac{3}{5}\\right),\\frac{1}{2}+\\frac{5}{2}\\left(t-\\frac{4}{5}\\right)\\right\\}\\right)",
+        "hidden": true
+      },
+      {
+        "type": "expression",
+        "id": "120097",
+        "folderId": "118810",
+        "color": "#2d70b3",
+        "latex": "s=28+0"
+      },
+      {
+        "type": "expression",
+        "id": "120744",
+        "folderId": "118810",
+        "color": "#c74440",
+        "latex": "S=\\left(\\frac{\\sin\\left(2.05\\pi\\left(t-0.01\\right)\\right)}{70}^{\\frac{1}{3}}+\\frac{1}{4},t\\right)",
+        "hidden": true
+      },
+      {
+        "type": "expression",
+        "id": "120098",
+        "folderId": "118810",
+        "color": "#388c46",
+        "latex": "t_{0}=29+0"
+      },
+      {
+        "type": "expression",
+        "id": "120747",
+        "folderId": "118810",
+        "color": "#6042a6",
+        "latex": "T=\\left(\\left\\{t<\\frac{1}{2}:\\frac{1}{4},t-\\frac{1}{2}\\right\\},\\left\\{t<\\frac{1}{2}:2t,1\\right\\}\\right)",
+        "hidden": true
+      },
+      {
+        "type": "expression",
+        "id": "120099",
+        "folderId": "118810",
+        "color": "#6042a6",
+        "latex": "u=30+0"
+      },
+      {
+        "type": "expression",
+        "id": "120748",
+        "folderId": "118810",
+        "color": "#000000",
+        "latex": "U=\\left(\\left\\{t<\\frac{1}{3}:0,t<\\frac{2}{3}:\\frac{3}{2}\\left(t-\\frac{1}{3}\\right),\\frac{1}{2}\\right\\},\\left\\{t<\\frac{1}{3}:3t,t<\\frac{2}{3}:0,3\\left(t-\\frac{2}{3}\\right)\\right\\}\\right)",
+        "hidden": true
+      },
+      {
+        "type": "expression",
+        "id": "120100",
+        "folderId": "118810",
+        "color": "#000000",
+        "latex": "v=31+0"
+      },
+      {
+        "type": "expression",
+        "id": "120749",
+        "folderId": "118810",
+        "color": "#c74440",
+        "latex": "V=\\left(\\frac{t}{2},\\left\\{t<\\frac{1}{2}:1-2t,2\\left(t-\\frac{1}{2}\\right)\\right\\}\\right)",
+        "hidden": true
+      },
+      {
+        "type": "expression",
+        "id": "120101",
+        "folderId": "118810",
+        "color": "#c74440",
+        "latex": "w=32+0"
+      },
+      {
+        "type": "expression",
+        "id": "120750",
+        "folderId": "118810",
+        "color": "#2d70b3",
+        "latex": "W=\\left(\\frac{t}{2},\\left\\{t<\\frac{1}{4}:1-4t,t<\\frac{2}{4}:2\\left(t-\\frac{1}{4}\\right),t<\\frac{3}{4}:\\frac{1}{2}-2\\left(t-\\frac{2}{4}\\right),4\\left(t-\\frac{3}{4}\\right)\\right\\}\\right)",
+        "hidden": true
+      },
+      {
+        "type": "expression",
+        "id": "120102",
+        "folderId": "118810",
+        "color": "#2d70b3",
+        "latex": "x_{0}=33+0"
+      },
+      {
+        "type": "expression",
+        "id": "120751",
+        "folderId": "118810",
+        "color": "#388c46",
+        "latex": "X=\\left(\\left\\{t<\\frac{1}{2}:t,t-\\frac{1}{2}\\right\\},\\left\\{t<\\frac{1}{2}:2t,1-2\\left(t-\\frac{1}{2}\\right)\\right\\}\\right)",
+        "hidden": true
+      },
+      {
+        "type": "expression",
+        "id": "130635",
+        "folderId": "118810",
+        "color": "#6042a6",
+        "latex": "X_{t}\\left(t\\right)=\\left(\\left\\{t<\\frac{1}{2}:t,t-\\frac{1}{2}\\right\\},\\left\\{t<\\frac{1}{2}:2t,1-2\\left(t-\\frac{1}{2}\\right)\\right\\}\\right)+\\left(0.25,0.125\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "120103",
+        "folderId": "118810",
+        "color": "#388c46",
+        "latex": "y_{0}=34+0"
+      },
+      {
+        "type": "expression",
+        "id": "120752",
+        "folderId": "118810",
+        "color": "#6042a6",
+        "latex": "Y=\\left(\\left\\{t<\\frac{1}{3}:\\frac{1}{4},t<\\frac{2}{3}:\\frac{3}{4}\\left(t-\\frac{1}{3}\\right),\\frac{1}{4}+\\frac{2}{3}\\left(t-\\frac{2}{3}\\right)\\right\\},\\left\\{t<\\frac{1}{3}:\\frac{3}{2}t,t<\\frac{2}{3}:1-\\frac{3}{2}\\left(t-\\frac{1}{3}\\right),\\frac{1}{2}+\\frac{3}{2}\\left(t-\\frac{2}{3}\\right)\\right\\}\\right)",
+        "hidden": true
+      },
+      {
+        "type": "expression",
+        "id": "120104",
+        "folderId": "118810",
+        "color": "#6042a6",
+        "latex": "z=35+0"
+      },
+      {
+        "type": "expression",
+        "id": "120753",
+        "folderId": "118810",
+        "color": "#000000",
+        "latex": "Z=\\left(\\left\\{t<\\frac{1}{3}:\\frac{3}{2}t,t<\\frac{2}{3}:\\frac{3}{2}\\left(t-\\frac{1}{3}\\right),\\frac{3}{2}\\left(t-\\frac{2}{3}\\right)\\right\\},\\left\\{t<\\frac{1}{3}:0,t<\\frac{2}{3}:3\\left(t-\\frac{1}{3}\\right),1\\right\\}\\right)",
+        "hidden": true
+      },
+      {
+        "type": "folder",
+        "id": "14959",
+        "title": "Funções",
+        "hidden": true,
+        "collapsed": true
+      },
+      {
+        "type": "expression",
+        "id": "130853",
+        "folderId": "14959",
+        "color": "#6042a6",
+        "latex": "i_{n}\\left(x,y\\right)=\\max\\left(\\left\\{x=y:1,0\\right\\}\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "130597",
+        "folderId": "14959",
+        "color": "#000000",
+        "latex": "p_{rodLista}\\left(x\\right)=\\prod_{y=1}^{\\operatorname{length}\\left(x\\right)}x\\left[y\\right]"
+      },
+      {
+        "type": "expression",
+        "id": "130719",
+        "folderId": "14959",
+        "color": "#388c46",
+        "latex": "t_{em1}\\left(x\\right)=\\max\\left(\\left\\{x=1:1,0\\right\\}\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "130721",
+        "folderId": "14959",
+        "color": "#000000",
+        "latex": "t_{em2}\\left(x\\right)=\\max\\left(\\left\\{x=2:1,0\\right\\}\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "130722",
+        "folderId": "14959",
+        "color": "#c74440",
+        "latex": "t_{em1e2}\\left(x\\right)=t_{em1}\\left(x\\right)\\cdot t_{em2}\\left(x\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "15081",
+        "folderId": "14959",
+        "color": "#c74440",
+        "latex": "L_{0}\\left(A_{0},B_{0}\\right)=\\left(A_{0}.x\\cdot t+B_{0}.x\\left(1-t\\right),A_{0}.y\\cdot t+B_{0}.y\\left(1-t\\right)\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "120773",
+        "folderId": "14959",
+        "color": "#c74440",
+        "latex": "d_{igs}\\left(x\\right)=\\left\\{x=0:1,\\operatorname{floor}\\left(\\log\\left(\\left|x\\right|\\right)+1\\right)\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "120787",
+        "folderId": "14959",
+        "color": "#000000",
+        "latex": "d_{igshexa}\\left(x\\right)=\\operatorname{floor}\\left(\\log_{16}\\left(x\\right)+1\\right)"
+      },
+      {
+        "type": "text",
+        "id": "15130",
+        "folderId": "14959",
+        "text": "Arruma a função ax --att: Não precisa mais"
+      },
+      {
+        "type": "expression",
+        "id": "15159",
+        "folderId": "14959",
+        "color": "#c74440",
+        "latex": "o_{nes}\\left(n_{0}\\right)=\\frac{\\left[1...n_{0}\\right]}{\\left[1...n_{0}\\right]}"
+      },
+      {
+        "type": "expression",
+        "id": "14960",
+        "folderId": "14959",
+        "color": "#2d70b3",
+        "latex": "z_{ero}\\left(x\\right)=\\left\\{x=0:1,0\\right\\}",
+        "hidden": true
+      },
+      {
+        "type": "expression",
+        "id": "130581",
+        "folderId": "14959",
+        "color": "#2d70b3",
+        "latex": "z_{erosLista}\\left(x\\right)=\\left[1...x\\right]-\\left[1...x\\right]"
+      },
+      {
+        "type": "expression",
+        "id": "121674",
+        "folderId": "14959",
+        "color": "#000000",
+        "latex": "b_{ranco}=\\operatorname{rgb}\\left(255,255,255\\right)"
+      }
+    ]
+  },
+  "includeFunctionParametersInRandomSeed": true,
+  "doNotMigrateMovablePointStyle": true
+}
