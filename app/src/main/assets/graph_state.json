@@ -3,10 +3,10 @@
   "randomSeed": "299b5abe0a73e1040aacfe8fafd54478",
   "graph": {
     "viewport": {
-      "xmin": -9.421213214156223,
-      "ymin": -8.845190310681044,
-      "xmax": 16.745996816277618,
-      "ymax": 19.161901675017678
+      "xmin": -7.285869726797683,
+      "ymin": -5.387809023719832,
+      "xmax": 14.529903178689358,
+      "ymax": 18.071852577942057
     },
     "showGrid": false,
     "showXAxis": false,
@@ -30,7 +30,7 @@
       {
         "type": "text",
         "id": "130901",
-        "text": "Otimiza as funções de listas - parece q melhorou um pouco!"
+        "text": "FAZ SEM LISTAS - cria 81 variáveis"
       },
       {
         "type": "folder",
@@ -159,31 +159,11 @@
         }
       },
       {
-        "type": "expression",
-        "id": "130815",
-        "folderId": "121681",
-        "color": "#000000",
-        "latex": "\\frac{b_{otao}\\left(\\left[r,e_{0},s,e_{0},t_{0}\\right],t\\right)}{2}+\\left(2,-01\\right)+\\left(0,\\left\\{i_{f}\\left(I_{nicial}\\right)=1:1000,0\\right\\}\\right)",
-        "fill": true,
-        "fillOpacity": "0",
-        "clickableInfo": {
-          "enabled": true,
-          "latex": "r_{eset}"
-        }
-      },
-      {
         "type": "folder",
         "id": "121505",
         "title": "Matriz do Campo",
         "hidden": true,
         "collapsed": true
-      },
-      {
-        "type": "expression",
-        "id": "130600",
-        "folderId": "121505",
-        "color": "#388c46",
-        "latex": "r_{esetCampos}=C_{ampo1}\\to C_{ampo0},C_{ampo2}\\to C_{ampo0},C_{ampo3}\\to C_{ampo0},C_{ampo4}\\to C_{ampo0},C_{ampo5}\\to C_{ampo0},C_{ampo6}\\to C_{ampo0},C_{ampo7}\\to C_{ampo0},C_{ampo8}\\to C_{ampo0},C_{ampo9}\\to C_{ampo0}"
       },
       {
         "type": "expression",
@@ -204,14 +184,21 @@
         "id": "130607",
         "folderId": "121505",
         "color": "#6042a6",
-        "latex": "P_{rodutos}\\left(C_{ampoX}\\right)=\\left[p_{rodLista}\\left(l_{in}\\left(C_{ampoX},1\\right)\\right),p_{rodLista}\\left(l_{in}\\left(C_{ampoX},2\\right)\\right),p_{rodLista}\\left(l_{in}\\left(C_{ampoX},3\\right)\\right),p_{rodLista}\\left(c_{ol}\\left(C_{ampoX},1\\right)\\right),p_{rodLista}\\left(c_{ol}\\left(C_{ampoX},2\\right)\\right),p_{rodLista}\\left(c_{ol}\\left(C_{ampoX},3\\right)\\right),p_{rodLista}\\left(d_{iag1}\\left(C_{ampoX}\\right)\\right),p_{rodLista}\\left(d_{iag2}\\left(C_{ampoX}\\right)\\right)\\right]"
+        "latex": "P_{rodutosOLD}\\left(C_{ampoX}\\right)=\\left[p_{rodLista}\\left(l_{in}\\left(C_{ampoX},1\\right)\\right),p_{rodLista}\\left(l_{in}\\left(C_{ampoX},2\\right)\\right),p_{rodLista}\\left(l_{in}\\left(C_{ampoX},3\\right)\\right),p_{rodLista}\\left(c_{ol}\\left(C_{ampoX},1\\right)\\right),p_{rodLista}\\left(c_{ol}\\left(C_{ampoX},2\\right)\\right),p_{rodLista}\\left(c_{ol}\\left(C_{ampoX},3\\right)\\right),p_{rodLista}\\left(d_{iag1}\\left(C_{ampoX}\\right)\\right),p_{rodLista}\\left(d_{iag2}\\left(C_{ampoX}\\right)\\right)\\right]"
+      },
+      {
+        "type": "expression",
+        "id": "131575",
+        "folderId": "121505",
+        "color": "#6042a6",
+        "latex": "P_{rodutos}\\left(x_{1},x_{2},x_{3},x_{4},x_{5},x_{6},x_{7},x_{8},x_{9}\\right)=\\left[x_{1}x_{2}x_{3},\\ x_{4}x_{5}x_{6}\\ ,\\ x_{7}x_{8}x_{9}\\ \\ ,x_{1}x_{4}x_{7}\\ ,\\ x_{2}x_{5}x_{8}\\ \\ ,\\ \\ x_{3}x_{6}x_{9}\\ \\ \\ ,\\ \\ x_{1}x_{5}x_{9}\\ \\ ,\\ \\ x_{3}x_{5}x_{7}\\right]"
       },
       {
         "type": "expression",
         "id": "130596",
         "folderId": "121505",
         "color": "#6042a6",
-        "latex": "V_{encedor}\\left(C_{ampoX}\\right)=\\max\\left(\\left\\{P_{rodutos}\\left(C_{ampoX}\\right)=2^{3}:2,P_{rodutos}\\left(C_{ampoX}\\right)=1^{3}:1,0\\right\\}\\right)"
+        "latex": "V_{encedor}\\left(x_{1},x_{2},x_{3},x_{4},x_{5},x_{6},x_{7},x_{8},x_{9}\\right)=\\max\\left(\\left\\{P_{rodutos}\\left(x_{1},x_{2},x_{3},x_{4},x_{5},x_{6},x_{7},x_{8},x_{9}\\right)=2^{3}:2,P_{rodutos}\\left(x_{1},x_{2},x_{3},x_{4},x_{5},x_{6},x_{7},x_{8},x_{9}\\right)=1^{3}:1,0\\right\\}\\right)"
       },
       {
         "type": "text",
@@ -224,7 +211,7 @@
         "id": "130891",
         "folderId": "121505",
         "color": "#6042a6",
-        "latex": "V_{encedor2}\\left(C_{ampoX}\\right)=\\max\\left(\\left\\{P_{rodutos}\\left(C_{ampoX}\\right)=2^{3}:2,P_{rodutos}\\left(C_{ampoX}\\right)=1^{3}:1,P_{rodutos}\\left(C_{ampoX}\\right)=3^{3}:3,P_{rodutos}\\left(C_{ampoX}\\right)=3\\cdot1\\cdot1:1,P_{rodutos}\\left(C_{ampoX}\\right)=3\\cdot3\\cdot1:1,P_{rodutos}\\left(C_{ampoX}\\right)=3\\cdot2\\cdot2:2,P_{rodutos}\\left(C_{ampoX}\\right)=3\\cdot3\\cdot2:2,0\\right\\}\\right)"
+        "latex": "V_{encedor2}\\left(x_{1},x_{2},x_{3},x_{4},x_{5},x_{6},x_{7},x_{8},x_{9}\\right)=\\max\\left(\\left\\{P_{rodutos}\\left(x_{1},x_{2},x_{3},x_{4},x_{5},x_{6},x_{7},x_{8},x_{9}\\right)=2^{3}:2,P_{rodutos}\\left(x_{1},x_{2},x_{3},x_{4},x_{5},x_{6},x_{7},x_{8},x_{9}\\right)=1^{3}:1,P_{rodutos}\\left(x_{1},x_{2},x_{3},x_{4},x_{5},x_{6},x_{7},x_{8},x_{9}\\right)=3^{3}:3,P_{rodutos}\\left(x_{1},x_{2},x_{3},x_{4},x_{5},x_{6},x_{7},x_{8},x_{9}\\right)=3\\cdot1\\cdot1:1,P_{rodutos}\\left(x_{1},x_{2},x_{3},x_{4},x_{5},x_{6},x_{7},x_{8},x_{9}\\right)=3\\cdot3\\cdot1:1,P_{rodutos}\\left(x_{1},x_{2},x_{3},x_{4},x_{5},x_{6},x_{7},x_{8},x_{9}\\right)=3\\cdot2\\cdot2:2,P_{rodutos}\\left(x_{1},x_{2},x_{3},x_{4},x_{5},x_{6},x_{7},x_{8},x_{9}\\right)=3\\cdot3\\cdot2:2,0\\right\\}\\right)"
       },
       {
         "type": "text",
@@ -237,7 +224,7 @@
         "id": "130728",
         "folderId": "121505",
         "color": "#c74440",
-        "latex": "D_{euVelha}\\left(C_{ampoX}\\right)=\\min\\left(\\left[t_{em1e2}\\left(l_{in}\\left(C_{ampoX},1\\right)\\right),t_{em1e2}\\left(l_{in}\\left(C_{ampoX},2\\right)\\right),t_{em1e2}\\left(l_{in}\\left(C_{ampoX},3\\right)\\right),t_{em1e2}\\left(c_{ol}\\left(C_{ampoX},1\\right)\\right),t_{em1e2}\\left(c_{ol}\\left(C_{ampoX},2\\right)\\right),t_{em1e2}\\left(c_{ol}\\left(C_{ampoX},3\\right)\\right),t_{em1e2}\\left(d_{iag1}\\left(C_{ampoX}\\right)\\right),t_{em1e2}\\left(d_{iag2}\\left(C_{ampoX}\\right)\\right)\\right]\\right)"
+        "latex": "D_{euVelha}\\left(x_{1},x_{2},x_{3},x_{4},x_{5},x_{6},x_{7},x_{8},x_{9}\\right)=\\min\\left(\\left[t_{em1e2}\\left(x_{1},x_{2},x_{3}\\right),t_{em1e2}\\left(x_{4},x_{5},x_{6}\\right),t_{em1e2}\\left(x_{7},x_{8},x_{9}\\right),t_{em1e2}\\left(x_{1},x_{4},x_{7}\\right),t_{em1e2}\\left(x_{2},x_{5},x_{8}\\right),t_{em1e2}\\left(x_{3},x_{6},x_{9}\\right),t_{em1e2}\\left(x_{1},x_{5},x_{9}\\right),t_{em1e2}\\left(x_{3},x_{5},x_{7}\\right)\\right]\\right)"
       },
       {
         "type": "text",
@@ -250,7 +237,7 @@
         "id": "130731",
         "folderId": "121505",
         "color": "#6042a6",
-        "latex": "R_{esultado}\\left(C_{ampoX}\\right)=3D_{euVelha}\\left(C_{ampoX}\\right)+V_{encedor2}\\left(C_{ampoX}\\right)"
+        "latex": "R_{esultado}\\left(x_{1},x_{2},x_{3},x_{4},x_{5},x_{6},x_{7},x_{8},x_{9}\\right)=3D_{euVelha}\\left(x_{1},x_{2},x_{3},x_{4},x_{5},x_{6},x_{7},x_{8},x_{9}\\right)+V_{encedor2}\\left(x_{1},x_{2},x_{3},x_{4},x_{5},x_{6},x_{7},x_{8},x_{9}\\right)"
       },
       {
         "type": "text",
@@ -263,173 +250,12 @@
         "id": "130799",
         "folderId": "121505",
         "color": "#000000",
-        "latex": "Q_{ualLinha}\\left(C_{ampoX}\\right)=\\left\\{R_{esultado}\\left(C_{ampoX}\\right)=3:-1,\\left(\\left\\{P_{rodutos}\\left(C_{ampoX}\\right)=2^{3}:1,P_{rodutos}\\left(C_{ampoX}\\right)=1^{3}:1,P_{rodutos}\\left(C_{ampoX}\\right)=3^{3}:1,P_{rodutos}\\left(C_{ampoX}\\right)=3\\cdot1\\cdot1:1,P_{rodutos}\\left(C_{ampoX}\\right)=3\\cdot3\\cdot1:1,P_{rodutos}\\left(C_{ampoX}\\right)=3\\cdot2\\cdot2:1,P_{rodutos}\\left(C_{ampoX}\\right)=3\\cdot3\\cdot2:1,0\\right\\}\\cdot\\left[1...8\\right]\\right)\\right\\}"
-      },
-      {
-        "type": "expression",
-        "id": "130897",
-        "folderId": "121505",
-        "color": "#000000",
-        "latex": "Q_{ualLinhaOLD}\\left(C_{ampoX}\\right)=\\left\\{R_{esultado}\\left(C_{ampoX}\\right)=3:-1,\\max\\left(\\left\\{P_{rodutos}\\left(C_{ampoX}\\right)=2^{3}:1,P_{rodutos}\\left(C_{ampoX}\\right)=1^{3}:1,P_{rodutos}\\left(C_{ampoX}\\right)=3^{3}:1,P_{rodutos}\\left(C_{ampoX}\\right)=3\\cdot1\\cdot1:1,P_{rodutos}\\left(C_{ampoX}\\right)=3\\cdot3\\cdot1:1,P_{rodutos}\\left(C_{ampoX}\\right)=3\\cdot2\\cdot2:1,P_{rodutos}\\left(C_{ampoX}\\right)=3\\cdot3\\cdot2:1,0\\right\\}\\cdot\\left[1...8\\right]\\right)\\right\\}"
-      },
-      {
-        "type": "expression",
-        "id": "130617",
-        "folderId": "121505",
-        "color": "#388c46",
-        "latex": "R_{esultado}\\left(C_{ampo}\\left(C_{ampoi}\\right)\\right)"
-      },
-      {
-        "type": "expression",
-        "id": "130618",
-        "folderId": "121505",
-        "color": "#6042a6",
-        "latex": "C_{ampoi}=1",
-        "slider": {
-          "hardMin": true,
-          "min": "0",
-          "step": "1"
-        }
-      },
-      {
-        "type": "expression",
-        "id": "130611",
-        "folderId": "121505",
-        "color": "#388c46",
-        "latex": "C_{ampo}\\left(x\\right)=\\left\\{x=0:C_{ampo0},x=1:C_{ampo1},x=2:C_{ampo2},x=3:C_{ampo3},x=4:C_{ampo4},x=5:C_{ampo5},x=6:C_{ampo6},x=7:C_{ampo7},x=8:C_{ampo8},x=9:C_{ampo9},x=10:C_{ampo10}\\right\\}",
-        "hidden": true
-      },
-      {
-        "type": "expression",
-        "id": "130583",
-        "folderId": "121505",
-        "color": "#6042a6",
-        "latex": "C_{ampo0}=\\operatorname{join}\\left(3,z_{erosLista}\\left(9\\right)\\right)"
-      },
-      {
-        "type": "text",
-        "id": "130620",
-        "folderId": "121505",
-        "text": "Campo10 é o jogo global"
-      },
-      {
-        "type": "expression",
-        "id": "130630",
-        "folderId": "121505",
-        "color": "#6042a6",
-        "latex": "R_{esultado}\\left(C_{ampo10}\\right)"
-      },
-      {
-        "id": "130626",
-        "type": "table",
-        "folderId": "121505",
-        "columns": [
-          {
-            "hidden": true,
-            "id": "130624",
-            "color": "#6042a6"
-          },
-          {
-            "hidden": true,
-            "id": "130625",
-            "color": "#000000",
-            "latex": "c_{ol2}\\left(C_{ampo10},1\\right)"
-          },
-          {
-            "hidden": true,
-            "id": "130627",
-            "color": "#c74440",
-            "latex": "c_{ol2}\\left(C_{ampo10},2\\right)"
-          },
-          {
-            "hidden": true,
-            "id": "130628",
-            "color": "#2d70b3",
-            "latex": "c_{ol2}\\left(C_{ampo10},3\\right)"
-          }
-        ]
-      },
-      {
-        "type": "expression",
-        "id": "130580",
-        "folderId": "121505",
-        "color": "#c74440",
-        "latex": "C_{ampo1}=\\left[3,0,0,0,0,0,0,0,0,0\\right]"
-      },
-      {
-        "type": "expression",
-        "id": "130582",
-        "folderId": "121505",
-        "color": "#388c46",
-        "latex": "C_{ampo2}=\\left[3,0,0,0,0,0,0,0,0,0\\right]"
-      },
-      {
-        "type": "expression",
-        "id": "130590",
-        "folderId": "121505",
-        "color": "#388c46",
-        "latex": "C_{ampo3}=\\left[3,0,0,0,0,0,0,0,0,0\\right]"
-      },
-      {
-        "type": "expression",
-        "id": "130589",
-        "folderId": "121505",
-        "color": "#388c46",
-        "latex": "C_{ampo4}=\\left[3,0,0,0,0,0,0,0,0,0\\right]"
-      },
-      {
-        "type": "expression",
-        "id": "130588",
-        "folderId": "121505",
-        "color": "#388c46",
-        "latex": "C_{ampo5}=\\left[3,0,0,0,0,0,0,0,0,0\\right]"
-      },
-      {
-        "type": "expression",
-        "id": "130587",
-        "folderId": "121505",
-        "color": "#388c46",
-        "latex": "C_{ampo6}=\\left[3,0,0,0,0,0,0,0,0,0\\right]"
-      },
-      {
-        "type": "expression",
-        "id": "130586",
-        "folderId": "121505",
-        "color": "#388c46",
-        "latex": "C_{ampo7}=\\left[3,0,0,0,0,0,0,0,0,0\\right]"
-      },
-      {
-        "type": "expression",
-        "id": "130585",
-        "folderId": "121505",
-        "color": "#388c46",
-        "latex": "C_{ampo8}=\\left[3,0,0,0,0,0,0,0,0,0\\right]"
-      },
-      {
-        "type": "expression",
-        "id": "130584",
-        "folderId": "121505",
-        "color": "#388c46",
-        "latex": "C_{ampo9}=\\left[3,0,0,0,0,0,0,0,0,0\\right]"
-      },
-      {
-        "type": "expression",
-        "id": "130861",
-        "folderId": "121505",
-        "color": "#2d70b3",
-        "latex": "R_{esultados}=\\operatorname{join}\\left(R_{esultado}\\left(C_{ampo1}\\right),R_{esultado}\\left(C_{ampo2}\\right),R_{esultado}\\left(C_{ampo3}\\right),R_{esultado}\\left(C_{ampo4}\\right),R_{esultado}\\left(C_{ampo5}\\right),R_{esultado}\\left(C_{ampo6}\\right),R_{esultado}\\left(C_{ampo7}\\right),R_{esultado}\\left(C_{ampo8}\\right),R_{esultado}\\left(C_{ampo9}\\right)\\right)"
-      },
-      {
-        "type": "expression",
-        "id": "130593",
-        "folderId": "121505",
-        "color": "#2d70b3",
-        "latex": "C_{ampo10}=\\operatorname{join}\\left(3,R_{esultados}\\right)"
+        "latex": "Q_{ualLinha}\\left(x_{1},x_{2},x_{3},x_{4},x_{5},x_{6},x_{7},x_{8},x_{9}\\right)=\\left\\{R_{esultado}\\left(x_{1},x_{2},x_{3},x_{4},x_{5},x_{6},x_{7},x_{8},x_{9}\\right)=3:-1,\\left(\\left\\{P_{rodutos}\\left(x_{1},x_{2},x_{3},x_{4},x_{5},x_{6},x_{7},x_{8},x_{9}\\right)=2^{3}:1,P_{rodutos}\\left(x_{1},x_{2},x_{3},x_{4},x_{5},x_{6},x_{7},x_{8},x_{9}\\right)=1^{3}:1,P_{rodutos}\\left(x_{1},x_{2},x_{3},x_{4},x_{5},x_{6},x_{7},x_{8},x_{9}\\right)=3^{3}:1,P_{rodutos}\\left(x_{1},x_{2},x_{3},x_{4},x_{5},x_{6},x_{7},x_{8},x_{9}\\right)=3\\cdot1\\cdot1:1,P_{rodutos}\\left(x_{1},x_{2},x_{3},x_{4},x_{5},x_{6},x_{7},x_{8},x_{9}\\right)=3\\cdot3\\cdot1:1,P_{rodutos}\\left(x_{1},x_{2},x_{3},x_{4},x_{5},x_{6},x_{7},x_{8},x_{9}\\right)=3\\cdot2\\cdot2:1,P_{rodutos}\\left(x_{1},x_{2},x_{3},x_{4},x_{5},x_{6},x_{7},x_{8},x_{9}\\right)=3\\cdot3\\cdot2:1,0\\right\\}\\cdot\\left[1...8\\right]\\right)\\right\\}"
       },
       {
         "type": "folder",
         "id": "130817",
-        "title": "Funções pra escrever as listas Campo",
+        "title": "Variável vez",
         "hidden": true,
         "collapsed": true
       },
@@ -455,169 +281,1420 @@
         "latex": "t_{roca}=v_{ez}\\to p_{roximo}\\left(v_{ez}\\right)"
       },
       {
+        "type": "folder",
+        "id": "131076",
+        "title": "Variáveis do campo (chatGPT escreveu pra mim kkkkk)",
+        "collapsed": true
+      },
+      {
+        "type": "expression",
+        "id": "130861",
+        "folderId": "131076",
+        "color": "#2d70b3",
+        "latex": "R_{esultados}=\\operatorname{join}\\left(R_{esultado}\\left(x_{11},x_{12},x_{13},x_{14},x_{15},x_{16},x_{17},x_{18},x_{19}\\right),R_{esultado}\\left(x_{21},x_{22},x_{23},x_{24},x_{25},x_{26},x_{27},x_{28},x_{29}\\right),R_{esultado}\\left(x_{31},x_{32},x_{33},x_{34},x_{35},x_{36},x_{37},x_{38},x_{39}\\right),R_{esultado}\\left(x_{41},x_{42},x_{43},x_{44},x_{45},x_{46},x_{47},x_{48},x_{49}\\right),R_{esultado}\\left(x_{51},x_{52},x_{53},x_{54},x_{55},x_{56},x_{57},x_{58},x_{59}\\right),R_{esultado}\\left(x_{61},x_{62},x_{63},x_{64},x_{65},x_{66},x_{67},x_{68},x_{69}\\right),R_{esultado}\\left(x_{71},x_{72},x_{73},x_{74},x_{75},x_{76},x_{77},x_{78},x_{79}\\right),R_{esultado}\\left(x_{81},x_{82},x_{83},x_{84},x_{85},x_{86},x_{87},x_{88},x_{89}\\right),R_{esultado}\\left(x_{91},x_{92},x_{93},x_{94},x_{95},x_{96},x_{97},x_{98},x_{99}\\right)\\right)"
+      },
+      {
         "type": "text",
-        "id": "131019",
-        "folderId": "130817",
-        "text": "E se tirar os casos das bordas? - Não sei se melhorou muito\nTirei a verificação de indice <= 10 - parece que ficou mais rápido\nMuda a função escreveCampo? Troca por uma soma de listas? - parece +ou- igual??\ntroquei as funções"
+        "id": "131577",
+        "folderId": "131076",
+        "text": "\\left(x_{11}, x_{12}, x_{13}, x_{14}, x_{15}, x_{16}, x_{17}, x_{18}, x_{19}\\right)\n\\left(x_{21}, x_{22}, x_{23}, x_{24}, x_{25}, x_{26}, x_{27}, x_{28}, x_{29}\\right)\n\\left(x_{31}, x_{32}, x_{33}, x_{34}, x_{35}, x_{36}, x_{37}, x_{38}, x_{39}\\right)\n\\left(x_{41}, x_{42}, x_{43}, x_{44}, x_{45}, x_{46}, x_{47}, x_{48}, x_{49}\\right)\n\\left(x_{51}, x_{52}, x_{53}, x_{54}, x_{55}, x_{56}, x_{57}, x_{58}, x_{59}\\right)\n\\left(x_{61}, x_{62}, x_{63}, x_{64}, x_{65}, x_{66}, x_{67}, x_{68}, x_{69}\\right)\n\\left(x_{71}, x_{72}, x_{73}, x_{74}, x_{75}, x_{76}, x_{77}, x_{78}, x_{79}\\right)\n\\left(x_{81}, x_{82}, x_{83}, x_{84}, x_{85}, x_{86}, x_{87}, x_{88}, x_{89}\\right)\n\\left(x_{91}, x_{92}, x_{93}, x_{94}, x_{95}, x_{96}, x_{97}, x_{98}, x_{99}\\right)"
       },
       {
         "type": "expression",
-        "id": "131022",
-        "folderId": "130817",
+        "id": "130593",
+        "folderId": "131076",
+        "color": "#2d70b3",
+        "latex": "C_{ampo10}=\\left(R_{esultado}\\left(C_{ampo1}\\right),R_{esultado}\\left(C_{ampo2}\\right),R_{esultado}\\left(C_{ampo3}\\right),R_{esultado}\\left(C_{ampo4}\\right),R_{esultado}\\left(C_{ampo5}\\right),R_{esultado}\\left(C_{ampo6}\\right),R_{esultado}\\left(C_{ampo7}\\right),R_{esultado}\\left(C_{ampo8}\\right),R_{esultado}\\left(C_{ampo9}\\right)\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "131367",
+        "folderId": "131076",
+        "color": "#c74440",
+        "latex": "C_{ampo1}=\\left(x_{11},x_{12},x_{13},x_{14},x_{15},x_{16},x_{17},x_{18},x_{19}\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "131368",
+        "folderId": "131076",
+        "color": "#2d70b3",
+        "latex": "C_{ampo2}=\\left(x_{21},x_{22},x_{23},x_{24},x_{25},x_{26},x_{27},x_{28},x_{29}\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "131369",
+        "folderId": "131076",
         "color": "#388c46",
-        "latex": "\\operatorname{length}\\left(C_{ampo1}\\right)"
+        "latex": "C_{ampo3}=\\left(x_{31},x_{32},x_{33},x_{34},x_{35},x_{36},x_{37},x_{38},x_{39}\\right)"
       },
       {
         "type": "expression",
-        "id": "131023",
-        "folderId": "130817",
+        "id": "131370",
+        "folderId": "131076",
         "color": "#6042a6",
-        "latex": "c_{riaLista}\\left(i_{ndice},x\\right)=\\left\\{\\left[1...10\\right]=i_{ndice}:x,0\\right\\}"
+        "latex": "C_{ampo4}=\\left(x_{41},x_{42},x_{43},x_{44},x_{45},x_{46},x_{47},x_{48},x_{49}\\right)"
       },
       {
         "type": "expression",
-        "id": "131025",
-        "folderId": "130817",
-        "color": "#388c46",
-        "latex": "e_{screveCampo1}\\left(i_{ndice},x\\right)=C_{ampo1}\\to C_{ampo1}+c_{riaLista}\\left(i_{ndice},x\\right)"
+        "id": "131371",
+        "folderId": "131076",
+        "color": "#000000",
+        "latex": "C_{ampo5}=\\left(x_{51},x_{52},x_{53},x_{54},x_{55},x_{56},x_{57},x_{58},x_{59}\\right)"
       },
       {
         "type": "expression",
-        "id": "130735",
-        "folderId": "130817",
+        "id": "131372",
+        "folderId": "131076",
+        "color": "#c74440",
+        "latex": "C_{ampo6}=\\left(x_{61},x_{62},x_{63},x_{64},x_{65},x_{66},x_{67},x_{68},x_{69}\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "131373",
+        "folderId": "131076",
         "color": "#2d70b3",
-        "latex": "c_{lica1}\\left(i_{ndice}\\right)=\\left\\{R_{esultado}\\left(C_{ampo1}\\right)=0:\\left\\{C_{ampo1}\\left[i_{ndice}\\right]=0:\\left(e_{screveCampo1}\\left(i_{ndice},v_{ez}\\right),t_{roca}\\right)\\right\\}\\right\\}"
+        "latex": "C_{ampo7}=\\left(x_{71},x_{72},x_{73},x_{74},x_{75},x_{76},x_{77},x_{78},x_{79}\\right)"
       },
       {
         "type": "expression",
-        "id": "131030",
-        "folderId": "130817",
+        "id": "131374",
+        "folderId": "131076",
         "color": "#388c46",
-        "latex": "e_{screveCampo2}\\left(i_{ndice},x\\right)=C_{ampo2}\\to C_{ampo2}+c_{riaLista}\\left(i_{ndice},x\\right)"
+        "latex": "C_{ampo8}=\\left(x_{81},x_{82},x_{83},x_{84},x_{85},x_{86},x_{87},x_{88},x_{89}\\right)"
       },
       {
         "type": "expression",
-        "id": "130833",
-        "folderId": "130817",
+        "id": "131375",
+        "folderId": "131076",
+        "color": "#6042a6",
+        "latex": "C_{ampo9}=\\left(x_{91},x_{92},x_{93},x_{94},x_{95},x_{96},x_{97},x_{98},x_{99}\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "131364",
+        "folderId": "131076",
+        "color": "#388c46",
+        "latex": "r_{esetCampos}=x_{11}\\to0,x_{12}\\to0,x_{13}\\to0,x_{14}\\to0,x_{15}\\to0,x_{16}\\to0,x_{17}\\to0,x_{18}\\to0,x_{19}\\to0,x_{21}\\to0,x_{22}\\to0,x_{23}\\to0,x_{24}\\to0,x_{25}\\to0,x_{26}\\to0,x_{27}\\to0,x_{28}\\to0,x_{29}\\to0,x_{31}\\to0,x_{32}\\to0,x_{33}\\to0,x_{34}\\to0,x_{35}\\to0,x_{36}\\to0,x_{37}\\to0,x_{38}\\to0,x_{39}\\to0,x_{41}\\to0,x_{42}\\to0,x_{43}\\to0,x_{44}\\to0,x_{45}\\to0,x_{46}\\to0,x_{47}\\to0,x_{48}\\to0,x_{49}\\to0,x_{51}\\to0,x_{52}\\to0,x_{53}\\to0,x_{54}\\to0,x_{55}\\to0,x_{56}\\to0,x_{57}\\to0,x_{58}\\to0,x_{59}\\to0,x_{61}\\to0,x_{62}\\to0,x_{63}\\to0,x_{64}\\to0,x_{65}\\to0,x_{66}\\to0,x_{67}\\to0,x_{68}\\to0,x_{69}\\to0,x_{71}\\to0,x_{72}\\to0,x_{73}\\to0,x_{74}\\to0,x_{75}\\to0,x_{76}\\to0,x_{77}\\to0,x_{78}\\to0,x_{79}\\to0,x_{81}\\to0,x_{82}\\to0,x_{83}\\to0,x_{84}\\to0,x_{85}\\to0,x_{86}\\to0,x_{87}\\to0,x_{88}\\to0,x_{89}\\to0,x_{91}\\to0,x_{92}\\to0,x_{93}\\to0,x_{94}\\to0,x_{95}\\to0,x_{96}\\to0,x_{97}\\to0,x_{98}\\to0,x_{99}\\to0"
+      },
+      {
+        "type": "expression",
+        "id": "131480",
+        "folderId": "131076",
+        "color": "#6042a6",
+        "latex": "c_{licaX11}=\\left\\{i_{f}\\left(S_{imples}\\right)=1:c_{licaX11simples},c_{licaX11avancado}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131777",
+        "folderId": "131076",
+        "color": "#c74440",
+        "latex": "c_{licaX11simples}=\\left\\{R_{esultado}\\left(x_{11},x_{12},x_{13},x_{14},x_{15},x_{16},x_{17},x_{18},x_{19}\\right)=0:\\left\\{x_{11}=0:\\left(x_{11}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131778",
+        "folderId": "131076",
         "color": "#2d70b3",
-        "latex": "c_{lica2}\\left(i_{ndice}\\right)=\\left\\{R_{esultado}\\left(C_{ampo2}\\right)=0:\\left\\{C_{ampo2}\\left[i_{ndice}\\right]=0:\\left(e_{screveCampo2}\\left(i_{ndice},v_{ez}\\right),t_{roca}\\right)\\right\\}\\right\\}"
+        "latex": "c_{licaX11avancado}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(1,p_{rox}\\right)=1:\\left(c_{licaX11simples},a_{tualizaProx}\\left(1\\right)\\right)\\right\\}\\right\\}"
       },
       {
         "type": "expression",
-        "id": "131031",
-        "folderId": "130817",
-        "color": "#388c46",
-        "latex": "e_{screveCampo3}\\left(i_{ndice},x\\right)=C_{ampo3}\\to C_{ampo3}+c_{riaLista}\\left(i_{ndice},x\\right)"
+        "id": "131780",
+        "folderId": "131076",
+        "color": "#6042a6",
+        "latex": "c_{licaX12}=\\left\\{i_{f}\\left(S_{imples}\\right)=1:c_{licaX12simples},c_{licaX12avancado}\\right\\}"
       },
       {
         "type": "expression",
-        "id": "130832",
-        "folderId": "130817",
+        "id": "131781",
+        "folderId": "131076",
+        "color": "#c74440",
+        "latex": "c_{licaX12simples}=\\left\\{R_{esultado}\\left(x_{11},x_{12},x_{13},x_{14},x_{15},x_{16},x_{17},x_{18},x_{19}\\right)=0:\\left\\{x_{12}=0:\\left(x_{12}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131782",
+        "folderId": "131076",
         "color": "#2d70b3",
-        "latex": "c_{lica3}\\left(i_{ndice}\\right)=\\left\\{R_{esultado}\\left(C_{ampo3}\\right)=0:\\left\\{C_{ampo3}\\left[i_{ndice}\\right]=0:\\left(e_{screveCampo3}\\left(i_{ndice},v_{ez}\\right),t_{roca}\\right)\\right\\}\\right\\}"
+        "latex": "c_{licaX12avancado}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(1,p_{rox}\\right)=1:\\left(c_{licaX12simples},a_{tualizaProx}\\left(2\\right)\\right)\\right\\}\\right\\}"
       },
       {
         "type": "expression",
-        "id": "131032",
-        "folderId": "130817",
-        "color": "#388c46",
-        "latex": "e_{screveCampo4}\\left(i_{ndice},x\\right)=C_{ampo4}\\to C_{ampo4}+c_{riaLista}\\left(i_{ndice},x\\right)"
+        "id": "131784",
+        "folderId": "131076",
+        "color": "#000000",
+        "latex": "c_{licaX13}=\\left\\{i_{f}\\left(S_{imples}\\right)=1:c_{licaX13simples},c_{licaX13avancado}\\right\\}"
       },
       {
         "type": "expression",
-        "id": "130831",
-        "folderId": "130817",
+        "id": "131785",
+        "folderId": "131076",
+        "color": "#c74440",
+        "latex": "c_{licaX13simples}=\\left\\{R_{esultado}\\left(x_{11},x_{12},x_{13},x_{14},x_{15},x_{16},x_{17},x_{18},x_{19}\\right)=0:\\left\\{x_{13}=0:\\left(x_{13}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131786",
+        "folderId": "131076",
         "color": "#2d70b3",
-        "latex": "c_{lica4}\\left(i_{ndice}\\right)=\\left\\{R_{esultado}\\left(C_{ampo4}\\right)=0:\\left\\{C_{ampo4}\\left[i_{ndice}\\right]=0:\\left(e_{screveCampo4}\\left(i_{ndice},v_{ez}\\right),t_{roca}\\right)\\right\\}\\right\\}"
+        "latex": "c_{licaX13avancado}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(1,p_{rox}\\right)=1:\\left(c_{licaX13simples},a_{tualizaProx}\\left(3\\right)\\right)\\right\\}\\right\\}"
       },
       {
         "type": "expression",
-        "id": "131033",
-        "folderId": "130817",
+        "id": "131787",
+        "folderId": "131076",
         "color": "#388c46",
-        "latex": "e_{screveCampo5}\\left(i_{ndice},x\\right)=C_{ampo5}\\to C_{ampo5}+c_{riaLista}\\left(i_{ndice},x\\right)"
+        "latex": "c_{licaX14}=\\left\\{i_{f}\\left(S_{imples}\\right)=1:c_{licaX14simples},c_{licaX14avancado}\\right\\}"
       },
       {
         "type": "expression",
-        "id": "130830",
-        "folderId": "130817",
+        "id": "131788",
+        "folderId": "131076",
+        "color": "#6042a6",
+        "latex": "c_{licaX14simples}=\\left\\{R_{esultado}\\left(x_{11},x_{12},x_{13},x_{14},x_{15},x_{16},x_{17},x_{18},x_{19}\\right)=0:\\left\\{x_{14}=0:\\left(x_{14}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131789",
+        "folderId": "131076",
+        "color": "#000000",
+        "latex": "c_{licaX14avancado}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(1,p_{rox}\\right)=1:\\left(c_{licaX14simples},a_{tualizaProx}\\left(4\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131790",
+        "folderId": "131076",
+        "color": "#c74440",
+        "latex": "c_{licaX15}=\\left\\{i_{f}\\left(S_{imples}\\right)=1:c_{licaX15simples},c_{licaX15avancado}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131791",
+        "folderId": "131076",
         "color": "#2d70b3",
-        "latex": "c_{lica5}\\left(i_{ndice}\\right)=\\left\\{R_{esultado}\\left(C_{ampo5}\\right)=0:\\left\\{C_{ampo5}\\left[i_{ndice}\\right]=0:\\left(e_{screveCampo5}\\left(i_{ndice},v_{ez}\\right),t_{roca}\\right)\\right\\}\\right\\}"
+        "latex": "c_{licaX15simples}=\\left\\{R_{esultado}\\left(x_{11},x_{12},x_{13},x_{14},x_{15},x_{16},x_{17},x_{18},x_{19}\\right)=0:\\left\\{x_{15}=0:\\left(x_{15}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\}"
       },
       {
         "type": "expression",
-        "id": "131034",
-        "folderId": "130817",
+        "id": "131792",
+        "folderId": "131076",
         "color": "#388c46",
-        "latex": "e_{screveCampo6}\\left(i_{ndice},x\\right)=C_{ampo6}\\to C_{ampo6}+c_{riaLista}\\left(i_{ndice},x\\right)"
+        "latex": "c_{licaX15avancado}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(1,p_{rox}\\right)=1:\\left(c_{licaX15simples},a_{tualizaProx}\\left(5\\right)\\right)\\right\\}\\right\\}"
       },
       {
         "type": "expression",
-        "id": "130829",
-        "folderId": "130817",
+        "id": "131793",
+        "folderId": "131076",
+        "color": "#6042a6",
+        "latex": "c_{licaX16}=\\left\\{i_{f}\\left(S_{imples}\\right)=1:c_{licaX16simples},c_{licaX16avancado}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131794",
+        "folderId": "131076",
+        "color": "#000000",
+        "latex": "c_{licaX16simples}=\\left\\{R_{esultado}\\left(x_{11},x_{12},x_{13},x_{14},x_{15},x_{16},x_{17},x_{18},x_{19}\\right)=0:\\left\\{x_{16}=0:\\left(x_{16}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131795",
+        "folderId": "131076",
+        "color": "#c74440",
+        "latex": "c_{licaX16avancado}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(1,p_{rox}\\right)=1:\\left(c_{licaX16simples},a_{tualizaProx}\\left(6\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131796",
+        "folderId": "131076",
         "color": "#2d70b3",
-        "latex": "c_{lica6}\\left(i_{ndice}\\right)=\\left\\{R_{esultado}\\left(C_{ampo6}\\right)=0:\\left\\{C_{ampo6}\\left[i_{ndice}\\right]=0:\\left(e_{screveCampo6}\\left(i_{ndice},v_{ez}\\right),t_{roca}\\right)\\right\\}\\right\\}"
+        "latex": "c_{licaX17}=\\left\\{i_{f}\\left(S_{imples}\\right)=1:c_{licaX17simples},c_{licaX17avancado}\\right\\}"
       },
       {
         "type": "expression",
-        "id": "131035",
-        "folderId": "130817",
+        "id": "131797",
+        "folderId": "131076",
         "color": "#388c46",
-        "latex": "e_{screveCampo7}\\left(i_{ndice},x\\right)=C_{ampo7}\\to C_{ampo7}+c_{riaLista}\\left(i_{ndice},x\\right)"
+        "latex": "c_{licaX17simples}=\\left\\{R_{esultado}\\left(x_{11},x_{12},x_{13},x_{14},x_{15},x_{16},x_{17},x_{18},x_{19}\\right)=0:\\left\\{x_{17}=0:\\left(x_{17}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\}"
       },
       {
         "type": "expression",
-        "id": "130828",
-        "folderId": "130817",
+        "id": "131798",
+        "folderId": "131076",
+        "color": "#6042a6",
+        "latex": "c_{licaX17avancado}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(1,p_{rox}\\right)=1:\\left(c_{licaX17simples},a_{tualizaProx}\\left(7\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131799",
+        "folderId": "131076",
+        "color": "#000000",
+        "latex": "c_{licaX18}=\\left\\{i_{f}\\left(S_{imples}\\right)=1:c_{licaX18simples},c_{licaX18avancado}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131800",
+        "folderId": "131076",
+        "color": "#c74440",
+        "latex": "c_{licaX18simples}=\\left\\{R_{esultado}\\left(x_{11},x_{12},x_{13},x_{14},x_{15},x_{16},x_{17},x_{18},x_{19}\\right)=0:\\left\\{x_{18}=0:\\left(x_{18}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131801",
+        "folderId": "131076",
         "color": "#2d70b3",
-        "latex": "c_{lica7}\\left(i_{ndice}\\right)=\\left\\{R_{esultado}\\left(C_{ampo7}\\right)=0:\\left\\{C_{ampo7}\\left[i_{ndice}\\right]=0:\\left(e_{screveCampo7}\\left(i_{ndice},v_{ez}\\right),t_{roca}\\right)\\right\\}\\right\\}"
+        "latex": "c_{licaX18avancado}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(1,p_{rox}\\right)=1:\\left(c_{licaX18simples},a_{tualizaProx}\\left(8\\right)\\right)\\right\\}\\right\\}"
       },
       {
         "type": "expression",
-        "id": "131036",
-        "folderId": "130817",
+        "id": "131802",
+        "folderId": "131076",
         "color": "#388c46",
-        "latex": "e_{screveCampo8}\\left(i_{ndice},x\\right)=C_{ampo8}\\to C_{ampo8}+c_{riaLista}\\left(i_{ndice},x\\right)"
+        "latex": "c_{licaX19}=\\left\\{i_{f}\\left(S_{imples}\\right)=1:c_{licaX19simples},c_{licaX19avancado}\\right\\}"
       },
       {
         "type": "expression",
-        "id": "130827",
-        "folderId": "130817",
+        "id": "131803",
+        "folderId": "131076",
+        "color": "#6042a6",
+        "latex": "c_{licaX19simples}=\\left\\{R_{esultado}\\left(x_{11},x_{12},x_{13},x_{14},x_{15},x_{16},x_{17},x_{18},x_{19}\\right)=0:\\left\\{x_{19}=0:\\left(x_{19}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131804",
+        "folderId": "131076",
+        "color": "#000000",
+        "latex": "c_{licaX19avancado}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(1,p_{rox}\\right)=1:\\left(c_{licaX19simples},a_{tualizaProx}\\left(9\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "text",
+        "id": "131809",
+        "folderId": "131076",
+        "text": "Jogos 2-9 (só no avançado) - já pedi pro chatgpt"
+      },
+      {
+        "type": "expression",
+        "id": "131810",
+        "folderId": "131076",
+        "color": "#c74440",
+        "latex": "c_{licaX21}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(2,p_{rox}\\right)=1:\\left(\\left\\{R_{esultado}\\left(x_{21},x_{22},x_{23},x_{24},x_{25},x_{26},x_{27},x_{28},x_{29}\\right)=0:\\left\\{x_{21}=0:\\left(x_{21}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\},a_{tualizaProx}\\left(1\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131811",
+        "folderId": "131076",
         "color": "#2d70b3",
-        "latex": "c_{lica8}\\left(i_{ndice}\\right)=\\left\\{R_{esultado}\\left(C_{ampo8}\\right)=0:\\left\\{C_{ampo8}\\left[i_{ndice}\\right]=0:\\left(e_{screveCampo8}\\left(i_{ndice},v_{ez}\\right),t_{roca}\\right)\\right\\}\\right\\}"
+        "latex": "c_{licaX22}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(2,p_{rox}\\right)=1:\\left(\\left\\{R_{esultado}\\left(x_{21},x_{22},x_{23},x_{24},x_{25},x_{26},x_{27},x_{28},x_{29}\\right)=0:\\left\\{x_{22}=0:\\left(x_{22}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\},a_{tualizaProx}\\left(2\\right)\\right)\\right\\}\\right\\}"
       },
       {
         "type": "expression",
-        "id": "131037",
-        "folderId": "130817",
+        "id": "131812",
+        "folderId": "131076",
         "color": "#388c46",
-        "latex": "e_{screveCampo9}\\left(i_{ndice},x\\right)=C_{ampo9}\\to C_{ampo9}+c_{riaLista}\\left(i_{ndice},x\\right)"
+        "latex": "c_{licaX23}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(2,p_{rox}\\right)=1:\\left(\\left\\{R_{esultado}\\left(x_{21},x_{22},x_{23},x_{24},x_{25},x_{26},x_{27},x_{28},x_{29}\\right)=0:\\left\\{x_{23}=0:\\left(x_{23}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\},a_{tualizaProx}\\left(3\\right)\\right)\\right\\}\\right\\}"
       },
       {
         "type": "expression",
-        "id": "130826",
-        "folderId": "130817",
+        "id": "131813",
+        "folderId": "131076",
+        "color": "#6042a6",
+        "latex": "c_{licaX24}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(2,p_{rox}\\right)=1:\\left(\\left\\{R_{esultado}\\left(x_{21},x_{22},x_{23},x_{24},x_{25},x_{26},x_{27},x_{28},x_{29}\\right)=0:\\left\\{x_{24}=0:\\left(x_{24}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\},a_{tualizaProx}\\left(4\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131814",
+        "folderId": "131076",
+        "color": "#000000",
+        "latex": "c_{licaX25}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(2,p_{rox}\\right)=1:\\left(\\left\\{R_{esultado}\\left(x_{21},x_{22},x_{23},x_{24},x_{25},x_{26},x_{27},x_{28},x_{29}\\right)=0:\\left\\{x_{25}=0:\\left(x_{25}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\},a_{tualizaProx}\\left(5\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131815",
+        "folderId": "131076",
+        "color": "#c74440",
+        "latex": "c_{licaX26}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(2,p_{rox}\\right)=1:\\left(\\left\\{R_{esultado}\\left(x_{21},x_{22},x_{23},x_{24},x_{25},x_{26},x_{27},x_{28},x_{29}\\right)=0:\\left\\{x_{26}=0:\\left(x_{26}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\},a_{tualizaProx}\\left(6\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131816",
+        "folderId": "131076",
         "color": "#2d70b3",
-        "latex": "c_{lica9}\\left(i_{ndice}\\right)=\\left\\{R_{esultado}\\left(C_{ampo9}\\right)=0:\\left\\{C_{ampo9}\\left[i_{ndice}\\right]=0:\\left(e_{screveCampo9}\\left(i_{ndice},v_{ez}\\right),t_{roca}\\right)\\right\\}\\right\\}"
+        "latex": "c_{licaX27}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(2,p_{rox}\\right)=1:\\left(\\left\\{R_{esultado}\\left(x_{21},x_{22},x_{23},x_{24},x_{25},x_{26},x_{27},x_{28},x_{29}\\right)=0:\\left\\{x_{27}=0:\\left(x_{27}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\},a_{tualizaProx}\\left(7\\right)\\right)\\right\\}\\right\\}"
       },
       {
         "type": "expression",
-        "id": "130857",
-        "folderId": "130817",
+        "id": "131817",
+        "folderId": "131076",
         "color": "#388c46",
-        "latex": "c_{lica}\\left(j_{ogo},i_{ndice}\\right)=\\left\\{j_{ogo}=1:c_{lica1}\\left(i_{ndice}\\right),j_{ogo}=2:c_{lica2}\\left(i_{ndice}\\right),j_{ogo}=3:c_{lica3}\\left(i_{ndice}\\right),j_{ogo}=4:c_{lica4}\\left(i_{ndice}\\right),j_{ogo}=5:c_{lica5}\\left(i_{ndice}\\right),j_{ogo}=6:c_{lica6}\\left(i_{ndice}\\right),j_{ogo}=7:c_{lica7}\\left(i_{ndice}\\right),j_{ogo}=8:c_{lica8}\\left(i_{ndice}\\right),j_{ogo}=9:c_{lica9}\\left(i_{ndice}\\right)\\right\\}"
+        "latex": "c_{licaX28}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(2,p_{rox}\\right)=1:\\left(\\left\\{R_{esultado}\\left(x_{21},x_{22},x_{23},x_{24},x_{25},x_{26},x_{27},x_{28},x_{29}\\right)=0:\\left\\{x_{28}=0:\\left(x_{28}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\},a_{tualizaProx}\\left(8\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131818",
+        "folderId": "131076",
+        "color": "#6042a6",
+        "latex": "c_{licaX29}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(2,p_{rox}\\right)=1:\\left(\\left\\{R_{esultado}\\left(x_{21},x_{22},x_{23},x_{24},x_{25},x_{26},x_{27},x_{28},x_{29}\\right)=0:\\left\\{x_{29}=0:\\left(x_{29}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\},a_{tualizaProx}\\left(9\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131819",
+        "folderId": "131076",
+        "color": "#000000"
+      },
+      {
+        "type": "expression",
+        "id": "131821",
+        "folderId": "131076",
+        "color": "#2d70b3",
+        "latex": "c_{licaX31}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(3,p_{rox}\\right)=1:\\left(\\left\\{R_{esultado}\\left(x_{31},x_{32},x_{33},x_{34},x_{35},x_{36},x_{37},x_{38},x_{39}\\right)=0:\\left\\{x_{31}=0:\\left(x_{31}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\},a_{tualizaProx}\\left(1\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131822",
+        "folderId": "131076",
+        "color": "#388c46",
+        "latex": "c_{licaX32}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(3,p_{rox}\\right)=1:\\left(\\left\\{R_{esultado}\\left(x_{31},x_{32},x_{33},x_{34},x_{35},x_{36},x_{37},x_{38},x_{39}\\right)=0:\\left\\{x_{32}=0:\\left(x_{32}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\},a_{tualizaProx}\\left(2\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131823",
+        "folderId": "131076",
+        "color": "#6042a6",
+        "latex": "c_{licaX33}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(3,p_{rox}\\right)=1:\\left(\\left\\{R_{esultado}\\left(x_{31},x_{32},x_{33},x_{34},x_{35},x_{36},x_{37},x_{38},x_{39}\\right)=0:\\left\\{x_{33}=0:\\left(x_{33}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\},a_{tualizaProx}\\left(3\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131824",
+        "folderId": "131076",
+        "color": "#000000",
+        "latex": "c_{licaX34}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(3,p_{rox}\\right)=1:\\left(\\left\\{R_{esultado}\\left(x_{31},x_{32},x_{33},x_{34},x_{35},x_{36},x_{37},x_{38},x_{39}\\right)=0:\\left\\{x_{34}=0:\\left(x_{34}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\},a_{tualizaProx}\\left(4\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131825",
+        "folderId": "131076",
+        "color": "#c74440",
+        "latex": "c_{licaX35}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(3,p_{rox}\\right)=1:\\left(\\left\\{R_{esultado}\\left(x_{31},x_{32},x_{33},x_{34},x_{35},x_{36},x_{37},x_{38},x_{39}\\right)=0:\\left\\{x_{35}=0:\\left(x_{35}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\},a_{tualizaProx}\\left(5\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131826",
+        "folderId": "131076",
+        "color": "#2d70b3",
+        "latex": "c_{licaX36}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(3,p_{rox}\\right)=1:\\left(\\left\\{R_{esultado}\\left(x_{31},x_{32},x_{33},x_{34},x_{35},x_{36},x_{37},x_{38},x_{39}\\right)=0:\\left\\{x_{36}=0:\\left(x_{36}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\},a_{tualizaProx}\\left(6\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131827",
+        "folderId": "131076",
+        "color": "#388c46",
+        "latex": "c_{licaX37}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(3,p_{rox}\\right)=1:\\left(\\left\\{R_{esultado}\\left(x_{31},x_{32},x_{33},x_{34},x_{35},x_{36},x_{37},x_{38},x_{39}\\right)=0:\\left\\{x_{37}=0:\\left(x_{37}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\},a_{tualizaProx}\\left(7\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131828",
+        "folderId": "131076",
+        "color": "#6042a6",
+        "latex": "c_{licaX38}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(3,p_{rox}\\right)=1:\\left(\\left\\{R_{esultado}\\left(x_{31},x_{32},x_{33},x_{34},x_{35},x_{36},x_{37},x_{38},x_{39}\\right)=0:\\left\\{x_{38}=0:\\left(x_{38}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\},a_{tualizaProx}\\left(8\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131829",
+        "folderId": "131076",
+        "color": "#000000",
+        "latex": "c_{licaX39}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(3,p_{rox}\\right)=1:\\left(\\left\\{R_{esultado}\\left(x_{31},x_{32},x_{33},x_{34},x_{35},x_{36},x_{37},x_{38},x_{39}\\right)=0:\\left\\{x_{39}=0:\\left(x_{39}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\},a_{tualizaProx}\\left(9\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131820",
+        "folderId": "131076",
+        "color": "#c74440"
+      },
+      {
+        "type": "expression",
+        "id": "131832",
+        "folderId": "131076",
+        "color": "#388c46",
+        "latex": "c_{licaX41}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(4,p_{rox}\\right)=1:\\left(\\left\\{R_{esultado}\\left(x_{41},x_{42},x_{43},x_{44},x_{45},x_{46},x_{47},x_{48},x_{49}\\right)=0:\\left\\{x_{41}=0:\\left(x_{41}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\},a_{tualizaProx}\\left(1\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131833",
+        "folderId": "131076",
+        "color": "#6042a6",
+        "latex": "c_{licaX42}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(4,p_{rox}\\right)=1:\\left(\\left\\{R_{esultado}\\left(x_{41},x_{42},x_{43},x_{44},x_{45},x_{46},x_{47},x_{48},x_{49}\\right)=0:\\left\\{x_{42}=0:\\left(x_{42}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\},a_{tualizaProx}\\left(2\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131834",
+        "folderId": "131076",
+        "color": "#000000",
+        "latex": "c_{licaX43}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(4,p_{rox}\\right)=1:\\left(\\left\\{R_{esultado}\\left(x_{41},x_{42},x_{43},x_{44},x_{45},x_{46},x_{47},x_{48},x_{49}\\right)=0:\\left\\{x_{43}=0:\\left(x_{43}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\},a_{tualizaProx}\\left(3\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131835",
+        "folderId": "131076",
+        "color": "#c74440",
+        "latex": "c_{licaX44}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(4,p_{rox}\\right)=1:\\left(\\left\\{R_{esultado}\\left(x_{41},x_{42},x_{43},x_{44},x_{45},x_{46},x_{47},x_{48},x_{49}\\right)=0:\\left\\{x_{44}=0:\\left(x_{44}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\},a_{tualizaProx}\\left(4\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131836",
+        "folderId": "131076",
+        "color": "#2d70b3",
+        "latex": "c_{licaX45}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(4,p_{rox}\\right)=1:\\left(\\left\\{R_{esultado}\\left(x_{41},x_{42},x_{43},x_{44},x_{45},x_{46},x_{47},x_{48},x_{49}\\right)=0:\\left\\{x_{45}=0:\\left(x_{45}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\},a_{tualizaProx}\\left(5\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131837",
+        "folderId": "131076",
+        "color": "#388c46",
+        "latex": "c_{licaX46}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(4,p_{rox}\\right)=1:\\left(\\left\\{R_{esultado}\\left(x_{41},x_{42},x_{43},x_{44},x_{45},x_{46},x_{47},x_{48},x_{49}\\right)=0:\\left\\{x_{46}=0:\\left(x_{46}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\},a_{tualizaProx}\\left(6\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131838",
+        "folderId": "131076",
+        "color": "#6042a6",
+        "latex": "c_{licaX47}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(4,p_{rox}\\right)=1:\\left(\\left\\{R_{esultado}\\left(x_{41},x_{42},x_{43},x_{44},x_{45},x_{46},x_{47},x_{48},x_{49}\\right)=0:\\left\\{x_{47}=0:\\left(x_{47}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\},a_{tualizaProx}\\left(7\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131839",
+        "folderId": "131076",
+        "color": "#000000",
+        "latex": "c_{licaX48}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(4,p_{rox}\\right)=1:\\left(\\left\\{R_{esultado}\\left(x_{41},x_{42},x_{43},x_{44},x_{45},x_{46},x_{47},x_{48},x_{49}\\right)=0:\\left\\{x_{48}=0:\\left(x_{48}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\},a_{tualizaProx}\\left(8\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131840",
+        "folderId": "131076",
+        "color": "#c74440",
+        "latex": "c_{licaX49}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(4,p_{rox}\\right)=1:\\left(\\left\\{R_{esultado}\\left(x_{41},x_{42},x_{43},x_{44},x_{45},x_{46},x_{47},x_{48},x_{49}\\right)=0:\\left\\{x_{49}=0:\\left(x_{49}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\},a_{tualizaProx}\\left(9\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131830",
+        "folderId": "131076",
+        "color": "#c74440"
+      },
+      {
+        "type": "expression",
+        "id": "131842",
+        "folderId": "131076",
+        "color": "#388c46",
+        "latex": "c_{licaX51}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(5,p_{rox}\\right)=1:\\left(\\left\\{R_{esultado}\\left(x_{51},x_{52},x_{53},x_{54},x_{55},x_{56},x_{57},x_{58},x_{59}\\right)=0:\\left\\{x_{51}=0:\\left(x_{51}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\},a_{tualizaProx}\\left(1\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131843",
+        "folderId": "131076",
+        "color": "#6042a6",
+        "latex": "c_{licaX52}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(5,p_{rox}\\right)=1:\\left(\\left\\{R_{esultado}\\left(x_{51},x_{52},x_{53},x_{54},x_{55},x_{56},x_{57},x_{58},x_{59}\\right)=0:\\left\\{x_{52}=0:\\left(x_{52}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\},a_{tualizaProx}\\left(2\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131844",
+        "folderId": "131076",
+        "color": "#000000",
+        "latex": "c_{licaX53}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(5,p_{rox}\\right)=1:\\left(\\left\\{R_{esultado}\\left(x_{51},x_{52},x_{53},x_{54},x_{55},x_{56},x_{57},x_{58},x_{59}\\right)=0:\\left\\{x_{53}=0:\\left(x_{53}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\},a_{tualizaProx}\\left(3\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131845",
+        "folderId": "131076",
+        "color": "#c74440",
+        "latex": "c_{licaX54}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(5,p_{rox}\\right)=1:\\left(\\left\\{R_{esultado}\\left(x_{51},x_{52},x_{53},x_{54},x_{55},x_{56},x_{57},x_{58},x_{59}\\right)=0:\\left\\{x_{54}=0:\\left(x_{54}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\},a_{tualizaProx}\\left(4\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131846",
+        "folderId": "131076",
+        "color": "#2d70b3",
+        "latex": "c_{licaX55}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(5,p_{rox}\\right)=1:\\left(\\left\\{R_{esultado}\\left(x_{51},x_{52},x_{53},x_{54},x_{55},x_{56},x_{57},x_{58},x_{59}\\right)=0:\\left\\{x_{55}=0:\\left(x_{55}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\},a_{tualizaProx}\\left(5\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131847",
+        "folderId": "131076",
+        "color": "#388c46",
+        "latex": "c_{licaX56}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(5,p_{rox}\\right)=1:\\left(\\left\\{R_{esultado}\\left(x_{51},x_{52},x_{53},x_{54},x_{55},x_{56},x_{57},x_{58},x_{59}\\right)=0:\\left\\{x_{56}=0:\\left(x_{56}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\},a_{tualizaProx}\\left(6\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131848",
+        "folderId": "131076",
+        "color": "#6042a6",
+        "latex": "c_{licaX57}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(5,p_{rox}\\right)=1:\\left(\\left\\{R_{esultado}\\left(x_{51},x_{52},x_{53},x_{54},x_{55},x_{56},x_{57},x_{58},x_{59}\\right)=0:\\left\\{x_{57}=0:\\left(x_{57}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\},a_{tualizaProx}\\left(7\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131849",
+        "folderId": "131076",
+        "color": "#000000",
+        "latex": "c_{licaX58}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(5,p_{rox}\\right)=1:\\left(\\left\\{R_{esultado}\\left(x_{51},x_{52},x_{53},x_{54},x_{55},x_{56},x_{57},x_{58},x_{59}\\right)=0:\\left\\{x_{58}=0:\\left(x_{58}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\},a_{tualizaProx}\\left(8\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131850",
+        "folderId": "131076",
+        "color": "#c74440",
+        "latex": "c_{licaX59}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(5,p_{rox}\\right)=1:\\left(\\left\\{R_{esultado}\\left(x_{51},x_{52},x_{53},x_{54},x_{55},x_{56},x_{57},x_{58},x_{59}\\right)=0:\\left\\{x_{59}=0:\\left(x_{59}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\},a_{tualizaProx}\\left(9\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131851",
+        "folderId": "131076",
+        "color": "#2d70b3"
+      },
+      {
+        "type": "expression",
+        "id": "131852",
+        "folderId": "131076",
+        "color": "#388c46",
+        "latex": "c_{licaX61}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(6,p_{rox}\\right)=1:\\left(\\left\\{R_{esultado}\\left(x_{61},x_{62},x_{63},x_{64},x_{65},x_{66},x_{67},x_{68},x_{69}\\right)=0:\\left\\{x_{61}=0:\\left(x_{61}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\},a_{tualizaProx}\\left(1\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131853",
+        "folderId": "131076",
+        "color": "#6042a6",
+        "latex": "c_{licaX62}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(6,p_{rox}\\right)=1:\\left(\\left\\{R_{esultado}\\left(x_{61},x_{62},x_{63},x_{64},x_{65},x_{66},x_{67},x_{68},x_{69}\\right)=0:\\left\\{x_{62}=0:\\left(x_{62}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\},a_{tualizaProx}\\left(2\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131854",
+        "folderId": "131076",
+        "color": "#000000",
+        "latex": "c_{licaX63}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(6,p_{rox}\\right)=1:\\left(\\left\\{R_{esultado}\\left(x_{61},x_{62},x_{63},x_{64},x_{65},x_{66},x_{67},x_{68},x_{69}\\right)=0:\\left\\{x_{63}=0:\\left(x_{63}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\},a_{tualizaProx}\\left(3\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131855",
+        "folderId": "131076",
+        "color": "#c74440",
+        "latex": "c_{licaX64}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(6,p_{rox}\\right)=1:\\left(\\left\\{R_{esultado}\\left(x_{61},x_{62},x_{63},x_{64},x_{65},x_{66},x_{67},x_{68},x_{69}\\right)=0:\\left\\{x_{64}=0:\\left(x_{64}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\},a_{tualizaProx}\\left(4\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131856",
+        "folderId": "131076",
+        "color": "#2d70b3",
+        "latex": "c_{licaX65}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(6,p_{rox}\\right)=1:\\left(\\left\\{R_{esultado}\\left(x_{61},x_{62},x_{63},x_{64},x_{65},x_{66},x_{67},x_{68},x_{69}\\right)=0:\\left\\{x_{65}=0:\\left(x_{65}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\},a_{tualizaProx}\\left(5\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131857",
+        "folderId": "131076",
+        "color": "#388c46",
+        "latex": "c_{licaX66}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(6,p_{rox}\\right)=1:\\left(\\left\\{R_{esultado}\\left(x_{61},x_{62},x_{63},x_{64},x_{65},x_{66},x_{67},x_{68},x_{69}\\right)=0:\\left\\{x_{66}=0:\\left(x_{66}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\},a_{tualizaProx}\\left(6\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131858",
+        "folderId": "131076",
+        "color": "#6042a6",
+        "latex": "c_{licaX67}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(6,p_{rox}\\right)=1:\\left(\\left\\{R_{esultado}\\left(x_{61},x_{62},x_{63},x_{64},x_{65},x_{66},x_{67},x_{68},x_{69}\\right)=0:\\left\\{x_{67}=0:\\left(x_{67}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\},a_{tualizaProx}\\left(7\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131859",
+        "folderId": "131076",
+        "color": "#000000",
+        "latex": "c_{licaX68}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(6,p_{rox}\\right)=1:\\left(\\left\\{R_{esultado}\\left(x_{61},x_{62},x_{63},x_{64},x_{65},x_{66},x_{67},x_{68},x_{69}\\right)=0:\\left\\{x_{68}=0:\\left(x_{68}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\},a_{tualizaProx}\\left(8\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131860",
+        "folderId": "131076",
+        "color": "#c74440",
+        "latex": "c_{licaX69}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(6,p_{rox}\\right)=1:\\left(\\left\\{R_{esultado}\\left(x_{61},x_{62},x_{63},x_{64},x_{65},x_{66},x_{67},x_{68},x_{69}\\right)=0:\\left\\{x_{69}=0:\\left(x_{69}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\},a_{tualizaProx}\\left(9\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131841",
+        "folderId": "131076",
+        "color": "#2d70b3"
+      },
+      {
+        "type": "expression",
+        "id": "131871",
+        "folderId": "131076",
+        "color": "#2d70b3",
+        "latex": "c_{licaX71}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(7,p_{rox}\\right)=1:\\left(\\left\\{R_{esultado}\\left(x_{71},x_{72},x_{73},x_{74},x_{75},x_{76},x_{77},x_{78},x_{79}\\right)=0:\\left\\{x_{71}=0:\\left(x_{71}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\},a_{tualizaProx}\\left(1\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131872",
+        "folderId": "131076",
+        "color": "#388c46",
+        "latex": "c_{licaX72}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(7,p_{rox}\\right)=1:\\left(\\left\\{R_{esultado}\\left(x_{71},x_{72},x_{73},x_{74},x_{75},x_{76},x_{77},x_{78},x_{79}\\right)=0:\\left\\{x_{72}=0:\\left(x_{72}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\},a_{tualizaProx}\\left(2\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131873",
+        "folderId": "131076",
+        "color": "#6042a6",
+        "latex": "c_{licaX73}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(7,p_{rox}\\right)=1:\\left(\\left\\{R_{esultado}\\left(x_{71},x_{72},x_{73},x_{74},x_{75},x_{76},x_{77},x_{78},x_{79}\\right)=0:\\left\\{x_{73}=0:\\left(x_{73}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\},a_{tualizaProx}\\left(3\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131874",
+        "folderId": "131076",
+        "color": "#000000",
+        "latex": "c_{licaX74}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(7,p_{rox}\\right)=1:\\left(\\left\\{R_{esultado}\\left(x_{71},x_{72},x_{73},x_{74},x_{75},x_{76},x_{77},x_{78},x_{79}\\right)=0:\\left\\{x_{74}=0:\\left(x_{74}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\},a_{tualizaProx}\\left(4\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131875",
+        "folderId": "131076",
+        "color": "#c74440",
+        "latex": "c_{licaX75}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(7,p_{rox}\\right)=1:\\left(\\left\\{R_{esultado}\\left(x_{71},x_{72},x_{73},x_{74},x_{75},x_{76},x_{77},x_{78},x_{79}\\right)=0:\\left\\{x_{75}=0:\\left(x_{75}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\},a_{tualizaProx}\\left(5\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131876",
+        "folderId": "131076",
+        "color": "#2d70b3",
+        "latex": "c_{licaX76}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(7,p_{rox}\\right)=1:\\left(\\left\\{R_{esultado}\\left(x_{71},x_{72},x_{73},x_{74},x_{75},x_{76},x_{77},x_{78},x_{79}\\right)=0:\\left\\{x_{76}=0:\\left(x_{76}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\},a_{tualizaProx}\\left(6\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131877",
+        "folderId": "131076",
+        "color": "#388c46",
+        "latex": "c_{licaX77}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(7,p_{rox}\\right)=1:\\left(\\left\\{R_{esultado}\\left(x_{71},x_{72},x_{73},x_{74},x_{75},x_{76},x_{77},x_{78},x_{79}\\right)=0:\\left\\{x_{77}=0:\\left(x_{77}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\},a_{tualizaProx}\\left(7\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131878",
+        "folderId": "131076",
+        "color": "#6042a6",
+        "latex": "c_{licaX78}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(7,p_{rox}\\right)=1:\\left(\\left\\{R_{esultado}\\left(x_{71},x_{72},x_{73},x_{74},x_{75},x_{76},x_{77},x_{78},x_{79}\\right)=0:\\left\\{x_{78}=0:\\left(x_{78}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\},a_{tualizaProx}\\left(8\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131879",
+        "folderId": "131076",
+        "color": "#000000",
+        "latex": "c_{licaX79}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(7,p_{rox}\\right)=1:\\left(\\left\\{R_{esultado}\\left(x_{71},x_{72},x_{73},x_{74},x_{75},x_{76},x_{77},x_{78},x_{79}\\right)=0:\\left\\{x_{79}=0:\\left(x_{79}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\},a_{tualizaProx}\\left(9\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131861",
+        "folderId": "131076",
+        "color": "#2d70b3"
+      },
+      {
+        "type": "expression",
+        "id": "131881",
+        "folderId": "131076",
+        "color": "#2d70b3",
+        "latex": "c_{licaX81}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(8,p_{rox}\\right)=1:\\left(\\left\\{R_{esultado}\\left(x_{81},x_{82},x_{83},x_{84},x_{85},x_{86},x_{87},x_{88},x_{89}\\right)=0:\\left\\{x_{81}=0:\\left(x_{81}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\},a_{tualizaProx}\\left(1\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131882",
+        "folderId": "131076",
+        "color": "#388c46",
+        "latex": "c_{licaX82}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(8,p_{rox}\\right)=1:\\left(\\left\\{R_{esultado}\\left(x_{81},x_{82},x_{83},x_{84},x_{85},x_{86},x_{87},x_{88},x_{89}\\right)=0:\\left\\{x_{82}=0:\\left(x_{82}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\},a_{tualizaProx}\\left(2\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131883",
+        "folderId": "131076",
+        "color": "#6042a6",
+        "latex": "c_{licaX83}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(8,p_{rox}\\right)=1:\\left(\\left\\{R_{esultado}\\left(x_{81},x_{82},x_{83},x_{84},x_{85},x_{86},x_{87},x_{88},x_{89}\\right)=0:\\left\\{x_{83}=0:\\left(x_{83}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\},a_{tualizaProx}\\left(3\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131884",
+        "folderId": "131076",
+        "color": "#000000",
+        "latex": "c_{licaX84}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(8,p_{rox}\\right)=1:\\left(\\left\\{R_{esultado}\\left(x_{81},x_{82},x_{83},x_{84},x_{85},x_{86},x_{87},x_{88},x_{89}\\right)=0:\\left\\{x_{84}=0:\\left(x_{84}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\},a_{tualizaProx}\\left(4\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131885",
+        "folderId": "131076",
+        "color": "#c74440",
+        "latex": "c_{licaX85}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(8,p_{rox}\\right)=1:\\left(\\left\\{R_{esultado}\\left(x_{81},x_{82},x_{83},x_{84},x_{85},x_{86},x_{87},x_{88},x_{89}\\right)=0:\\left\\{x_{85}=0:\\left(x_{85}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\},a_{tualizaProx}\\left(5\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131886",
+        "folderId": "131076",
+        "color": "#2d70b3",
+        "latex": "c_{licaX86}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(8,p_{rox}\\right)=1:\\left(\\left\\{R_{esultado}\\left(x_{81},x_{82},x_{83},x_{84},x_{85},x_{86},x_{87},x_{88},x_{89}\\right)=0:\\left\\{x_{86}=0:\\left(x_{86}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\},a_{tualizaProx}\\left(6\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131887",
+        "folderId": "131076",
+        "color": "#388c46",
+        "latex": "c_{licaX87}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(8,p_{rox}\\right)=1:\\left(\\left\\{R_{esultado}\\left(x_{81},x_{82},x_{83},x_{84},x_{85},x_{86},x_{87},x_{88},x_{89}\\right)=0:\\left\\{x_{87}=0:\\left(x_{87}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\},a_{tualizaProx}\\left(7\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131888",
+        "folderId": "131076",
+        "color": "#6042a6",
+        "latex": "c_{licaX88}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(8,p_{rox}\\right)=1:\\left(\\left\\{R_{esultado}\\left(x_{81},x_{82},x_{83},x_{84},x_{85},x_{86},x_{87},x_{88},x_{89}\\right)=0:\\left\\{x_{88}=0:\\left(x_{88}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\},a_{tualizaProx}\\left(8\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131889",
+        "folderId": "131076",
+        "color": "#000000",
+        "latex": "c_{licaX89}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(8,p_{rox}\\right)=1:\\left(\\left\\{R_{esultado}\\left(x_{81},x_{82},x_{83},x_{84},x_{85},x_{86},x_{87},x_{88},x_{89}\\right)=0:\\left\\{x_{89}=0:\\left(x_{89}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\},a_{tualizaProx}\\left(9\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131880",
+        "folderId": "131076",
+        "color": "#c74440"
+      },
+      {
+        "type": "expression",
+        "id": "131891",
+        "folderId": "131076",
+        "color": "#2d70b3",
+        "latex": "c_{licaX91}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(9,p_{rox}\\right)=1:\\left(\\left\\{R_{esultado}\\left(x_{91},x_{92},x_{93},x_{94},x_{95},x_{96},x_{97},x_{98},x_{99}\\right)=0:\\left\\{x_{91}=0:\\left(x_{91}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\},a_{tualizaProx}\\left(1\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131892",
+        "folderId": "131076",
+        "color": "#388c46",
+        "latex": "c_{licaX92}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(9,p_{rox}\\right)=1:\\left(\\left\\{R_{esultado}\\left(x_{91},x_{92},x_{93},x_{94},x_{95},x_{96},x_{97},x_{98},x_{99}\\right)=0:\\left\\{x_{92}=0:\\left(x_{92}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\},a_{tualizaProx}\\left(2\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131893",
+        "folderId": "131076",
+        "color": "#6042a6",
+        "latex": "c_{licaX93}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(9,p_{rox}\\right)=1:\\left(\\left\\{R_{esultado}\\left(x_{91},x_{92},x_{93},x_{94},x_{95},x_{96},x_{97},x_{98},x_{99}\\right)=0:\\left\\{x_{93}=0:\\left(x_{93}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\},a_{tualizaProx}\\left(3\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131894",
+        "folderId": "131076",
+        "color": "#000000",
+        "latex": "c_{licaX94}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(9,p_{rox}\\right)=1:\\left(\\left\\{R_{esultado}\\left(x_{91},x_{92},x_{93},x_{94},x_{95},x_{96},x_{97},x_{98},x_{99}\\right)=0:\\left\\{x_{94}=0:\\left(x_{94}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\},a_{tualizaProx}\\left(4\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131895",
+        "folderId": "131076",
+        "color": "#c74440",
+        "latex": "c_{licaX95}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(9,p_{rox}\\right)=1:\\left(\\left\\{R_{esultado}\\left(x_{91},x_{92},x_{93},x_{94},x_{95},x_{96},x_{97},x_{98},x_{99}\\right)=0:\\left\\{x_{95}=0:\\left(x_{95}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\},a_{tualizaProx}\\left(5\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131896",
+        "folderId": "131076",
+        "color": "#2d70b3",
+        "latex": "c_{licaX96}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(9,p_{rox}\\right)=1:\\left(\\left\\{R_{esultado}\\left(x_{91},x_{92},x_{93},x_{94},x_{95},x_{96},x_{97},x_{98},x_{99}\\right)=0:\\left\\{x_{96}=0:\\left(x_{96}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\},a_{tualizaProx}\\left(6\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131897",
+        "folderId": "131076",
+        "color": "#388c46",
+        "latex": "c_{licaX97}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(9,p_{rox}\\right)=1:\\left(\\left\\{R_{esultado}\\left(x_{91},x_{92},x_{93},x_{94},x_{95},x_{96},x_{97},x_{98},x_{99}\\right)=0:\\left\\{x_{97}=0:\\left(x_{97}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\},a_{tualizaProx}\\left(7\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131898",
+        "folderId": "131076",
+        "color": "#6042a6",
+        "latex": "c_{licaX98}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(9,p_{rox}\\right)=1:\\left(\\left\\{R_{esultado}\\left(x_{91},x_{92},x_{93},x_{94},x_{95},x_{96},x_{97},x_{98},x_{99}\\right)=0:\\left\\{x_{98}=0:\\left(x_{98}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\},a_{tualizaProx}\\left(8\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131899",
+        "folderId": "131076",
+        "color": "#000000",
+        "latex": "c_{licaX99}=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(9,p_{rox}\\right)=1:\\left(\\left\\{R_{esultado}\\left(x_{91},x_{92},x_{93},x_{94},x_{95},x_{96},x_{97},x_{98},x_{99}\\right)=0:\\left\\{x_{99}=0:\\left(x_{99}\\to v_{ez},t_{roca}\\right)\\right\\}\\right\\},a_{tualizaProx}\\left(9\\right)\\right)\\right\\}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131890",
+        "folderId": "131076",
+        "color": "#c74440"
+      },
+      {
+        "type": "expression",
+        "id": "131078",
+        "folderId": "131076",
+        "color": "#2d70b3",
+        "latex": "x_{11}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131079",
+        "folderId": "131076",
+        "color": "#388c46",
+        "latex": "x_{12}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131080",
+        "folderId": "131076",
+        "color": "#6042a6",
+        "latex": "x_{13}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131081",
+        "folderId": "131076",
+        "color": "#000000",
+        "latex": "x_{14}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131082",
+        "folderId": "131076",
+        "color": "#c74440",
+        "latex": "x_{15}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131083",
+        "folderId": "131076",
+        "color": "#2d70b3",
+        "latex": "x_{16}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131084",
+        "folderId": "131076",
+        "color": "#388c46",
+        "latex": "x_{17}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131085",
+        "folderId": "131076",
+        "color": "#6042a6",
+        "latex": "x_{18}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131086",
+        "folderId": "131076",
+        "color": "#000000",
+        "latex": "x_{19}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131087",
+        "folderId": "131076",
+        "color": "#c74440",
+        "latex": "x_{21}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131088",
+        "folderId": "131076",
+        "color": "#2d70b3",
+        "latex": "x_{22}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131089",
+        "folderId": "131076",
+        "color": "#388c46",
+        "latex": "x_{23}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131090",
+        "folderId": "131076",
+        "color": "#6042a6",
+        "latex": "x_{24}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131091",
+        "folderId": "131076",
+        "color": "#000000",
+        "latex": "x_{25}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131092",
+        "folderId": "131076",
+        "color": "#c74440",
+        "latex": "x_{26}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131093",
+        "folderId": "131076",
+        "color": "#2d70b3",
+        "latex": "x_{27}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131094",
+        "folderId": "131076",
+        "color": "#388c46",
+        "latex": "x_{28}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131095",
+        "folderId": "131076",
+        "color": "#6042a6",
+        "latex": "x_{29}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131096",
+        "folderId": "131076",
+        "color": "#000000",
+        "latex": "x_{31}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131097",
+        "folderId": "131076",
+        "color": "#c74440",
+        "latex": "x_{32}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131098",
+        "folderId": "131076",
+        "color": "#2d70b3",
+        "latex": "x_{33}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131099",
+        "folderId": "131076",
+        "color": "#388c46",
+        "latex": "x_{34}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131100",
+        "folderId": "131076",
+        "color": "#6042a6",
+        "latex": "x_{35}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131101",
+        "folderId": "131076",
+        "color": "#000000",
+        "latex": "x_{36}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131102",
+        "folderId": "131076",
+        "color": "#c74440",
+        "latex": "x_{37}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131103",
+        "folderId": "131076",
+        "color": "#2d70b3",
+        "latex": "x_{38}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131104",
+        "folderId": "131076",
+        "color": "#388c46",
+        "latex": "x_{39}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131105",
+        "folderId": "131076",
+        "color": "#6042a6",
+        "latex": "x_{41}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131106",
+        "folderId": "131076",
+        "color": "#000000",
+        "latex": "x_{42}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131107",
+        "folderId": "131076",
+        "color": "#c74440",
+        "latex": "x_{43}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131108",
+        "folderId": "131076",
+        "color": "#2d70b3",
+        "latex": "x_{44}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131109",
+        "folderId": "131076",
+        "color": "#388c46",
+        "latex": "x_{45}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131110",
+        "folderId": "131076",
+        "color": "#6042a6",
+        "latex": "x_{46}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131111",
+        "folderId": "131076",
+        "color": "#000000",
+        "latex": "x_{47}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131112",
+        "folderId": "131076",
+        "color": "#c74440",
+        "latex": "x_{48}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131113",
+        "folderId": "131076",
+        "color": "#2d70b3",
+        "latex": "x_{49}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131114",
+        "folderId": "131076",
+        "color": "#388c46",
+        "latex": "x_{51}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131115",
+        "folderId": "131076",
+        "color": "#6042a6",
+        "latex": "x_{52}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131116",
+        "folderId": "131076",
+        "color": "#000000",
+        "latex": "x_{53}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131117",
+        "folderId": "131076",
+        "color": "#c74440",
+        "latex": "x_{54}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131118",
+        "folderId": "131076",
+        "color": "#2d70b3",
+        "latex": "x_{55}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131119",
+        "folderId": "131076",
+        "color": "#388c46",
+        "latex": "x_{56}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131120",
+        "folderId": "131076",
+        "color": "#6042a6",
+        "latex": "x_{57}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131121",
+        "folderId": "131076",
+        "color": "#000000",
+        "latex": "x_{58}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131122",
+        "folderId": "131076",
+        "color": "#c74440",
+        "latex": "x_{59}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131123",
+        "folderId": "131076",
+        "color": "#2d70b3",
+        "latex": "x_{61}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131124",
+        "folderId": "131076",
+        "color": "#388c46",
+        "latex": "x_{62}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131125",
+        "folderId": "131076",
+        "color": "#6042a6",
+        "latex": "x_{63}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131126",
+        "folderId": "131076",
+        "color": "#000000",
+        "latex": "x_{64}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131127",
+        "folderId": "131076",
+        "color": "#c74440",
+        "latex": "x_{65}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131128",
+        "folderId": "131076",
+        "color": "#2d70b3",
+        "latex": "x_{66}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131129",
+        "folderId": "131076",
+        "color": "#388c46",
+        "latex": "x_{67}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131130",
+        "folderId": "131076",
+        "color": "#6042a6",
+        "latex": "x_{68}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131131",
+        "folderId": "131076",
+        "color": "#000000",
+        "latex": "x_{69}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131132",
+        "folderId": "131076",
+        "color": "#c74440",
+        "latex": "x_{71}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131133",
+        "folderId": "131076",
+        "color": "#2d70b3",
+        "latex": "x_{72}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131134",
+        "folderId": "131076",
+        "color": "#388c46",
+        "latex": "x_{73}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131135",
+        "folderId": "131076",
+        "color": "#6042a6",
+        "latex": "x_{74}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131136",
+        "folderId": "131076",
+        "color": "#000000",
+        "latex": "x_{75}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131137",
+        "folderId": "131076",
+        "color": "#c74440",
+        "latex": "x_{76}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131138",
+        "folderId": "131076",
+        "color": "#2d70b3",
+        "latex": "x_{77}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131139",
+        "folderId": "131076",
+        "color": "#388c46",
+        "latex": "x_{78}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131140",
+        "folderId": "131076",
+        "color": "#6042a6",
+        "latex": "x_{79}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131141",
+        "folderId": "131076",
+        "color": "#000000",
+        "latex": "x_{81}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131142",
+        "folderId": "131076",
+        "color": "#c74440",
+        "latex": "x_{82}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131143",
+        "folderId": "131076",
+        "color": "#2d70b3",
+        "latex": "x_{83}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131144",
+        "folderId": "131076",
+        "color": "#388c46",
+        "latex": "x_{84}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131145",
+        "folderId": "131076",
+        "color": "#6042a6",
+        "latex": "x_{85}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131146",
+        "folderId": "131076",
+        "color": "#000000",
+        "latex": "x_{86}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131147",
+        "folderId": "131076",
+        "color": "#c74440",
+        "latex": "x_{87}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131148",
+        "folderId": "131076",
+        "color": "#2d70b3",
+        "latex": "x_{88}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131149",
+        "folderId": "131076",
+        "color": "#388c46",
+        "latex": "x_{89}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131150",
+        "folderId": "131076",
+        "color": "#6042a6",
+        "latex": "x_{91}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131151",
+        "folderId": "131076",
+        "color": "#000000",
+        "latex": "x_{92}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131152",
+        "folderId": "131076",
+        "color": "#c74440",
+        "latex": "x_{93}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131153",
+        "folderId": "131076",
+        "color": "#2d70b3",
+        "latex": "x_{94}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131154",
+        "folderId": "131076",
+        "color": "#388c46",
+        "latex": "x_{95}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131155",
+        "folderId": "131076",
+        "color": "#6042a6",
+        "latex": "x_{96}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131156",
+        "folderId": "131076",
+        "color": "#000000",
+        "latex": "x_{97}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131157",
+        "folderId": "131076",
+        "color": "#c74440",
+        "latex": "x_{98}=0"
+      },
+      {
+        "type": "expression",
+        "id": "131158",
+        "folderId": "131076",
+        "color": "#2d70b3",
+        "latex": "x_{99}=0"
       },
       {
         "type": "folder",
         "id": "130639",
-        "title": "Jogo simples",
+        "title": "Campo 1 ok",
         "collapsed": true
-      },
-      {
-        "type": "text",
-        "id": "130645",
-        "folderId": "130639",
-        "text": "Usa só o Campo1"
       },
       {
         "type": "expression",
@@ -638,14 +1715,14 @@
         "id": "130742",
         "folderId": "130639",
         "color": "#6042a6",
-        "latex": "R_{esultado}\\left(C_{ampo1}\\right)"
+        "latex": "R_{esultado1}=R_{esultado}\\left(x_{11},x_{12},x_{13},x_{14},x_{15},x_{16},x_{17},x_{18},x_{19}\\right)"
       },
       {
         "type": "expression",
-        "id": "130903",
+        "id": "130815",
         "folderId": "130639",
-        "color": "#c74440",
-        "latex": "\\frac{b_{otao}\\left(\\left[r,e_{0},s,e_{0},t_{0}\\right],t\\right)}{2}+\\left(2,-01\\right)+\\left(0,\\left\\{i_{f}\\left(S_{imples}\\right)=1:0,1000\\right\\}\\right)\\left\\{R_{esultado}\\left(C_{ampo1}\\right)=3\\right\\}",
+        "color": "#000000",
+        "latex": "\\frac{b_{otao}\\left(\\left[r,e_{0},s,e_{0},t_{0}\\right],t\\right)}{2}+\\left(2,-01\\right)+\\left(0,\\left\\{i_{f}\\left(I_{nicial}\\right)=0:0,1000\\right\\}\\right)",
         "fill": true,
         "fillOpacity": "0",
         "clickableInfo": {
@@ -655,13 +1732,15 @@
       },
       {
         "type": "expression",
-        "id": "130640",
+        "id": "131926",
         "folderId": "130639",
-        "color": "#000000",
-        "latex": "\\left(d_{esenhaCampo}\\left(C_{ampo1},t\\right)+\\left(2,1\\right)+\\left(0,\\left\\{i_{f}\\left(S_{imples}\\right)=1:0,1000\\right\\}\\right)\\right)",
+        "color": "#c74440",
+        "latex": "\\frac{b_{otao}\\left(\\left[r,e_{0},s,e_{0},t_{0}\\right],t\\right)}{2}+\\left(2,-01\\right)+\\left(0,\\left\\{i_{f}\\left(I_{nicial}\\right)=0:0,1000\\right\\}\\right)\\left\\{R_{esultado1}=0:\\frac{1}{0},1\\right\\}",
+        "fill": true,
+        "fillOpacity": "0",
         "clickableInfo": {
           "enabled": true,
-          "latex": "c_{lica1}\\left(\\operatorname{index}\\right)"
+          "latex": "r_{eset}"
         }
       },
       {
@@ -669,7 +1748,1155 @@
         "id": "130902",
         "folderId": "130639",
         "color": "#000000",
-        "latex": "2d_{esenhaSimbolo}\\left(v_{ez},t\\right)+\\left(5,-02\\right)+\\left(0,\\left\\{i_{f}\\left(S_{imples}\\right)=1:0,1000\\right\\}\\right)"
+        "latex": "2d_{esenhaSimbolo}\\left(v_{ez},t\\right)+\\left(5,-02\\right)+\\left(0,\\left\\{i_{f}\\left(I_{nicial}\\right)=0:0,1000\\right\\}\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "131564",
+        "folderId": "130639",
+        "color": "#000000",
+        "latex": "\\left(c_{ampo}\\left(t\\right)+\\left(2,1\\right)+\\left(0,\\left\\{i_{f}\\left(I_{nicial}\\right)=0:0,1000\\right\\}\\right)\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131594",
+        "folderId": "130639",
+        "color": "#000000",
+        "latex": "\\left(d_{esenhaLinha}\\left(x_{11},x_{12},x_{13},x_{14},x_{15},x_{16},x_{17},x_{18},x_{19},t\\right)+\\left(2,1\\right)+\\left(0,\\left\\{i_{f}\\left(I_{nicial}\\right)=0:0,1000\\right\\}\\right)\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "131566",
+        "folderId": "130639",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{11},t\\right)+\\left(2,1\\right)+\\left(0,\\left\\{i_{f}\\left(I_{nicial}\\right)=0:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX11}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131574",
+        "folderId": "130639",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{12},t\\right)+\\left(3,1\\right)+\\left(0,\\left\\{i_{f}\\left(I_{nicial}\\right)=0:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX12}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131573",
+        "folderId": "130639",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{13},t\\right)+\\left(4,1\\right)+\\left(0,\\left\\{i_{f}\\left(I_{nicial}\\right)=0:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX13}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131572",
+        "folderId": "130639",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{14},t\\right)+\\left(2,2.25\\right)+\\left(0,\\left\\{i_{f}\\left(I_{nicial}\\right)=0:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX14}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131571",
+        "folderId": "130639",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{15},t\\right)+\\left(3,2.25\\right)+\\left(0,\\left\\{i_{f}\\left(I_{nicial}\\right)=0:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX15}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131570",
+        "folderId": "130639",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{16},t\\right)+\\left(4,2.25\\right)+\\left(0,\\left\\{i_{f}\\left(I_{nicial}\\right)=0:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX16}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131569",
+        "folderId": "130639",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{17},t\\right)+\\left(2,3.5\\right)+\\left(0,\\left\\{i_{f}\\left(I_{nicial}\\right)=0:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX17}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131568",
+        "folderId": "130639",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{18},t\\right)+\\left(3,3.5\\right)+\\left(0,\\left\\{i_{f}\\left(I_{nicial}\\right)=0:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX18}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131567",
+        "folderId": "130639",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{19},t\\right)+\\left(4,3.5\\right)+\\left(0,\\left\\{i_{f}\\left(I_{nicial}\\right)=0:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX19}"
+        }
+      },
+      {
+        "type": "folder",
+        "id": "131645",
+        "title": "Campo 2 ok",
+        "collapsed": true
+      },
+      {
+        "type": "expression",
+        "id": "131648",
+        "folderId": "131645",
+        "color": "#6042a6",
+        "latex": "R_{esultado2}=R_{esultado}\\left(x_{21},x_{22},x_{23},x_{24},x_{25},x_{26},x_{27},x_{28},x_{29}\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "131650",
+        "folderId": "131645",
+        "color": "#000000",
+        "latex": "\\left(c_{ampo}\\left(t\\right)+\\left(2,1\\right)+\\left(4,0\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131652",
+        "folderId": "131645",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{21},t\\right)+\\left(2,1\\right)+\\left(4,0\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX21}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131653",
+        "folderId": "131645",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{22},t\\right)+\\left(3,1\\right)+\\left(4,0\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX22}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131654",
+        "folderId": "131645",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{23},t\\right)+\\left(4,1\\right)+\\left(4,0\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX23}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131655",
+        "folderId": "131645",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{24},t\\right)+\\left(2,2.25\\right)+\\left(4,0\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX24}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131656",
+        "folderId": "131645",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{25},t\\right)+\\left(3,2.25\\right)+\\left(4,0\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX25}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131657",
+        "folderId": "131645",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{26},t\\right)+\\left(4,2.25\\right)+\\left(4,0\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX26}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131658",
+        "folderId": "131645",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{27},t\\right)+\\left(2,3.5\\right)+\\left(4,0\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX27}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131659",
+        "folderId": "131645",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{28},t\\right)+\\left(3,3.5\\right)+\\left(4,0\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX28}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131660",
+        "folderId": "131645",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{29},t\\right)+\\left(4,3.5\\right)+\\left(4,0\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX29}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131651",
+        "folderId": "131645",
+        "color": "#000000",
+        "latex": "\\left(d_{esenhaLinha}\\left(x_{21},x_{22},x_{23},x_{24},x_{25},x_{26},x_{27},x_{28},x_{29},t\\right)+\\left(2,1\\right)+\\left(4,0\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}"
+      },
+      {
+        "type": "folder",
+        "id": "131749",
+        "title": "Campo 3 ok",
+        "collapsed": true
+      },
+      {
+        "type": "expression",
+        "id": "131750",
+        "folderId": "131749",
+        "color": "#6042a6",
+        "latex": "R_{esultado3}=R_{esultado}\\left(x_{31},x_{32},x_{33},x_{34},x_{35},x_{36},x_{37},x_{38},x_{39}\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "131751",
+        "folderId": "131749",
+        "color": "#000000",
+        "latex": "\\left(c_{ampo}\\left(t\\right)+\\left(2,1\\right)+\\left(8,0\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131752",
+        "folderId": "131749",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{31},t\\right)+\\left(2,1\\right)+\\left(8,0\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX31}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131753",
+        "folderId": "131749",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{32},t\\right)+\\left(3,1\\right)+\\left(8,0\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX32}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131754",
+        "folderId": "131749",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{33},t\\right)+\\left(4,1\\right)+\\left(8,0\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX33}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131755",
+        "folderId": "131749",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{34},t\\right)+\\left(2,2.25\\right)+\\left(8,0\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX34}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131756",
+        "folderId": "131749",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{35},t\\right)+\\left(3,2.25\\right)+\\left(8,0\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX35}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131757",
+        "folderId": "131749",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{36},t\\right)+\\left(4,2.25\\right)+\\left(8,0\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX36}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131758",
+        "folderId": "131749",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{37},t\\right)+\\left(2,3.5\\right)+\\left(8,0\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX37}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131759",
+        "folderId": "131749",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{38},t\\right)+\\left(3,3.5\\right)+\\left(8,0\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX38}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131760",
+        "folderId": "131749",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{39},t\\right)+\\left(4,3.5\\right)+\\left(8,0\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX39}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131761",
+        "folderId": "131749",
+        "color": "#000000",
+        "latex": "\\left(d_{esenhaLinha}\\left(x_{31},x_{32},x_{33},x_{34},x_{35},x_{36},x_{37},x_{38},x_{39},t\\right)+\\left(2,1\\right)+\\left(8,0\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}"
+      },
+      {
+        "type": "folder",
+        "id": "131736",
+        "title": "Campo 4 ok",
+        "collapsed": true
+      },
+      {
+        "type": "expression",
+        "id": "131737",
+        "folderId": "131736",
+        "color": "#6042a6",
+        "latex": "R_{esultado4}=R_{esultado}\\left(x_{41},x_{42},x_{43},x_{44},x_{45},x_{46},x_{47},x_{48},x_{49}\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "131738",
+        "folderId": "131736",
+        "color": "#000000",
+        "latex": "\\left(c_{ampo}\\left(t\\right)+\\left(2,1\\right)+\\left(0,5.125\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131739",
+        "folderId": "131736",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{41},t\\right)+\\left(2,1\\right)+\\left(0,5.125\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX41}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131740",
+        "folderId": "131736",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{42},t\\right)+\\left(3,1\\right)+\\left(0,5.125\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX42}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131741",
+        "folderId": "131736",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{43},t\\right)+\\left(4,1\\right)+\\left(0,5.125\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX43}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131742",
+        "folderId": "131736",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{44},t\\right)+\\left(2,2.25\\right)+\\left(0,5.125\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX44}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131743",
+        "folderId": "131736",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{45},t\\right)+\\left(3,2.25\\right)+\\left(0,5.125\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX45}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131744",
+        "folderId": "131736",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{46},t\\right)+\\left(4,2.25\\right)+\\left(0,5.125\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX46}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131745",
+        "folderId": "131736",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{47},t\\right)+\\left(2,3.5\\right)+\\left(0,5.125\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX47}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131746",
+        "folderId": "131736",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{48},t\\right)+\\left(3,3.5\\right)+\\left(0,5.125\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX48}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131747",
+        "folderId": "131736",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{49},t\\right)+\\left(4,3.5\\right)+\\left(0,5.125\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX49}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131748",
+        "folderId": "131736",
+        "color": "#000000",
+        "latex": "\\left(d_{esenhaLinha}\\left(x_{41},x_{42},x_{43},x_{44},x_{45},x_{46},x_{47},x_{48},x_{49},t\\right)+\\left(2,1\\right)+\\left(0,5.125\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}"
+      },
+      {
+        "type": "folder",
+        "id": "131723",
+        "title": "Campo 5 ok",
+        "collapsed": true
+      },
+      {
+        "type": "expression",
+        "id": "131724",
+        "folderId": "131723",
+        "color": "#6042a6",
+        "latex": "R_{esultado5}=R_{esultado}\\left(x_{51},x_{52},x_{53},x_{54},x_{55},x_{56},x_{57},x_{58},x_{59}\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "131725",
+        "folderId": "131723",
+        "color": "#000000",
+        "latex": "\\left(c_{ampo}\\left(t\\right)+\\left(2,1\\right)+\\left(4,5.125\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131726",
+        "folderId": "131723",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{51},t\\right)+\\left(2,1\\right)+\\left(4,5.125\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX51}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131727",
+        "folderId": "131723",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{52},t\\right)+\\left(3,1\\right)+\\left(4,5.125\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX52}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131728",
+        "folderId": "131723",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{53},t\\right)+\\left(4,1\\right)+\\left(4,5.125\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX53}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131729",
+        "folderId": "131723",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{54},t\\right)+\\left(2,2.25\\right)+\\left(4,5.125\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX54}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131730",
+        "folderId": "131723",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{55},t\\right)+\\left(3,2.25\\right)+\\left(4,5.125\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX55}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131731",
+        "folderId": "131723",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{56},t\\right)+\\left(4,2.25\\right)+\\left(4,5.125\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX56}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131732",
+        "folderId": "131723",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{57},t\\right)+\\left(2,3.5\\right)+\\left(4,5.125\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX57}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131733",
+        "folderId": "131723",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{58},t\\right)+\\left(3,3.5\\right)+\\left(4,5.125\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX58}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131734",
+        "folderId": "131723",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{59},t\\right)+\\left(4,3.5\\right)+\\left(4,5.125\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX59}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131735",
+        "folderId": "131723",
+        "color": "#000000",
+        "latex": "\\left(d_{esenhaLinha}\\left(x_{51},x_{52},x_{53},x_{54},x_{55},x_{56},x_{57},x_{58},x_{59},t\\right)+\\left(2,1\\right)+\\left(4,5.125\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}"
+      },
+      {
+        "type": "folder",
+        "id": "131710",
+        "title": "Campo 6 ok",
+        "collapsed": true
+      },
+      {
+        "type": "expression",
+        "id": "131711",
+        "folderId": "131710",
+        "color": "#6042a6",
+        "latex": "R_{esultado6}=R_{esultado}\\left(x_{61},x_{62},x_{63},x_{64},x_{65},x_{66},x_{67},x_{68},x_{69}\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "131712",
+        "folderId": "131710",
+        "color": "#000000",
+        "latex": "\\left(c_{ampo}\\left(t\\right)+\\left(2,1\\right)+\\left(8,5.125\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131713",
+        "folderId": "131710",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{61},t\\right)+\\left(2,1\\right)+\\left(8,5.125\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX61}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131714",
+        "folderId": "131710",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{62},t\\right)+\\left(3,1\\right)+\\left(8,5.125\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX62}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131715",
+        "folderId": "131710",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{63},t\\right)+\\left(4,1\\right)+\\left(8,5.125\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX63}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131716",
+        "folderId": "131710",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{64},t\\right)+\\left(2,2.25\\right)+\\left(8,5.125\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX64}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131717",
+        "folderId": "131710",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{65},t\\right)+\\left(3,2.25\\right)+\\left(8,5.125\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX65}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131718",
+        "folderId": "131710",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{66},t\\right)+\\left(4,2.25\\right)+\\left(8,5.125\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX66}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131719",
+        "folderId": "131710",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{67},t\\right)+\\left(2,3.5\\right)+\\left(8,5.125\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX67}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131720",
+        "folderId": "131710",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{68},t\\right)+\\left(3,3.5\\right)+\\left(8,5.125\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX68}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131721",
+        "folderId": "131710",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{69},t\\right)+\\left(4,3.5\\right)+\\left(8,5.125\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX69}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131722",
+        "folderId": "131710",
+        "color": "#000000",
+        "latex": "\\left(d_{esenhaLinha}\\left(x_{61},x_{62},x_{63},x_{64},x_{65},x_{66},x_{67},x_{68},x_{69},t\\right)+\\left(2,1\\right)+\\left(8,5.125\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}"
+      },
+      {
+        "type": "folder",
+        "id": "131697",
+        "title": "Campo 7 ok",
+        "collapsed": true
+      },
+      {
+        "type": "expression",
+        "id": "131698",
+        "folderId": "131697",
+        "color": "#6042a6",
+        "latex": "R_{esultado7}=R_{esultado}\\left(x_{71},x_{72},x_{73},x_{74},x_{75},x_{76},x_{77},x_{78},x_{79}\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "131699",
+        "folderId": "131697",
+        "color": "#000000",
+        "latex": "\\left(c_{ampo}\\left(t\\right)+\\left(2,1\\right)+\\left(0,10.25\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131700",
+        "folderId": "131697",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{71},t\\right)+\\left(2,1\\right)+\\left(0,10.25\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX71}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131701",
+        "folderId": "131697",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{72},t\\right)+\\left(3,1\\right)+\\left(0,10.25\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX72}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131702",
+        "folderId": "131697",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{73},t\\right)+\\left(4,1\\right)+\\left(0,10.25\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX73}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131703",
+        "folderId": "131697",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{74},t\\right)+\\left(2,2.25\\right)+\\left(0,10.25\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX74}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131704",
+        "folderId": "131697",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{75},t\\right)+\\left(3,2.25\\right)+\\left(0,10.25\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX75}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131705",
+        "folderId": "131697",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{76},t\\right)+\\left(4,2.25\\right)+\\left(0,10.25\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX76}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131706",
+        "folderId": "131697",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{77},t\\right)+\\left(2,3.5\\right)+\\left(0,10.25\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX77}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131707",
+        "folderId": "131697",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{78},t\\right)+\\left(3,3.5\\right)+\\left(0,10.25\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX78}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131708",
+        "folderId": "131697",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{79},t\\right)+\\left(4,3.5\\right)+\\left(0,10.25\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX79}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131709",
+        "folderId": "131697",
+        "color": "#000000",
+        "latex": "\\left(d_{esenhaLinha}\\left(x_{71},x_{72},x_{73},x_{74},x_{75},x_{76},x_{77},x_{78},x_{79},t\\right)+\\left(2,1\\right)+\\left(0,10.25\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}"
+      },
+      {
+        "type": "folder",
+        "id": "131684",
+        "title": "Campo 8 ok",
+        "collapsed": true
+      },
+      {
+        "type": "expression",
+        "id": "131685",
+        "folderId": "131684",
+        "color": "#6042a6",
+        "latex": "R_{esultado8}=R_{esultado}\\left(x_{81},x_{82},x_{83},x_{84},x_{85},x_{86},x_{87},x_{88},x_{89}\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "131686",
+        "folderId": "131684",
+        "color": "#000000",
+        "latex": "\\left(c_{ampo}\\left(t\\right)+\\left(2,1\\right)+\\left(4,10.25\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131687",
+        "folderId": "131684",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{81},t\\right)+\\left(2,1\\right)+\\left(4,10.25\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX81}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131688",
+        "folderId": "131684",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{82},t\\right)+\\left(3,1\\right)+\\left(4,10.25\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX82}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131689",
+        "folderId": "131684",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{83},t\\right)+\\left(4,1\\right)+\\left(4,10.25\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX83}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131690",
+        "folderId": "131684",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{84},t\\right)+\\left(2,2.25\\right)+\\left(4,10.25\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX84}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131691",
+        "folderId": "131684",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{85},t\\right)+\\left(3,2.25\\right)+\\left(4,10.25\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX85}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131692",
+        "folderId": "131684",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{86},t\\right)+\\left(4,2.25\\right)+\\left(4,10.25\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX86}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131693",
+        "folderId": "131684",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{87},t\\right)+\\left(2,3.5\\right)+\\left(4,10.25\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX87}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131694",
+        "folderId": "131684",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{88},t\\right)+\\left(3,3.5\\right)+\\left(4,10.25\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX88}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131695",
+        "folderId": "131684",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{89},t\\right)+\\left(4,3.5\\right)+\\left(4,10.25\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX89}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131696",
+        "folderId": "131684",
+        "color": "#000000",
+        "latex": "\\left(d_{esenhaLinha}\\left(x_{81},x_{82},x_{83},x_{84},x_{85},x_{86},x_{87},x_{88},x_{89},t\\right)+\\left(2,1\\right)+\\left(4,10.25\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}"
+      },
+      {
+        "type": "folder",
+        "id": "131671",
+        "title": "Campo 9 ok",
+        "collapsed": true
+      },
+      {
+        "type": "expression",
+        "id": "131672",
+        "folderId": "131671",
+        "color": "#6042a6",
+        "latex": "R_{esultado9}=R_{esultado}\\left(x_{91},x_{92},x_{93},x_{94},x_{95},x_{96},x_{97},x_{98},x_{99}\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "131673",
+        "folderId": "131671",
+        "color": "#000000",
+        "latex": "\\left(c_{ampo}\\left(t\\right)+\\left(2,1\\right)+\\left(8,10.25\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131674",
+        "folderId": "131671",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{91},t\\right)+\\left(2,1\\right)+\\left(8,10.25\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX91}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131675",
+        "folderId": "131671",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{92},t\\right)+\\left(3,1\\right)+\\left(8,10.25\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX92}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131676",
+        "folderId": "131671",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{93},t\\right)+\\left(4,1\\right)+\\left(8,10.25\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX93}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131677",
+        "folderId": "131671",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{94},t\\right)+\\left(2,2.25\\right)+\\left(8,10.25\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX94}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131678",
+        "folderId": "131671",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{95},t\\right)+\\left(3,2.25\\right)+\\left(8,10.25\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX95}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131679",
+        "folderId": "131671",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{96},t\\right)+\\left(4,2.25\\right)+\\left(8,10.25\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX96}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131680",
+        "folderId": "131671",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{97},t\\right)+\\left(2,3.5\\right)+\\left(8,10.25\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX97}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131681",
+        "folderId": "131671",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{98},t\\right)+\\left(3,3.5\\right)+\\left(8,10.25\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX98}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131682",
+        "folderId": "131671",
+        "color": "#000000",
+        "latex": "d_{esenhaSimbolo}\\left(x_{99},t\\right)+\\left(4,3.5\\right)+\\left(8,10.25\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true,
+          "latex": "c_{licaX99}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131683",
+        "folderId": "131671",
+        "color": "#000000",
+        "latex": "\\left(d_{esenhaLinha}\\left(x_{91},x_{92},x_{93},x_{94},x_{95},x_{96},x_{97},x_{98},x_{99},t\\right)+\\left(2,1\\right)+\\left(8,10.25\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}"
       },
       {
         "type": "folder",
@@ -699,10 +2926,10 @@
       },
       {
         "type": "expression",
-        "id": "130844",
+        "id": "131775",
         "folderId": "130839",
         "color": "#6042a6",
-        "latex": "R_{esultado}\\left(C_{ampo10}\\right)"
+        "latex": "R_{esultado10}=R_{esultado}\\left(R_{esultado1},R_{esultado2},R_{esultado3},R_{esultado4},R_{esultado5},R_{esultado6},R_{esultado7},R_{esultado8},R_{esultado9}\\right)"
       },
       {
         "type": "expression",
@@ -753,6 +2980,12 @@
         "text": "Bug quando o movimento finaliza o jogo e manda pro mesmo bloco - vale a pena arrumar?"
       },
       {
+        "type": "text",
+        "id": "131772",
+        "folderId": "130839",
+        "text": "Usa a função atualizaProx - junta com as condições de clicaAvancado"
+      },
+      {
         "type": "expression",
         "id": "130864",
         "folderId": "130839",
@@ -764,113 +2997,49 @@
         "id": "130855",
         "folderId": "130839",
         "color": "#c74440",
-        "latex": "c_{licaAvancado}\\left(j_{ogo},i_{ndice}\\right)=\\left\\{R_{esultado}\\left(C_{ampo10}\\right)=0:\\left\\{i_{n}\\left(j_{ogo},p_{rox}\\right)=1:\\left(c_{lica}\\left(j_{ogo},i_{ndice}\\right),a_{tualizaProx}\\left(i_{ndice}-1\\right)\\right)\\right\\}\\right\\}"
+        "latex": "c_{licaAvancado}\\left(j_{ogo},i_{ndice}\\right)=\\left\\{R_{esultado10}=0:\\left\\{i_{n}\\left(j_{ogo},p_{rox}\\right)=1:\\left(c_{lica}\\left(j_{ogo},i_{ndice}\\right),a_{tualizaProx}\\left(i_{ndice}\\right)\\right)\\right\\}\\right\\}"
       },
       {
         "type": "expression",
-        "id": "130845",
+        "id": "131900",
         "folderId": "130839",
-        "color": "#000000",
-        "latex": "\\left(d_{esenhaCampo}\\left(C_{ampo1},t\\right)+\\left(-2,1\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)\\right)",
+        "color": "#c74440",
+        "latex": "+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "hidden": true
+      },
+      {
+        "type": "text",
+        "id": "131905",
+        "folderId": "130839",
+        "text": "Desenho do campo maior e resultados"
+      },
+      {
+        "type": "expression",
+        "id": "130903",
+        "folderId": "130839",
+        "color": "#c74440",
+        "latex": "\\frac{b_{otao}\\left(\\left[r,e_{0},s,e_{0},t_{0}\\right],t\\right)}{2}+\\left(2,-01\\right)+\\left(0,\\left\\{i_{f}\\left(I_{nicial}\\right)=0:0,1000\\right\\}\\right)\\left\\{R_{esultado10}=0:\\frac{1}{0},1\\right\\}",
+        "fill": true,
+        "fillOpacity": "0",
         "clickableInfo": {
           "enabled": true,
-          "latex": "c_{licaAvancado}\\left(1,\\operatorname{index}\\right)"
+          "latex": "r_{eset}"
         }
       },
       {
         "type": "expression",
-        "id": "130873",
+        "id": "130878",
         "folderId": "130839",
-        "color": "#000000",
-        "latex": "\\left(d_{esenhaCampo}\\left(C_{ampo2},t\\right)+\\left(2,1\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)\\right)",
-        "clickableInfo": {
-          "enabled": true,
-          "latex": "c_{licaAvancado}\\left(2,\\operatorname{index}\\right)"
-        }
-      },
-      {
-        "type": "expression",
-        "id": "130874",
-        "folderId": "130839",
-        "color": "#000000",
-        "latex": "\\left(d_{esenhaCampo}\\left(C_{ampo3},t\\right)+\\left(6,1\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)\\right)",
-        "clickableInfo": {
-          "enabled": true,
-          "latex": "c_{licaAvancado}\\left(3,\\operatorname{index}\\right)"
-        }
-      },
-      {
-        "type": "expression",
-        "id": "130872",
-        "folderId": "130839",
-        "color": "#000000",
-        "latex": "\\left(d_{esenhaCampo}\\left(C_{ampo4},t\\right)+\\left(-2,6\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)\\right)",
-        "clickableInfo": {
-          "enabled": true,
-          "latex": "c_{licaAvancado}\\left(4,\\operatorname{index}\\right)"
-        }
-      },
-      {
-        "type": "expression",
-        "id": "130871",
-        "folderId": "130839",
-        "color": "#000000",
-        "latex": "\\left(d_{esenhaCampo}\\left(C_{ampo5},t\\right)+\\left(2,6\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)\\right)",
-        "clickableInfo": {
-          "enabled": true,
-          "latex": "c_{licaAvancado}\\left(5,\\operatorname{index}\\right)"
-        }
-      },
-      {
-        "type": "expression",
-        "id": "130870",
-        "folderId": "130839",
-        "color": "#000000",
-        "latex": "\\left(d_{esenhaCampo}\\left(C_{ampo6},t\\right)+\\left(6,6\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)\\right)",
-        "clickableInfo": {
-          "enabled": true,
-          "latex": "c_{licaAvancado}\\left(6,\\operatorname{index}\\right)"
-        }
-      },
-      {
-        "type": "expression",
-        "id": "130869",
-        "folderId": "130839",
-        "color": "#000000",
-        "latex": "\\left(d_{esenhaCampo}\\left(C_{ampo7},t\\right)+\\left(-2,11\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)\\right)",
-        "clickableInfo": {
-          "enabled": true,
-          "latex": "c_{licaAvancado}\\left(7,\\operatorname{index}\\right)"
-        }
-      },
-      {
-        "type": "expression",
-        "id": "130868",
-        "folderId": "130839",
-        "color": "#000000",
-        "latex": "\\left(d_{esenhaCampo}\\left(C_{ampo8},t\\right)+\\left(2,11\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)\\right)",
-        "clickableInfo": {
-          "enabled": true,
-          "latex": "c_{licaAvancado}\\left(8,\\operatorname{index}\\right)"
-        }
-      },
-      {
-        "type": "expression",
-        "id": "130867",
-        "folderId": "130839",
-        "color": "#000000",
-        "latex": "\\left(d_{esenhaCampo}\\left(C_{ampo9},t\\right)+\\left(6,11\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)\\right)",
-        "clickableInfo": {
-          "enabled": true,
-          "latex": "c_{licaAvancado}\\left(9,\\operatorname{index}\\right)"
-        }
+        "color": "#2d70b3",
+        "latex": "P_{prox}=\\left\\{\\operatorname{length}\\left(p_{rox}\\right)=1:\\left(2,1.\\right)+\\left(\\operatorname{mod}\\left(p_{rox}\\left[1\\right]-1,3\\right)4,\\operatorname{floor}\\left(\\frac{p_{rox}\\left[1\\right]-1}{3}\\right)5.125\\right)\\right\\}",
+        "hidden": true
       },
       {
         "type": "expression",
         "id": "130866",
         "folderId": "130839",
         "color": "#2d70b3",
-        "latex": "\\left(4d_{esenhaCampo2}\\left(C_{ampo10},t\\right)+\\left(-2.5,0.5\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)\\right)",
+        "latex": "\\left(4c_{ampo}\\left(t\\right)+\\left(1.5,0.5\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
         "lineOpacity": "1",
         "lineWidth": "5",
         "clickableInfo": {
@@ -879,11 +3048,100 @@
       },
       {
         "type": "expression",
-        "id": "130878",
+        "id": "130877",
+        "folderId": "130839",
+        "color": "#c74440",
+        "latex": "P_{prox}+\\left(c_{ampo}\\left(t\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)\\right)\\left\\{R_{esultado10}=0\\right\\}+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,0\\right)\\right\\}",
+        "clickableInfo": {
+          "enabled": true
+        }
+      },
+      {
+        "type": "expression",
+        "id": "131907",
         "folderId": "130839",
         "color": "#2d70b3",
-        "latex": "P_{prox}=\\left\\{\\operatorname{length}\\left(p_{rox}\\right)=1:\\left(-2,1\\right)+\\left(\\operatorname{mod}\\left(p_{rox}\\left[1\\right]-1,3\\right)4,\\operatorname{floor}\\left(\\frac{p_{rox}\\left[1\\right]-1}{3}\\right)5\\right)\\right\\}",
-        "hidden": true
+        "latex": "\\left(R_{esultado1},R_{esultado2},R_{esultado3},R_{esultado4},R_{esultado5},R_{esultado6},R_{esultado7},R_{esultado8},R_{esultado9}\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "131906",
+        "folderId": "130839",
+        "color": "#2d70b3",
+        "latex": "4d_{esenhaSimbolo2}\\left(R_{esultado1},t\\right)+\\left(1.5,0.25\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,1000\\right)\\right\\}",
+        "lineWidth": "5"
+      },
+      {
+        "type": "expression",
+        "id": "131922",
+        "folderId": "130839",
+        "color": "#2d70b3",
+        "latex": "4d_{esenhaSimbolo2}\\left(R_{esultado2},t\\right)+\\left(1.5,0.25\\right)+\\left(4,0\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,1000\\right)\\right\\}",
+        "lineWidth": "5"
+      },
+      {
+        "type": "expression",
+        "id": "131921",
+        "folderId": "130839",
+        "color": "#2d70b3",
+        "latex": "4d_{esenhaSimbolo2}\\left(R_{esultado3},t\\right)+\\left(1.5,0.25\\right)+\\left(8,0\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,1000\\right)\\right\\}",
+        "lineWidth": "5"
+      },
+      {
+        "type": "expression",
+        "id": "131920",
+        "folderId": "130839",
+        "color": "#2d70b3",
+        "latex": "4d_{esenhaSimbolo2}\\left(R_{esultado4},t\\right)+\\left(1.5,0.25\\right)+\\left(0,5.125\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,1000\\right)\\right\\}",
+        "lineWidth": "5"
+      },
+      {
+        "type": "expression",
+        "id": "131919",
+        "folderId": "130839",
+        "color": "#2d70b3",
+        "latex": "4d_{esenhaSimbolo2}\\left(R_{esultado5},t\\right)+\\left(1.5,0.25\\right)+\\left(4,5.125\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,1000\\right)\\right\\}",
+        "lineWidth": "5"
+      },
+      {
+        "type": "expression",
+        "id": "131918",
+        "folderId": "130839",
+        "color": "#2d70b3",
+        "latex": "4d_{esenhaSimbolo2}\\left(R_{esultado6},t\\right)+\\left(1.5,0.25\\right)+\\left(8,5.125\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,1000\\right)\\right\\}",
+        "lineWidth": "5"
+      },
+      {
+        "type": "expression",
+        "id": "131917",
+        "folderId": "130839",
+        "color": "#2d70b3",
+        "latex": "4d_{esenhaSimbolo2}\\left(R_{esultado7},t\\right)+\\left(1.5,0.25\\right)+\\left(0,10.25\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,1000\\right)\\right\\}",
+        "lineWidth": "5"
+      },
+      {
+        "type": "expression",
+        "id": "131916",
+        "folderId": "130839",
+        "color": "#2d70b3",
+        "latex": "4d_{esenhaSimbolo2}\\left(R_{esultado8},t\\right)+\\left(1.5,0.25\\right)+\\left(4,10.25\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,1000\\right)\\right\\}",
+        "lineWidth": "5"
+      },
+      {
+        "type": "expression",
+        "id": "131924",
+        "folderId": "130839",
+        "color": "#2d70b3",
+        "latex": "4d_{esenhaSimbolo2}\\left(R_{esultado9},t\\right)+\\left(1.5,0.25\\right)+\\left(8,10.25\\right)+\\left\\{i_{f}\\left(A_{vancado}\\right)=1:\\left(-4,0\\right),\\left(0,1000\\right)\\right\\}",
+        "lineWidth": "5"
+      },
+      {
+        "type": "expression",
+        "id": "131923",
+        "folderId": "130839",
+        "color": "#2d70b3",
+        "latex": "4d_{esenhaLinha}\\left(R_{esultado1},R_{esultado2},R_{esultado3},R_{esultado4},R_{esultado5},R_{esultado6},R_{esultado7},R_{esultado8},R_{esultado9},t\\right)+\\left(-2.5,\\ 0.375\\right)",
+        "lineWidth": "5"
       },
       {
         "type": "expression",
@@ -895,38 +3153,16 @@
       },
       {
         "type": "expression",
-        "id": "130877",
-        "folderId": "130839",
-        "color": "#c74440",
-        "latex": "P_{prox}+\\left(c_{ampo}\\left(t\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)\\right)\\left\\{R_{esultado}\\left(C_{ampo10}\\right)=0\\right\\}",
-        "clickableInfo": {
-          "enabled": true
-        }
-      },
-      {
-        "type": "expression",
         "id": "130890",
         "folderId": "130839",
         "color": "#000000",
-        "latex": "2d_{esenhaSimbolo}\\left(v_{ez},t\\right)+\\left(5,-02\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)"
-      },
-      {
-        "type": "expression",
-        "id": "130904",
-        "folderId": "130839",
-        "color": "#c74440",
-        "latex": "\\frac{b_{otao}\\left(\\left[r,e_{0},s,e_{0},t_{0}\\right],t\\right)}{2}+\\left(2,-01\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)\\left\\{R_{esultado}\\left(C_{ampo10}\\right)>0\\right\\}",
-        "fill": true,
-        "fillOpacity": "0",
-        "clickableInfo": {
-          "enabled": true,
-          "latex": "r_{eset}"
-        }
+        "latex": "2d_{esenhaSimbolo}\\left(v_{ez},t\\right)+\\left(5,-02\\right)+\\left(0,\\left\\{i_{f}\\left(A_{vancado}\\right)=1:0,1000\\right\\}\\right)",
+        "hidden": true
       },
       {
         "type": "folder",
         "id": "120835",
-        "title": "Funções com Matrizes - Otimizadas",
+        "title": "Funções com Matrizes - Melhor não usar",
         "hidden": true,
         "collapsed": true
       },
@@ -1061,14 +3297,14 @@
         "id": "130811",
         "folderId": "118810",
         "color": "#388c46",
-        "latex": "d_{esenhaLinha}\\left(x,t\\right)=\\left\\{Q_{ualLinha}\\left(x\\right)=1:\\left(3t,\\frac{2}{3}\\right),Q_{ualLinha}\\left(x\\right)=2:\\left(3t,\\frac{2}{3}+\\frac{5}{4}\\right),Q_{ualLinha}\\left(x\\right)=3:\\left(3t,\\frac{2}{3}+\\frac{10}{4}\\right),Q_{ualLinha}\\left(x\\right)=4:\\left(0.5,3.75t\\right),Q_{ualLinha}\\left(x\\right)=5:\\left(1.5,3.75t\\right),Q_{ualLinha}\\left(x\\right)=6:\\left(2.5,3.75t\\right),Q_{ualLinha}\\left(x\\right)=7:\\left(3,3.75\\right)t,Q_{ualLinha}\\left(x\\right)=8:\\left(3t,3.75\\left(1-t\\right)\\right)\\right\\}"
+        "latex": "d_{esenhaLinha}\\left(x_{1},x_{2},x_{3},x_{4},x_{5},x_{6},x_{7},x_{8},x_{9},t\\right)=\\left\\{Q_{ualLinha}\\left(x_{1},x_{2},x_{3},x_{4},x_{5},x_{6},x_{7},x_{8},x_{9}\\right)=1:\\left(3t,\\frac{2}{3}\\right),Q_{ualLinha}\\left(x_{1},x_{2},x_{3},x_{4},x_{5},x_{6},x_{7},x_{8},x_{9}\\right)=2:\\left(3t,\\frac{2}{3}+\\frac{5}{4}\\right),Q_{ualLinha}\\left(x_{1},x_{2},x_{3},x_{4},x_{5},x_{6},x_{7},x_{8},x_{9}\\right)=3:\\left(3t,\\frac{2}{3}+\\frac{10}{4}\\right),Q_{ualLinha}\\left(x_{1},x_{2},x_{3},x_{4},x_{5},x_{6},x_{7},x_{8},x_{9}\\right)=4:\\left(0.5,3.75t\\right),Q_{ualLinha}\\left(x_{1},x_{2},x_{3},x_{4},x_{5},x_{6},x_{7},x_{8},x_{9}\\right)=5:\\left(1.5,3.75t\\right),Q_{ualLinha}\\left(x_{1},x_{2},x_{3},x_{4},x_{5},x_{6},x_{7},x_{8},x_{9}\\right)=6:\\left(2.5,3.75t\\right),Q_{ualLinha}\\left(x_{1},x_{2},x_{3},x_{4},x_{5},x_{6},x_{7},x_{8},x_{9}\\right)=7:\\left(3,3.75\\right)t,Q_{ualLinha}\\left(x_{1},x_{2},x_{3},x_{4},x_{5},x_{6},x_{7},x_{8},x_{9}\\right)=8:\\left(3t,3.75\\left(1-t\\right)\\right)\\right\\}"
       },
       {
         "type": "expression",
         "id": "130814",
         "folderId": "118810",
         "color": "#000000",
-        "latex": "Q_{ualLinha}\\left(C_{ampo1}\\right)"
+        "latex": "Q_{ualLinha}\\left(x_{11},x_{12},x_{13},x_{14},x_{15},x_{16},x_{17},x_{18},x_{19}\\right)"
       },
       {
         "type": "text",
@@ -1904,21 +4140,21 @@
         "id": "130719",
         "folderId": "14959",
         "color": "#388c46",
-        "latex": "t_{em1}\\left(x\\right)=\\max\\left(\\left\\{x=1:1,0\\right\\}\\right)"
+        "latex": "t_{em1}\\left(x_{1},x_{2},x_{3}\\right)=\\left\\{x_{1}=1:1,\\left\\{x_{2}=1:1,\\left\\{x_{3}=1:1,0\\right\\}\\right\\}\\right\\}"
       },
       {
         "type": "expression",
         "id": "130721",
         "folderId": "14959",
         "color": "#000000",
-        "latex": "t_{em2}\\left(x\\right)=\\max\\left(\\left\\{x=2:1,0\\right\\}\\right)"
+        "latex": "t_{em2}\\left(x_{1},x_{2},x_{3}\\right)=\\left\\{x_{1}=2:1,\\left\\{x_{2}=2:1,\\left\\{x_{3}=2:1,0\\right\\}\\right\\}\\right\\}"
       },
       {
         "type": "expression",
         "id": "130722",
         "folderId": "14959",
         "color": "#c74440",
-        "latex": "t_{em1e2}\\left(x\\right)=t_{em1}\\left(x\\right)\\cdot t_{em2}\\left(x\\right)"
+        "latex": "t_{em1e2}\\left(x_{1},x_{2},x_{3}\\right)=t_{em1}\\left(x_{1},x_{2},x_{3}\\right)\\cdot t_{em2}\\left(x_{1},x_{2},x_{3}\\right)"
       },
       {
         "type": "expression",
@@ -1975,6 +4211,11 @@
         "folderId": "14959",
         "color": "#000000",
         "latex": "b_{ranco}=\\operatorname{rgb}\\left(255,255,255\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "131925",
+        "color": "#6042a6"
       }
     ]
   },
